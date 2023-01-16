@@ -1,0 +1,313 @@
+id,name,en,pinyin,desig,rank,display_ra,display_dec,display_scale
+1,毕宿,Net,Bi Xiu,毕宿,1,64.9945,15.8353,9.6
+2,壁宿,Wall,Bi Xiu,壁宿,1,2.703,22.137,13.9
+3,参宿,Three Stars,Shen Xiu,参宿,1,83.7137,-1.1313,17.1
+4,氐宿,Root,Di Xiu,氐宿,1,-131.6994,-14.5873,11.2
+5,斗宿,Dipper,Dou Xiu,斗宿,1,-79.9121,-25.4695,13.3
+6,房宿,Room,Fang Xiu,房宿,1,-119.7097,-24.5098,9.4
+7,鬼宿,Ghosts,Gui Xiu,鬼宿,1,129.5351,19.7815,3.4
+8,箕宿,Winnowing Basket,Ji Xiu,箕宿,1,-86.2525,-33.2949,6.9
+9,角宿,Horn,Jiao Xiu,角宿,1,-157.5142,-5.8786,10.6
+10,井宿,Well,Jing Xiu,井宿,1,101.6213,19.0134,15.8
+11,亢宿,Neck,Kang Xiu,亢宿,1,-144.8627,-7.7995,11.1
+12,奎宿,Legs,Kui Xiu,奎宿,1,14.7505,31.0568,20
+13,柳宿,Willow,Liu Xiu,柳宿,1,134.0025,4.3666,9.2
+14,娄宿,Bond,Lou Xiu,娄宿,1,30.088,21.3781,4.2
+15,昴宿,Hairy Head,Mao Xiu,昴宿,1,56.7548,24.2514,1.1
+16,牛宿,Ox,Niu Xiu,牛宿,1,-54.7088,-15.5641,6
+17,女宿,Girl,Nü Xiu,女宿,1,-47.4588,-7.2617,4.5
+18,室宿,Encampment,Shi Xiu,室宿,1,-13.9331,21.6441,12.9
+19,太微右垣,Supreme Palace Right Wall,Tai Wei You Yuan,太微右垣,2,173.1005,11.1442,18.8
+20,太微左垣,Supreme Palace Left Wall,Tai Wei Zuo Yuan,太微左垣,2,-168.7632,8.04,19
+21,天市右垣,Heavenly Market Right Wall,Tian Shi You Yuan,天市右垣,2,-118.5048,5.4613,32.1
+22,天市左垣,Heavenly Market Left Wall,Tian Shi Zuo Yuan,天市左垣,2,-88.0265,6.5188,44.5
+23,危宿,Rooftop,Wei Xiu,危宿,1,-30.7018,4.7776,10.2
+24,尾宿,Tail,Wei Xiu,尾宿,1,-100.2815,-38.7662,14.4
+25,胃宿,Stomach,Wei Xiu,胃宿,1,41.6795,28.2538,2
+26,心宿,Heart,Xin Xiu,心宿,1,-112.8661,-26.9044,3.7
+27,星宿,Star,Xing Xiu,星宿,1,142.4536,-6.5588,10.8
+28,虚宿,Emptiness,Xu Xiu,虚宿,1,-39.0771,-0.1617,10.8
+29,翼宿,Wings,Yi Xiu,翼宿,1,170.7051,-18.5479,17.5
+30,张宿,Extended Net,Zhang Xiu,张宿,1,152.3611,-15.2277,14.6
+31,轸宿,Chariot,Zhen Xiu,轸宿,1,-174.6499,-20.4624,8.5
+32,紫微右垣,Purple Forbidden Right Wall,Zi Wei You Yuan,紫微右垣,2,130.5471,67.1031,161.1
+33,紫微左垣,Purple Forbidden Left Wall,Zi Wei Zuo Yuan,紫微左垣,2,-58.412800000000004,66.9764,16.8
+34,觜宿,Turtle Beak,Zi Xiu,觜宿,1,83.9659,9.6124,0.6
+35,八谷,Eight Kinds of Crops,Ba Gu,八谷,3,82.1018,57.1444,15.6
+36,八魁,Net for Catching Birds,Ba Kui,八魁,3,-357.3479,-14.7212,8.4
+37,败瓜,Rotten Gourd,Bai Gua,败瓜,3,-50.9572,11.7007,3.2
+38,败臼,Decayed Mortar,Bai Jiu,败臼,3,-24.1932,-34.4522,14.6
+39,北斗,Northern Dipper,Bei Dou,北斗,3,-173.8272,55.5322,41.4
+40,北河,North River,Bei He,北河,3,114.3035,29.9573,4.1
+41,北极,Northern Pole,Bei Ji,北极,3,-148.7555,77.6234,37.9
+42,北落师门,North Gate of the Military Camp,Bei Luo Shi Men,北落师门,3,-15.5873,-29.6222,0
+43,鳖,River Turtle,Bie,鳖,3,-77.8746,-41.516,10.8
+44,波斯,Persia,Bo Si,波斯,3,-45.8709,-51.5875,31.9
+45,帛度,Textile Ruler,Bo Du,帛度,3,-88.7169,21.2052,1.8
+46,参旗,Banner of Three Stars,Can Qi,参旗,3,73.5486,7.9823,12.5
+47,厕,Toilet,Ce,厕,3,84.9459,-20.1353,5.8
+48,策,Whip,Ce,策,3,14.1772,60.7167,0
+49,常陈,Royal Guards,Chang Chen,常陈,3,-172.7324,40.682,13.5
+50,车府,Big Yard for Chariots,Che Fu,车府,3,-31.0175,43.9673,28.1
+51,车骑,Chariots and Cavalry,Che Qi,车骑,3,-136.8872,-50.7625,9.9
+52,车肆,Commodity Market,Che Si,车肆,3,-110.2954,-9.5773,5.5
+53,刍藁,Hay,Chu Gao,刍藁,3,37.0685,-7.5352,9.5
+54,杵(箕宿),Pestle (In Winnowing Basket Mansion),Chu(Ji Xiu),杵(箕宿),3,-97.38,-51.0178,9
+55,杵(危宿),Pestle (In Rooftop Mansion),Chu(Wei Xiu),杵(危宿),3,-27.3066,33.3564,8.8
+56,长沙(附官),Changsha (Vassal of Chariot),Chang Sha,长沙(附官),3,-174.8598,-22.2159,0
+57,传舍,Guest House,Chuan She,传舍,3,-335.2605,61.6293,12.4
+58,从官(房宿),Retinue (In Room Mansion),Cong Guan(Fang Xiu),从官(房宿),3,-123.2947,-34.1688,2.1
+59,从官(太微垣),Retinue (In Supreme Palace Enclosure),Cong Guan(Tai Wei Yuan),从官(太微垣),3,175.1961,21.3527,0
+60,大角,Great Horn,Da Jiao,大角,3,-146.0847,19.1824,0
+61,大理,Chief Judge,Da Li,大理,3,-176.9502,77.6162,0
+62,大陵,Mausoleum,Da Ling,大陵,3,41.4817,47.0822,17.5
+64,帝席,Mattress of the Emperor,Di Xi,帝席,3,-149.1289,26.2919,3.5
+65,帝座,Emperor's Seat,Di Zuo,帝座,3,-101.3381,14.3903,0
+66,东咸,Eastern Door,Dong Xian,东咸,3,-112.97,-19.0395,4.9
+67,斗,Dipper for Liquids,Dou,斗,3,-113.7289,10.5703,6.9
+68,顿顽,Trials,Dun Wan,顿顽,3,-130.4465,-33.8902,4.7
+69,伐(附官),Send Armed Forces To Suppress (Vassal of Three Stars),Fa,伐(附官),3,83.9494,-3.5559,4.7
+70,罚,Punishment,Fa,罚,3,-118.0065,-12.4514,8.2
+71,飞鱼,Flying Fish,Fei Yu,飞鱼,3,121.3993,-69.3715,28.4
+72,坟墓(附官),Tomb (Vassal of Rooftop),Fen Mu,坟墓(附官),3,-24.8574,-0.005,7.4
+73,𫓧钺,Axe,Fu Yue,𫓧钺,3,-3.3837,-18.4681,2.4
+74,𫓧锧,Sickle,Fu Zhi,𫓧锧,3,26.201,-21.8023,7.6
+75,扶筐,Basket for Mulberry Leaves,Fu Kuang,扶筐,3,-78.8963,56.3926,10.3
+76,附白,White Patched Nearby,Fu Bai,附白,3,49.7142,-74.6529,14.2
+77,附路,Auxiliary Road,Fu Lu,附路,3,9.2429,53.8969,0
+78,傅说,Fu Yue,Fu Yue,傅说,3,-92.5355,-37.0433,0
+79,盖屋,Roofing,Gai Wu,盖屋,3,-28.9869,-1.5308,1.2
+80,杠(附官),Canopy Support (Vassal of Canopy of the Emperor),Gang,杠(附官),3,40.1985,73.1899,34.8
+81,阁道,Flying Corridor,Ge Dao,阁道,3,24.2239,57.8435,26.1
+82,梗河,Celestial Lance,Geng He,梗河,3,-140.3979,28.7228,3.3
+83,勾陈,Curved Array,Gou Chen,勾陈,3,-43.0154,83.5293,11.5
+84,钩钤(附官),Lock (Vassal of Room),Gou Qian,钩钤(附官),3,-118.3947,-20.3371,1.1
+85,狗,Dog,Gou,狗,3,-67.2522,-24.6961,2.9
+86,狗国,Territory of Dog,Gou Guo,狗国,3,-60.1879,-26.9528,1.7
+87,贯索,Coiled Thong,Guan Suo,贯索,3,-123.841,29.686,8.4
+88,爟,Beacon Fire,Guan,爟,3,124.6144,26.8394,5.6
+89,龟,Tortoise,Gui,龟,3,-102.3895,-56.9221,10.3
+90,海山,Sea and Mountain,Hai Shan,海山,3,166.6857,-62.7341,19.4
+91,海石,Sea Rock,Hai Shi,海石,3,136.202,-62.1509,21.1
+93,河鼓,Drum at the River,He Gu,河鼓,3,-62.3034,8.5101,4.2
+94,鹤,Crane,He,鹤,3,-19.2921,-48.6838,19.1
+95,衡,Railings,Heng,衡,3,-150.5561,-41.8266,4.1
+96,候,Astrologer,Hou,候,3,-96.2664,12.56,0
+97,弧矢,Bow and Arrow,Hu Shi,弧矢,3,110.9387,-31.9529,17
+98,斛,Dipper for Solids,Hu,斛,3,-107.0625,8.7066,3
+99,虎贲,Emperor's Bodyguard,Hu Ben,虎贲,3,168.801,23.0955,0
+100,瓠瓜,Good Gourd,Hu Gua,瓠瓜,3,-49.7541,15.3597,2.8
+101,华盖,Canopy of the Emperor,Hua Gai,华盖,3,23.332,70.5415,11.3
+102,宦者,Eunuch Official,Huan Zhe,宦者,3,-103.0507,12.3386,3.5
+103,火鸟,Firebird,Huo Niao,火鸟,3,-352.3329,-43.3109,11
+104,积尸(鬼宿),Cumulative Corpses,Ji Shi(Gui Xiu),积尸(鬼宿),3,130.4587,19.8742,0
+105,积尸(胃宿),Heap of Corpses,Ji Shi(Wei Xiu),积尸(胃宿),3,44.6903,39.6627,0
+106,积水(胃宿),Stored water,Ji Shui(Wei Xiu),积水(胃宿),3,61.646,50.3513,0
+107,积薪,Pile of Firewood,Ji Xin,积薪,3,116.1119,24.398,0
+108,积卒,Group of Soldiers,Ji Zu,积卒,3,-119.1607,-37.5995,1.6
+109,夹白,White Patches Attached,Jia Bai,夹白,3,71.0228,-64.8296,14.8
+110,建,Establishment,Jian,建,3,-72.5679,-18.8482,6
+111,渐台,Clepsydra Terrace,Jian Tai,渐台,3,-75.3273,34.7941,4.3
+112,键闭,Door Bolt,Jian Bi,键闭,3,-117.0011,-19.4607,0
+113,金鱼,Goldfish,Jin Yu,金鱼,3,78.0955,-60.165,28.2
+114,进贤,Recommending Virtuous Men,Jin Xian,进贤,3,-165.0853,-3.8119,0
+115,积水(井宿),Accumulated Water,Ji Shui(Jin Xiu),积水(井宿),3,110.5109,36.7606,0
+116,九坎,Nine Water Wells,Jiu Kan,九坎,3,-41.9429,-40.2694,0
+117,九卿,Nine Senior Officers,Jiu Qing,九卿,3,-169.6569,8.9545,2.6
+118,九斿,Imperial Military Flag,Jiu Liu,九斿,3,72.4972,-10.8984,23.8
+119,九州殊口,Interpreters of Nine Dialects,Jiu Zhou Shu Kou,九州殊口,3,66.9943,-6.8044,8.1
+120,酒旗,Banner of Wine Shop,Jiu Qi,酒旗,3,144.0236,11.5392,5
+121,臼,Mortar,Jiu,臼,3,-29.3168,27.0439,9.3
+122,卷舌,Rolled Tongue,Juan She,卷舌,3,57.6679,37.231,10.7
+123,军井,Military Well,Jun Jing,军井,3,79.0353,-12.523,1.9
+124,军南门,Southern Military Gate,Jun Nan Men,军南门,3,17.3755,47.2418,0
+125,军市,Market for Soldiers,Jun Shi,军市,3,99.7182,-21.0701,8.1
+126,糠,Chaff,Kang,糠,3,-98.1614,-29.867,0
+127,亢池,Boats and Lake,Kang Chi,亢池,3,-146.1904,14.6332,3.3
+128,孔雀,Peafowl,Kong Que,孔雀,3,-65.9779,-64.8228,55.2
+129,哭,Crying,Ku,哭,3,-29.5099,-12.5584,4.3
+130,库楼,Arsenal,Ku Lou,库楼,3,-157.517,-42.3407,32.8
+131,郎将,Captain of the Bodyguards,Lang Jiang,郎将,3,-167.0753,27.5407,0
+132,郎位,Officers of the Imperial Guard,Lang Wei,郎位,3,-174.5751,24.4053,8.7
+133,老人,Old Man,Lao Ren,老人,3,95.988,-52.6957,0
+134,雷电,Thunder and Lightning,Lei Dian,雷电,3,-13.6729,11.085,11.9
+135,垒壁阵,Line of Ramparts,Lei Bi Zhen,垒壁阵,3,-17.198000000000008,-11.2467,16.4
+136,离宫(附官),Resting Palace (Vassal of Encampment),Li Gong,离宫(附官),3,-14.1079,26.8127,10.9
+137,离瑜,Jade Ornament on Ladies' Wear,Li Yu,离瑜,3,-39.125,-31.7055,2.8
+138,离珠,Pearls on Ladies' Wear,Li Zhu,离珠,3,-51.3669,-1.1995,3.4
+139,砺石,Whetstone,Li Shi,砺石,3,63.6988,27.3153,3.9
+140,列肆,Jewel Market,Lie Si,列肆,3,-113.3768,1.5065,2.2
+141,灵台,Astronomical Observatory,Ling Tai,灵台,3,165.6973,5.4768,3.7
+142,六甲,Six Jia,Liu Jia,六甲,3,98.1412,79.6945,46.1
+143,罗堰,Network of Dykes,Luo Yan,罗堰,3,-49.3202,-18.2344,6.6
+144,马腹,Horse's Abdomen,Ma Fu,马腹,3,-154.4213,-58.0868,10.8
+145,马尾,Horse's Tail,Ma Wei,马尾,3,-175.639,-51.5454,4.5
+146,蜜蜂,Bee,Mi Feng,蜜蜂,3,-168.1577,-70.1205,7.5
+147,明堂,The Hall of Glory,Ming Tang,明堂,3,173.1108,-0.0736,5.9
+148,南船,Southern Boat,Nan Chuan,南船,3,149.5196,-65.6851,22.4
+149,南河,South River,Nan He,南河,3,113.1188,7.2506,4.1
+151,南门,Southern Gate,Nan Men,南门,3,-147.563,-57.1502,14.9
+152,内厨,Inner Kitchen,Nei Chu,内厨,3,-167.1189,66.1144,2
+153,内阶,Inner Steps,Nei Jie,内阶,3,135.2241,60.6726,15.3
+154,内平,High Judge,Nei Ping,内平,3,149.7273,33.3564,8.1
+155,内屏,Inner Screen,Nei Ping,内屏,3,178.8116,7.6312,5
+156,辇道,Imperial Passageway,Nian Dao,辇道,3,-69.7798,38.8369,12.8
+157,鸟喙,Bird's Beak,Niao Hui,鸟喙,3,-7.3781999999999925,-62.9183,5.3
+158,农丈人,Peasant,Nong Zhang Ren,农丈人,3,-78.9193,-35.642,0
+159,女床,Woman's Bed,Nü Chuang,女床,3,-100.1588,37.0503,2.2
+160,女史,Female Protocol,Nü Shi,女史,3,-91.2035,72.0051,0
+161,霹雳,Thunderbolt,Pi Li,霹雳,3,-7.1014,5.0728,13.9
+162,平,Judging,Ping,平,3,-154.3383,-24.927,11.9
+163,平道,Flat Road,Ping Dao,平道,3,-158.5546,-7.121,7.9
+164,屏,Screen,Ping,屏,3,77.2991,-19.2882,6.2
+165,七公,Seven Excellencies,Qi Gong,七公,3,-120.7187,41.1216,20.8
+167,骑官,Imperial Guards,Qi Guan,骑官,3,-132.8662,-44.2614,13.3
+168,骑阵将军,Chariots and Cavalry General,Qi Zhen Jiang Jun,骑阵将军,3,-132.0164,-48.7378,0
+169,泣,Weeping,Qi,泣,3,-25.3709,-7.8022,0.8
+171,青丘,Green Hill,Qing Qiu,青丘,3,175.9928,-31.6109,6.3
+172,阙丘,Palace Gate,Que Qiu,阙丘,3,104.9068,1.0552,5.9
+173,人,Humans,Ren,人,3,-36.4801,20.4944,6.3
+174,日,Solar Star,Ri,日,3,-124.5133,-19.6788,0
+175,三公(太微垣),Three Excellencies (In Supreme Palace Enclosure),San Gong(Tai Wei Yuan),三公(太微垣),3,-168.7739,5.1897,3.2
+176,三公(紫微垣),Three Excellencies (In Purple Forbidden Enclosure),San gong(Zi Wei Yuan),三公(紫微垣),3,-158.413,49.3491,4.1
+177,三角形,Triangle,San Jiao Xing,三角形,3,-119.0532,-66.2292,22.4
+178,三师,Three Top Instructors,San Shi,三师,3,136.3671,67.2514,1.5
+179,三台,Three Steps,San Tai,三台,3,152.2108,39.7863,34.8
+180,尚书,Royal Secretary,Shang Shu,尚书,3,-105.7779,66.8492,17.5
+181,少微,Junior Officers,Shao Wei,少微,3,163.8122,22.2143,6.6
+182,蛇腹,Snake's Abdomen,She Fu,蛇腹,3,35.06,-68.138,12.7
+183,蛇首,Snake's Head,She Shou,蛇首,3,42.8712,-63.1884,26.4
+184,蛇尾,Snake's Tail,She Wei,蛇尾,3,-18.691399999999987,-77.2677,0.5
+185,神宫(附官),Changing Room (Vassal of Tail),Shen Gong,神宫(附官),3,-106.4923,-41.8064,0
+186,十二国,Twelve States,Shi Er Guo,十二国,3,-40.5276,-18.6956,8.5
+187,十字架,Cross,Shi Zi Jia,十字架,3,-172.1417,-60.1061,8.1
+188,屎,Excrement,Shi,屎,3,86.4996,-32.3064,0
+189,市楼,Municipal Office,Shi Lou,市楼,3,-94.5113,-9.9774,10.6
+190,势,Eunuch,Shi,势,3,160.646,32.8355,5.4
+191,水府,Official for Irrigation,Shui Fu,水府,3,92.8739,15.176,2
+192,水委,Crooked Running Water,Shui Wei,水委,3,17.6335,-56.3544,13.6
+193,水位,Water Level,Shui Wei,水位,3,117.7511,14.2081,10.6
+194,司非,Deified Judge of Right and Wrong,Si Fei,司非,3,-41.8972,10.0693,1
+195,司怪,Deity in Charge of Monsters,Si Guai,司怪,3,89.813,23.0462,5.8
+196,司禄,Deified Judge of Rank,Si Lu,司禄,3,-34.1516,2.4649,1.9
+197,司命,Deified Judge of Life,Si Ming,司命,3,-34.7883,0.6171,1.3
+198,司危,Deified Judge of Disaster and Good Fortune,Si wei,司危,3,-39.5032,7.0828,0.5
+199,四渎,Four Channels,Si Du,四渎,3,100.9253,7.7724,10
+200,四辅,Four Advisors,Si Fu,四辅,3,169.27,84.0729,23.7
+201,孙,Grandson,Sun,孙,3,93.01,-36.1967,2.3
+202,太阳守,Guard of the Sun,Tai Yang Shou,太阳守,3,176.5126,47.7794,0
+203,太乙,First Great One,Tai Yi,太乙,3,-154.6254,64.8224,0
+204,太子,Crown Prince,Tai Zi,太子,3,176.9964,20.2189,0
+205,太尊,Royals,Tai Zun,太尊,3,167.4159,44.4985,0
+206,螣蛇,Flying Serpent,Teng She,螣蛇,3,-20.4946,50.96,40.5
+207,天阿,Celestial Concave,Tian E,天阿,3,50.5496,27.6076,0
+208,天棓,Celestial Flail,Tian Bang,天棓,3,-94.1201,51.4395,10.9
+209,天弁,Market Officer,Tian Bian,天弁,3,-77.318,-6.3757,7.8
+210,天仓,Square Celestial Granary,Tian Cang,天仓,3,17.3998,-14.5039,25.1
+211,天谗,Celestial Slander,Tian Chan,天谗,3,57.3862,33.0914,0
+212,天厨,Celestial Kitchen,Tian Chu,天厨,3,-65.5783,67.5445,12.6
+213,天船,Celestial Boat,Tian Chuan,天船,3,53.7397,51.804,22.1
+214,天床,Celestial Bed,Tian Chuang,天床,3,-131.9388,67.2829,30.1
+215,天大将军,Great General of Heaven,Tian Da Jiang Jun,天大将军,3,28.427,42.268,16.8
+216,天桴,Celestial Drumstick,Tian Fu,天桴,3,-59.5278,0.0921,4.7
+217,天辐,Celestial Spokes,Tian Fu,天辐,3,-125.54,-28.9564,1.6
+218,天纲,Materials for Making Tents,Tian Gang,天纲,3,-16.0129,-32.5396,0
+219,天高,Celestial High Terrace,Tian Gao,天高,3,76.3314,20.4682,7
+220,天钩,Celestial Hook,Tian Gou,天钩,3,-33.3999,64.9751,46.1
+221,天狗,Celestial Dog,Tian Gou,天狗,3,131.6463,-35.3355,15.3
+222,天关,Celestial Pass,Tian Guan,天关,3,84.4112,21.1425,0
+223,天皇大帝,Great Emperor of Heaven,Tian Huang Da Di,天皇大帝,3,-26.7058,86.108,0
+224,天潢,Celestial Pier,Tian Huang,天潢,3,80.1346,35.5861,5.8
+225,天溷,Celestial Pigsty,Tian Hun,天溷,3,12.5269,-10.8107,4.1
+226,天鸡,Celestial Cock,Tian Ji,天鸡,3,-63.8899,-17.9425,3.6
+227,天记,Judge for Estimating the Age of Animals,Tian Ji,天记,3,136.999,-43.4326,0
+228,天纪,Celestial Discipline,Tian Ji,天纪,3,-102.7062,34.0179,23.5
+229,天江,Celestial River,Tian Jiang,天江,3,-99.924,-25.5798,3
+230,天街,Celestial Street,Tian Jie,天街,3,65.3348,21.3893,2
+231,天节,Celestial Tally,Tian Jie,天节,3,67.5023,12.1527,5.4
+232,天津,Celestial Ford,Tian Jin,天津,3,-52.1384,38.5213,23.2
+233,天厩,Celestial Stable,Tian Jiu,天厩,3,4.7766,37.7334,1.9
+234,天狼,Celestial Wolf,Tian Lang,天狼,3,101.2872,-16.7161,0
+235,天牢,Celestial Prison,Tian Lao,天牢,3,168.0623,41.3474,9.1
+236,天垒城,Celestial Ramparts,Tian Lei Cheng,天垒城,3,-39.1731,-11.5128,11.7
+237,天理,Judge for Nobility,Tian Li,天理,3,174.1505,58.6999,10.1
+238,天廪,Celestial Foodstuff,Tian Lin,天廪,3,51.9608,10.9828,3.9
+239,天门,Celestial Gate,Tian Men,天门,3,-160.061,-16.0861,3.8
+240,天钱,Celestial Money,Tian Qian,天钱,3,-30.6133,-31.4711,6.3
+241,天枪,Celestial Spear,Tian Qiang,天枪,3,-145.1674,51.609,2.9
+242,天囷,Circular Celestial Granary,Tian Qun,天囷,3,41.5888,3.8603,17.4
+243,天乳,Celestial Milk,Tian Ru,天乳,3,-122.595,-3.4302,0
+244,天社,Celestial Earth God's Temple,Tian She,天社,3,132.5943,-51.8415,20.4
+245,天田(角宿),Celestial Farmland (In Horn Mansion),Tian Tian(Jiao Xiu),天田(角宿),3,-153.0277,2.6018,6.9
+246,天田(牛宿),Celestial Farmland (In Ox Mansion),Tian Tian(Niu Xiu),天田(牛宿),3,-45.077,-26.3126,6.8
+247,天相,Celestial Premier,Tian Xiang,天相,3,153.4695,-8.2385,1.9
+248,天乙,Celestial Great One,Tian Yi,天乙,3,-152.1419,64.7233,0
+249,天阴,Celestial Yin Force,Tian Yin,天阴,3,50.0091,21.2653,4.2
+250,天庾,Ricks of Grain,Tian Yu,天庾,3,36.6976,-30.3191,11.1
+251,天渊,Celestial Spring,Tian Yuan,天渊,3,-69.1844,-42.7078,4.2
+252,天园,Celestial Orchard,Tian Yuan,天园,3,45.8503,-40.6877,46.1
+253,天苑,Celestial Meadows,Tian Yuan,天苑,3,50.5059,-16.7159,19
+254,天籥,Celestial Keyhole,Tian Yue,天籥,3,-94.2104,-24.757,6.1
+255,天柱,Celestial Pillar,Tian Zhu,天柱,3,-66.8066,79.5063,46.4
+256,天樽,Celestial Wine Cup,Tian Zun,天樽,3,108.2361,23.5164,5.3
+257,屠肆,Butcher's Shops,Tu Si,屠肆,3,-86.2838,21.9944,4.4
+258,土公,Official for Earthworks and Buildings,Tu Gong,土公,3,3.5242,8.0883,5.8
+259,土公吏,Official for Materials Supply,Tu Gong Li,土公吏,3,-23.6686,10.6671,3.1
+260,土司空,Master of Constructions,Tu Si Kong,土司空,3,10.8974,-17.9866,0
+261,外厨,Outer Kitchen,Wai Chu,外厨,3,129.4769,-4.5653,5.7
+262,外屏,Outer Fence,Wai Ping,外屏,3,21.3412,5.327,18.3
+263,王良,Wang Liang,Wang Liang,王良,3,7.2854,58.7271,10
+265,文昌,Administrative Center,Wen Chang,文昌,3,142.6221,55.3217,10.8
+266,五车,Five Chariots,Wu Che,五车,3,82.0894,37.3028,17.4
+267,五帝内座,Interior Seats of the Five Emperors,Wu Di Nei Zuo,五帝内座,3,46.8962,79.3649,31.2
+268,五帝座,Seats of the Five Emperors,Wu Di Zuo,五帝座,3,177.6083,14.261,4
+269,五诸侯(井宿),Five Feudal Kings,Wu Zhu Hou(JingXiu),五诸侯(井宿),3,110.7857,30.3636,15.2
+270,五诸侯(太微垣),Five Lords,Wu Zhu Hou(Tai Wei Yuan),五诸侯(太微垣),3,-169.7053,18.0263,12.6
+271,西咸,Western Door,Xi Xian,西咸,3,-121.44579999999999,-14.0514,5.4
+272,奚仲,Xi Zhong,Xi Zhong,奚仲,3,-67.6352,51.7948,6.2
+273,咸池,Pool of Harmony,Xian Chi,咸池,3,81.2366,40.8153,2.9
+274,相,Prime Minister,Xiang,相,3,-173.9938,51.5623,0
+275,小斗,Little Dipper,Xiao Dou,小斗,3,149.3022,-79.2129,70.6
+276,幸臣,Officer of Honour,Xing Chen,幸臣,3,-179.9804,19.4194,0
+277,虚梁,Temple,Xu Liang,虚梁,3,-20.7006,-4.8077,10
+278,轩辕,Xuanyuan,Xuan Yuan,轩辕,3,146.6814,25.5448,32.5
+279,玄戈,Sombre Lance,Xuan Ge,玄戈,3,-145.9041,46.0883,0
+280,钺(附官),Battle Axe (Vassal of Well),Yue,钺(附官),3,93.7194,22.5068,0
+281,阳门,Gate of Yang,Yang Men,阳门,3,-139.2978,-36.4836,2.6
+282,野鸡,Wild Cockerel,Ye Ji,野鸡,3,99.171,-19.2559,0
+283,谒者,Usher to the Court,Ye Zhe,谒者,3,-174.9126,3.3126,0
+284,异雀,Exotic Bird,Yi Que,异雀,3,-122.4588,-75.7193,46
+285,阴德,Hidden Virtue,Yin De,阴德,3,158.6644,74.7737,1.9
+286,右更,Official in Charge of Pasturing,You Geng,右更,3,23.9561,14.165,10
+287,右旗,Right Flag,You Qi,右旗,3,-65.0455,-0.5976,16
+288,右摄提,Right Conductor,You She Ti,右摄提,3,-152.2566,17.0978,2.6
+289,鱼,Fish,Yu,鱼,3,-91.5218,-34.7527,0
+290,羽林军,Palace Guard,Yu Lin Jun,羽林军,3,-19.806999999999988,-18.615,21.8
+291,玉井,Jade Well,Yu Jing,玉井,3,77.3807,-6.9202,4
+292,御女,Maids-in-waiting,Yu Nü,御女,3,-83.9703,74.0834,25.7
+293,月,Lunar Star,Yue,月,3,61.1738,22.0819,0
+294,附耳(附官),Whisper (Vassal of Net),Fu Er,附耳(附官),3,69.8188,15.918,0
+295,云雨,Cloud and Rain,Yun Yu,云雨,3,-5.4512,0.3721,5.6
+296,造父,Zaofu,Zao Fu,造父,3,-28.4152,59.6611,11.4
+297,长垣,Long Wall,Chang Yuan,长垣,3,160.1817,10.5742,7.2
+298,丈人,Grandfather,Zhang Ren,丈人,3,83.8577,-34.7723,2.1
+299,招摇,Twinkling Indicator,Zhao Yao,招摇,3,-141.9805,38.3083,0
+300,辅(附官),Assistant (Vassal of Northern Dipper),Fu,辅(附官),3,-158.6936,54.988,0
+301,折威,Executions,Zhe Wei,折威,3,-140.3953,-25.9517,12.8
+302,阵车,Battle Chariots,Zhen Che,阵车,3,-133.9851,-29.0545,6.9
+303,右辖(附官),Right linchpin (Vassal of Chariot),You Xia,右辖(附官),3,-177.8966,-24.7289,0
+304,织女,Weaving Girl,Zhi Nü,织女,3,-79.7861,38.6376,2.1
+305,左辖(附官),Left linchpin (Vassal of Chariot),Zuo Xia,左辖(附官),3,-171.9824,-16.196,0
+306,周鼎,Tripod of the Zhou,Zhou Ding,周鼎,3,-163.4815,29.2049,3.2
+307,诸王,Feudal Kings,Zhu Wang,诸王,3,79.4466,25.2846,17.8
+308,柱(毕宿),Pillars (In Net Mansion),Zhu(Bi Xiu),柱(毕宿),3,81.6824,37.1579,13.3
+309,柱(角宿),Pillars (In Horn Mansion),Zhu(Jiao Xiu),柱(角宿),3,-151.6582,-38.9929,16.4
+310,柱史,Official of Royal Archives,Zhu Shi,柱史,3,-84.8107,71.3378,0
+311,子,Son,Zi,子,3,88.0094,-34.7849,2
+312,宗,Patriarchal Clan,Zong,宗,3,-78.4146,19.3639,2.4
+313,宗人,Official of Religious Ceremonies,Zong Ren,宗人,3,-89.2853,2.8369,3.1
+314,宗正,Official for the Royal Clan,Zong Zheng,宗正,3,-93.5793,3.6373,1.9
+315,左更,Official in Charge of the Forest,Zuo Geng,左更,3,41.2887,18.5218,6.9
+316,左旗,Left Flag,Zuo Qi,左旗,3,-60.7033,17.3449,8.5
+317,左摄提,Left Conductor,Zuo She Ti,左摄提,3,-139.2541,15.3463,3.2
+318,座旗,Seat Flags,Zuo Qi,座旗,3,102.0347,43.8294,9.9
