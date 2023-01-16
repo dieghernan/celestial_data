@@ -230,6 +230,7 @@ exclude:
 
 include:
  - _pages
+ - data
 
 # Conversion
 markdown: kramdown
