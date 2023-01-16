@@ -42,25 +42,13 @@ author:
 # Navbar: 
 #   "brand" options would be set on the left side of your navbar
 #   "nav" would be set on the right side. Two-level nav links available
+navbar:
   brand:
     title   :  Home # Title in navbar
   nav:
-  - title   : Blog # Label
-    url     : /blog/ # url	
-  - title   : Projects
-    url     : /projects
-  - title   : Archives
-    child   :
-      - title : By date
-        url   : /archive
-      - title : By tags
-        url   : /tags
-  - title   : Gallery
-    url     : /gallery
   - title   : '<i class="fab fa-github" aria-hidden="true"></i> GitHub repo'
-    url     : https://github.com/dieghernan/dieghernan.github.io
-  - title   : '<i class="fas fa-external-link-alt" aria-hidden="true"></i> R-bloggers'
-    url     : https://www.r-bloggers.com/
+    url     : https://github.com/dieghernan/celestial_data
+
 
 footer:
   links:
