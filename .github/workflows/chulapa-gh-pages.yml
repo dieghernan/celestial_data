@@ -14,6 +14,8 @@ jobs:
       JEKYLL_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
     - uses: actions/checkout@v3
+      with:
+        token: ${{ secrets.GH_TOKEN }}
 
     # Use GitHub Actions' cache to shorten build times and decrease load on servers
     - uses: actions/cache@v3
