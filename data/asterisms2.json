@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "asterisms",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "id": "BigDipper", "n": "Big Dipper", "es": "Gran Carro", "p": 2, "loc_lon": -165.0, "loc_lat": 61.5 }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -176.1435, 57.0326 ], [ -180.0, 58.047775296382056 ] ], [ [ 180.0, 58.047775296382056 ], [ 165.932, 61.751 ], [ 165.4603, 56.3824 ], [ 178.4577, 53.6948 ], [ 180.0, 54.648324661035794 ] ], [ [ -180.0, 54.648324661035794 ], [ -176.1435, 57.0326 ], [ -166.4927, 55.9598 ], [ -159.0186, 54.9254 ], [ -153.1148, 49.3133 ] ] ] } }
+]
+}
