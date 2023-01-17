@@ -20,7 +20,7 @@ jobs:
     # Use GitHub Actions' cache to shorten build times and decrease load on servers
     - uses: actions/cache@v3
       with:
-        path: /vendor/bundle
+        path: vendor/bundle
         key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile') }}
         restore-keys: |
           ${{ runner.os }}-gems-
@@ -30,5 +30,3 @@ jobs:
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
         target_branch: 'gh-pages'
-        keep_history: false
-        jekyll_build_options: '--incremental'
