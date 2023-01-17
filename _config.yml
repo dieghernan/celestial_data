@@ -131,6 +131,7 @@ exclude:
   - README.md
   - Gemfile
   - vendor
+  - .github
 
 include:
  - _pages
