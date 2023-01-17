@@ -96,20 +96,6 @@ defaults:
       layout: "default"
       header_type: "base"
       include_on_search   : false
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      header_type       : "post"
-      include_on_search : true
-      include_on_feed   : true
-      show_date         : true
-      show_bottomnavs   : true
-      show_sociallinks  : true
-      breadcrumb_list   :
-        - label: Blog
-          url: /blog/
 
 # XX. Other settings - no need to modify
 # HTML Compression
