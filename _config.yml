@@ -45,6 +45,7 @@ author:
 navbar:
   brand:
     title   :  Home # Title in navbar
+    img: "./assets/icons/android-chrome-192x192.png"
   nav:
   - title   : 'Preview'
     url     : https://dieghernan.github.io/celestial_data/preview
