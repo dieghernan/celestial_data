@@ -88,9 +88,8 @@ Compilation.” *Astronomy Letters* 38 (5): 331–46.
 
 <div id="ref-butler_geojson_2016" class="csl-entry" markdown=1>
 
-Butler, H., M. Daly, A. Doyle, S. Gillies, S. Hagen, and T. Schaub.
-2016. “The GeoJSON Format.” RFC7946. RFC Editor.
-<https://doi.org/10.17487/RFC7946>.
+Butler, H., M. Daly, A. Doyle, S. Gillies, S. Hagen, and T. Schaub. 2016. 
+"The GeoJSON Format."" RFC7946. RFC Editor. <https://doi.org/10.17487/RFC7946>.
 
 </div>
 

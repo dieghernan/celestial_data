@@ -133,9 +133,7 @@ See additional details on <https://dieghernan.github.io/celestial_data/data>
 
 Please cite these datasets as:
 
-Frohn O, Hernangómez D (2023). "Celestial Data." <doi:10.5281/zenodo.7561601>
-<https://doi.org/10.5281/zenodo.7561601>,
-<https://dieghernan.github.io/celestial_data/>.
+Frohn, O., & Hernangómez, D. (2023). Celestial Data [Data set]. https://doi.org/10.5281/zenodo.7561601
 
 A BibTeX entry:
 
@@ -156,20 +154,20 @@ A BibTeX entry:
 
 <div id="refs" class="references csl-bib-body hanging-indent" markdown=1>
 
-<div id="ref-frohn2015" class="csl-entry">
+<div id="ref-frohn2015" class="csl-entry" markdown=1>
 
 Frohn, Olaf. 2015. “<span class="nocase">d3-celestial</span>.”
 <https://github.com/ofrohn/d3-celestial/>.
 
 </div>
 
-
-<div id="ref-pebesma2018" class="csl-entry">
+<div id="ref-pebesma2018" class="csl-entry" markdown=1>
 
 Pebesma, Edzer. 2018. “Simple Features for R: Standardized Support for
 Spatial Vector Data.” *The R Journal* 10 (1): 439446.
 <https://doi.org/10.32614/RJ-2018-009>.
 
 </div>
+
 
 </div>
