@@ -76,9 +76,9 @@ For completion, we add the original data sources cited by ([Frohn
 
 ## References
 
-<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="refs" class="references csl-bib-body hanging-indent" markdown=1>
 
-<div id="ref-anderson_xhip_2012" class="csl-entry">
+<div id="ref-anderson_xhip_2012" class="csl-entry" markdown=1>
 
 Anderson, E., and Ch. Francis. 2012. “XHIP: An Extended Hipparcos
 Compilation.” *Astronomy Letters* 38 (5): 331–46.
@@ -86,7 +86,7 @@ Compilation.” *Astronomy Letters* 38 (5): 331–46.
 
 </div>
 
-<div id="ref-butler_geojson_2016" class="csl-entry">
+<div id="ref-butler_geojson_2016" class="csl-entry" markdown=1>
 
 Butler, H., M. Daly, A. Doyle, S. Gillies, S. Hagen, and T. Schaub.
 2016. “The GeoJSON Format.” RFC7946. RFC Editor.
@@ -94,21 +94,21 @@ Butler, H., M. Daly, A. Doyle, S. Gillies, S. Hagen, and T. Schaub.
 
 </div>
 
-<div id="ref-davenhall1989misc" class="csl-entry">
+<div id="ref-davenhall1989misc" class="csl-entry" markdown=1>
 
 Davenhall, A. C., and S. K. Leggett. 1989. “Catalogue of Constellation
 Boundary Data.” <http://vizier.cfa.harvard.edu/viz-bin/Cat?VI/49>.
 
 </div>
 
-<div id="ref-frohn2015" class="csl-entry">
+<div id="ref-frohn2015" class="csl-entry" markdown=1>
 
 Frohn, Olaf. 2015. “<span class="nocase">d3-celestial</span>.”
 <https://github.com/ofrohn/d3-celestial/>.
 
 </div>
 
-<div id="ref-gliese_preliminary_1991" class="csl-entry">
+<div id="ref-gliese_preliminary_1991" class="csl-entry" markdown=1>
 
 Gliese, W., and H. Jahreiß. 1991. “Preliminary Version of the Third
 Catalogue of Nearby Stars.”
@@ -116,7 +116,7 @@ Catalogue of Nearby Stars.”
 
 </div>
 
-<div id="ref-kostjuk_vizier_2002" class="csl-entry">
+<div id="ref-kostjuk_vizier_2002" class="csl-entry" markdown=1>
 
 Kostjuk, N. D. 2002. “VizieR Online Data Catalog:
 HD-DM-GC-HR-HIP-Bayer-Flamsteed Cross Index.” *VizieR Online Data
@@ -125,7 +125,7 @@ Catalog*, IV/27A.
 
 </div>
 
-<div id="ref-pebesma2018" class="csl-entry">
+<div id="ref-pebesma2018" class="csl-entry" markdown=1>
 
 Pebesma, Edzer. 2018. “Simple Features for R: Standardized Support for
 Spatial Vector Data.” *The R Journal* 10 (1): 439446.
@@ -133,7 +133,7 @@ Spatial Vector Data.” *The R Journal* 10 (1): 439446.
 
 </div>
 
-<div id="ref-samus_general_2017" class="csl-entry">
+<div id="ref-samus_general_2017" class="csl-entry" markdown=1>
 
 Samus’, N. N., E. V. Kazarovets, O. V. Durlevich, N. N. Kireeva, and E.
 N. Pastukhova. 2017. “General Catalogue of Variable Stars: Version GCVS
@@ -142,7 +142,7 @@ N. Pastukhova. 2017. “General Catalogue of Variable Stars: Version GCVS
 
 </div>
 
-<div id="ref-smith_vizier_1996" class="csl-entry">
+<div id="ref-smith_vizier_1996" class="csl-entry" markdown=1>
 
 Smith, W. B. 1996. “VizieR Online Data Catalog: FK5 - SAO - HD - Common
 Name Cross Index.” *VizieR Online Data Catalog*, August, IV/22.
