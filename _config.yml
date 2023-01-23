@@ -7,8 +7,8 @@ baseurl: "/celestial_data"
 
 locale                  :     en
 title                   :  "Celestial Data"
-subtitle                : "Repository with json files of celestial object"
-description             : "Site with celestial json data objects. Original source: https://github.com/ofrohn/d3-celestial"
+subtitle                : "Repository with geojson files of celestial object"
+description             : "Site with celestial geojson data objects. Original source: https://github.com/ofrohn/d3-celestial"
 timezone                : "Europe/Madrid"
 
 og_image                :   https://dieghernan.github.io/celestial_data/assets/img/ogimage.webp
