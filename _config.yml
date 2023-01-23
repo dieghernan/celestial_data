@@ -5,7 +5,7 @@ url: "https://dieghernan.github.io"
 baseurl: "/celestial_data"
 
 
-locale                  :     es-ES
+locale                  :     en
 title                   :  "Celestial Data"
 subtitle                : "Repository with json files of celestial object"
 description             : "Site with celestial json data objects. Original source: https://github.com/ofrohn/d3-celestial"
