@@ -131,7 +131,7 @@ List of files provided
 
 </details>
 
-See additional details on [Deta Description](https://dieghernan.github.io/celestial_data/data).
+See additional details on [Data Description](https://dieghernan.github.io/celestial_data/data).
 
 
 ## Citation
