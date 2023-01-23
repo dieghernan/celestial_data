@@ -6,7 +6,7 @@ show_sidetoc: true
 project_links:
     - url: https://github.com/dieghernan/celestial_data/tree/main/data
       icon: fab fa-github         
-      label: View on Github       
+      label: View on GitHub       
 h_max: 3
 ---
 

@@ -4,6 +4,10 @@ title: Celestial Data
 header_type: hero
 subtitle: A compilation of celestial data files
 header_img: https://dieghernan.github.io/celestial_data/assets/img/ogimage.webp
+project_links:
+    - url: https://github.com/dieghernan/celestial_data/tree/main/data
+      icon: fab fa-github         
+      label: View on GitHub
 ---
 
 
@@ -51,8 +55,7 @@ Data is provided in GeoJSON (`*.geojson`) and GeoPackage (`*.gpkg`) format.
 Additionally, for GeoJSON formats a minified version (`*.min.geojson`) is
 also provided.
 
-The data source can be found on
-<https://github.com/dieghernan/celestial_data/tree/main/data>.
+The data source can be found on the corresponding [GitHub repo](https://github.com/dieghernan/celestial_data/tree/main/data).
 
 <details markdown=1 class="my-2">
 <summary>
@@ -126,7 +129,7 @@ List of files provided
 
 </details>
 
-See additional details on <https://dieghernan.github.io/celestial_data/data>
+See additional details on [Deta Description](https://dieghernan.github.io/celestial_data/data).
 
 
 ## Citation
@@ -155,14 +158,14 @@ A BibTeX entry:
 
 <div id="ref-frohn2015" class="csl-entry" markdown=1>
 
-Frohn, Olaf. 2015. “d3-celestial.” <https://github.com/ofrohn/d3-celestial/>.
+Frohn, Olaf. 2015. "d3-celestial" <https://github.com/ofrohn/d3-celestial/>.
 
 </div>
 
 <div id="ref-pebesma2018" class="csl-entry" markdown=1>
 
-Pebesma, Edzer. 2018. “Simple Features for R: Standardized Support for
-Spatial Vector Data.” *The R Journal* 10 (1): 439446.
+Pebesma, Edzer. 2018. "Simple Features for R: Standardized Support for
+Spatial Vector Data." *The R Journal* 10 (1): 439446.
 <https://doi.org/10.32614/RJ-2018-009>.
 
 </div>
