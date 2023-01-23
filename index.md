@@ -3,7 +3,7 @@ layout: default
 title: Celestial Data
 header_type: hero
 subtitle: A compilation of celestial data files
-header_img: https://dieghernan.github.io/celestial_data/assets/img/ogimage.png
+header_img: https://dieghernan.github.io/celestial_data/assets/img/ogimage.webp
 ---
 
 
