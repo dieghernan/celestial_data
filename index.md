@@ -54,7 +54,7 @@ also provided.
 The data source can be found on
 <https://github.com/dieghernan/celestial_data/tree/main/data>.
 
-<details>
+<details markdown=1 class="my-2">
 <summary>
 List of files provided
 </summary>
