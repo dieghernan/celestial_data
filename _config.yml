@@ -1,0 +1,154 @@
+remote_theme: dieghernan/chulapa
+
+repository: dieghernan/celestial_data
+url: "https://dieghernan.github.io"
+baseurl: "/celestial_data"
+
+
+locale                  :     es-ES
+title                   :  "Celestial Data"
+subtitle                : "Repository with json files of celestial object"
+description             : "Site with celestial json data objects. Original source: https://github.com/ofrohn/d3-celestial"
+timezone                : "Europe/Madrid"
+
+og_image                :   # TBC  
+twitter_site            :   dieghernan
+author:
+  name                  :  Diego Hernangomez 
+  location              :  "Madrid, Spain"
+  links:       
+    - url: https://dieghernan.github.io/
+      icon: fas fa-blog
+      label: Blog
+    - url: https://twitter.com/dhernangomez
+      icon: fab fa-twitter    
+      label: My Twitter
+    - url:  https://fosstodon.org/@dhernangomez
+      icon: fa-brands fa-mastodon
+      label: My Mastodon
+    - url:  https://github.com/dieghernan/
+      icon: fab fa-github
+      label: My GitHub
+    - url: https://stackoverflow.com/users/7877917/dieghernan
+      icon: fab fa-stack-overflow 
+      label: On StackOverflow
+    - url: https://orcid.org/0000-0001-8457-4658
+      icon: fa-brands fa-orcid
+      label: My Orcid
+
+# B. Navigation
+# Configure your navbar and the footer of your site
+
+# Navbar: 
+#   "brand" options would be set on the left side of your navbar
+#   "nav" would be set on the right side. Two-level nav links available
+navbar:
+  brand:
+    title   :  Home # Title in navbar
+  nav:
+  - title   : 'Data Description'
+    url     : https://dieghernan.github.io/celestial_data/data
+  - title   : 'Data Sources'
+    url     : https://dieghernan.github.io/celestial_data/sources
+  - title   : '<i class="fab fa-github" aria-hidden="true"></i> GitHub repo'
+    url     : https://github.com/dieghernan/celestial_data
+
+
+footer:
+  links:
+    - url: https://dieghernan.github.io/
+      icon: fas fa-blog
+      label: Blog
+    - label: Stack Overflow
+      icon: fab fa-stack-overflow
+      url: https://stackoverflow.com/users/7877917/dieghernan
+    - label: WikiCommons
+      icon: fab fa-wikipedia-w
+      url: https://commons.wikimedia.org/wiki/Special:ListFiles?limit=50&user=dieghernan84
+    - label: GitHub
+      icon: fab fa-github
+      url: https://github.com/dieghernan/
+  
+# C. Theme Settings
+
+
+# Theme and colors
+chulapa-skin: 
+  skin          :  gitdev-dark
+  highlight:  skeletor
+    
+# D. Jekyll Defaults and collections: see https://jekyllrb.com/
+
+# Blog pagination: on this site /blog/index.html. https://jekyllrb.com/docs/pagination/
+paginate: 7
+paginate_path: "/blog/page:num/"
+paginator_maxnum: 3  #default[3] Custom: max of number to be displayed on the paginator
+
+# Collections https://jekyllrb.com/docs/step-by-step/09-collections/
+collections:
+collections_dir     : 
+permalink           : /:year:month:day_:title/
+
+
+# Defaults https://jekyllrb.com/docs/configuration/front-matter-defaults/
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+      header_type: "base"
+      mathjax: true
+      include_on_search   : false
+
+# XX. Other settings - no need to modify
+# HTML Compression
+# - https://jch.penibelst.de/
+compress_html:
+  clippings: all
+  blanklines: true
+
+plugins:
+  - jekyll-github-metadata
+  - jekyll-paginate
+  - jekyll-include-cache
+  - jekyll-sitemap
+
+
+# Exclude these files from production site
+exclude:
+  - LICENSE
+  - README.md
+  - README.Rmd
+  - Gemfile
+  - vendor
+  - .github
+  - data/README.md
+
+include:
+ - _pages
+ - data
+
+# Conversion
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
+# Markdown Processing
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  footnote_backlink: '&uarr;'
+  entity_output: as_char
+  toc_levels: 2..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
+# Sass/SCSS
+sass:
+  sass_dir: _sass
+  style: compressed # https://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
