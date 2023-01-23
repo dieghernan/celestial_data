@@ -46,6 +46,8 @@ navbar:
   brand:
     title   :  Home # Title in navbar
   nav:
+  - title   : 'Preview'
+    url     : https://dieghernan.github.io/celestial_data/preview
   - title   : 'Data Description'
     url     : https://dieghernan.github.io/celestial_data/data
   - title   : 'Data Sources'
@@ -76,6 +78,8 @@ footer:
 chulapa-skin: 
   skin          :  gitdev-dark
   highlight:  skeletor
+  vars:
+    border-radius-lg: 0
     
 # D. Jekyll Defaults and collections: see https://jekyllrb.com/
 
