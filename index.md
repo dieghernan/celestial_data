@@ -3,6 +3,8 @@ layout: default
 title: Celestial Data
 header_type: hero
 subtitle: A compilation of celestial data files
+excerpt: This project provides several datasets in GeoJSON 
+  and GeoPackage format of celestial objects as of J2000 epoch.
 header_img: https://dieghernan.github.io/celestial_data/assets/img/ogimage.webp
 project_links:
     - url: https://github.com/dieghernan/celestial_data/tree/main/data
