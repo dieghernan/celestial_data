@@ -7,6 +7,8 @@ header_img: https://dieghernan.github.io/celestial_data/assets/img/ogimage.png
 ---
 
 
+[![DOI](https://img.shields.io/badge/DOI-10.5281/zenodo.7561601-blue)](https://doi.org/10.5281/zenodo.7561601)
+
 This project provides several datasets in GeoJSON and GeoPackage
 format of celestial objects as of J2000 epoch.
 
@@ -125,6 +127,29 @@ List of files provided
 </details>
 
 See additional details on <https://dieghernan.github.io/celestial_data/data>
+
+
+## Citation
+
+Please cite these datasets as:
+
+Frohn O, Hernangómez D (2023). "Celestial Data." <doi:10.5281/zenodo.7561601>
+<https://doi.org/10.5281/zenodo.7561601>,
+<https://dieghernan.github.io/celestial_data/>.
+
+A BibTeX entry:
+
+``` bibtex
+
+@misc{frohnhernangomez:2023,
+    title        = {Celestial Data},
+    author       = {Olaf Frohn and Diego Hernangómez},
+    year         = 2023,
+    doi          = {10.5281/zenodo.7561601},
+    url          = {https://dieghernan.github.io/celestial_data/},
+}
+
+```
 
 
 ## References

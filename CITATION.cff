@@ -27,8 +27,10 @@ preferred-citation:
     orcid: https://orcid.org/0000-0001-8457-4658
   url: https://dieghernan.github.io/celestial_data/
   year: '2023'
+  doi: 10.5281/zenodo.7561601
 repository-code: https://github.com/dieghernan/celestial_data/tree/main/data
 url: https://dieghernan.github.io/celestial_data/
+doi: 10.5281/zenodo.7561601
 references:
 - type: software
   title: d3-celestial
