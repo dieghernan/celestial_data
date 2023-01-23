@@ -11,7 +11,7 @@ subtitle                : "Repository with json files of celestial object"
 description             : "Site with celestial json data objects. Original source: https://github.com/ofrohn/d3-celestial"
 timezone                : "Europe/Madrid"
 
-og_image                :   # TBC  
+og_image                :   https://dieghernan.github.io/celestial_data/assets/img/ogimage.png
 twitter_site            :   dieghernan
 author:
   name                  :  Diego Hernangomez 

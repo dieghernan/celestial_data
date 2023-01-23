@@ -40,9 +40,9 @@ https://cdn.jsdelivr.net/gh/dieghernan/celestial_data@main/data/mw.min.geojson
 
 ## Data
 
-Data is provided in GeoJSON (*.geojson) and GeoPackage (*.gpkg) format.
-Additionally, for GeoJSON formats a minified version (\*.min.geojson) is
-also provided.
+Data is provided in GeoJSON (`*.geojson`) and GeoPackage (`*.gpkg`)
+format. Additionally, for GeoJSON formats a minified version
+(`*.min.geojson`) is also provided.
 
 The data source can be found on
 <https://github.com/dieghernan/celestial_data/tree/main/data>.
@@ -124,8 +124,8 @@ See additional details on
 
 ## Original data sources
 
-For completion, we add the original data sources cited by ([Frohn
-2015](#ref-frohn2015)):
+For completion, we add the original data sources cited by Frohn
+([2015](#ref-frohn2015)):
 
 - `asterisms.*`:
 
