@@ -11,4 +11,14 @@
 <meta name="msapplication-config" content="https://dieghernan.github.io/celestial_data/assets/icons/browserconfig.xml">
 <meta name="theme-color" content="#24292f">
 
+{% if page.leaflet %}
+
+	<!-- Load Leaflet -->
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+	<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+	<script src='https://cdn.jsdelivr.net/gh/leaflet-extras/leaflet-providers@master/leaflet-providers.min.js' ></script>
+	<script src='https://cdn.jsdelivr.net/gh/calvinmetcalf/leaflet-ajax@gh-pages/dist/leaflet.ajax.min.js' ></script>
+
+{% endif %}
+
 <!-- end custom head snippets -->

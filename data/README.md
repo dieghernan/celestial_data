@@ -138,7 +138,7 @@ Deep Space Objects
 
 ### Traditional Chinese DSO names
 
-`dsonames.cn.json` with 6 rows
+`dsonames.cn.<data format>` with 6 rows
 
 -   **id**: Hipparcos number
 -   **name**: Chinese name
@@ -214,7 +214,7 @@ than HIP/HD
 
 ### Traditional Chinese star names
 
-`starnames.cn.json` with 3056 rows
+`starnames.cn.<data format>` with 3056 rows
 
 -   **id**: Hipparcos number
 -   **name**: Chinese name
@@ -224,7 +224,7 @@ than HIP/HD
 
 ### Stars
 
-`stars.6.<data format>`, `stars.8.<data format>`, `<data format>.14.json`: the
+`stars.6.<data format>`, `stars.8.<data format>`, `stars.14.<data format>`: the
 number indicates limit magnitude:
 
 -   **id**: Short designator
