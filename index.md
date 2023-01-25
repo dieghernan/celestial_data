@@ -73,7 +73,6 @@ List of files provided
 - `constellations.borders.geojson`
 - `constellations.borders.gpkg`
 - `constellations.borders.min.geojson`
-- `constellations.borders.min.min.geojson`
 - `constellations.bounds.cn.geojson`
 - `constellations.bounds.cn.gpkg`
 - `constellations.bounds.cn.min.geojson`
