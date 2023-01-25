@@ -2,6 +2,8 @@
 # Celestial Data
 
 [![DOI](https://img.shields.io/badge/DOI-10.5281/zenodo.7561601-blue)](https://doi.org/10.5281/zenodo.7561601)
+![GitHub release (latest
+SemVer)](https://img.shields.io/github/v/release/dieghernan/celestial_data)
 
 This repository contains several datasets in GeoJSON and GeoPackage
 format of celestial objects as of J2000 epoch.
