@@ -28,13 +28,13 @@ some time before they are loaded.
         <option value="constellations.borders.cn">Chinese Constellations (Borders)</option>
         <option value="constellations.lines.cn">Chinese Constellations (Lines)</option>
       </optgroup>
-      <optgroup label="Points (some can take a while)">
+      <optgroup label="Points">
         <option value="constellations">Constellations</option>
         <option value="constellations.cn">Chinese Constellations</option>
         <option value="dsos.bright">DSOs Bright</option>
         <option value="lg">Local Group</option>
         <option value="messier">Messier Objects</option>
-        <option value="stars.6">Stars (magnitude 6 or less)</option>
+        <option value="stars.6">Stars (magnitude 6 or less), wait for it</option>
       </optgroup>
     </select>
   </div>
