@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
+	<channel>
+		<title>Celestial Data | Repository with geojson files of celestial object</title>
+		<generator>(c) Chulapa Jekyll Theme RSS generator</generator>
+		<link>https://dieghernan.github.io/celestial_data</link>
+		<description>Site with celestial geojson data objects. Original source: https://github.com/ofrohn/d3-celestial</description>
+		<language>en</language>
+		<copyright>(c) 2023, Diego Hernangomez</copyright>	
+		<pubDate>Sat, 04 Feb 2023 09:06:57 +0100</pubDate>
+		<lastBuildDate>Sat, 04 Feb 2023 09:06:57 +0100</lastBuildDate>
+		<category>blog</category>
+		<ttl>60</ttl>
+		<atom:link href="https://dieghernan.github.io/celestial_data/rss.xml" rel="self" type="application/rss+xml" />
+		<image>
+			<title>Celestial Data | Repository with geojson files of celestial object</title>
+			<url>https://dieghernan.github.io/celestial_data/assets/img/ogimage.webp</url>
+			<link>https://dieghernan.github.io/celestial_data</link>
+			<description>Site with celestial geojson data objects. Original source: https://github.com/ofrohn/d3-celestial</description>
+		</image></channel>
+</rss>

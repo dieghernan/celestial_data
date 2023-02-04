@@ -1,0 +1,41 @@
+cff-version: 1.2.0
+message: If you use this dataset, please cite it using the preferred-citation information.
+type: dataset
+license: BSD-3-Clause
+title: Celestial Data
+abstract: The Celestial Data datasets are a collection of files on GeoJSON and GeoPackage
+  format representing the position of celestial objects as of J2000 epoch and CRS
+  WGS84. All the files are valid as per GEOS 3.9.3 and fulfils also the GeoJSON specification.
+authors:
+- family-names: Frohn
+  given-names: Olaf
+- family-names: Hernangómez
+  given-names: Diego
+  orcid: https://orcid.org/0000-0001-8457-4658
+preferred-citation:
+  type: data
+  title: Celestial Data
+  abstract: The Celestial Data datasets are a collection of files on GeoJSON and GeoPackage
+    format representing the position of celestial objects as of J2000 epoch and CRS
+    WGS84. All the files are valid as per GEOS 3.9.3 and fulfils also the GeoJSON
+    specification.
+  authors:
+  - family-names: Frohn
+    given-names: Olaf
+  - family-names: Hernangómez
+    given-names: Diego
+    orcid: https://orcid.org/0000-0001-8457-4658
+  url: https://dieghernan.github.io/celestial_data/
+  year: '2023'
+  doi: 10.5281/zenodo.7561601
+repository-code: https://github.com/dieghernan/celestial_data/tree/main/data
+url: https://dieghernan.github.io/celestial_data/
+doi: 10.5281/zenodo.7561601
+references:
+- type: software
+  title: d3-celestial
+  authors:
+  - family-names: Frohn
+    given-names: Olaf
+  year: '2015'
+  url: https://github.com/ofrohn/d3-celestial/
