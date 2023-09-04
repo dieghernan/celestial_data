@@ -7,8 +7,8 @@
 		<description>Site with celestial geojson data objects. Original source: https://github.com/ofrohn/d3-celestial</description>
 		<language>en</language>
 		<copyright>(c) 2023, Diego Hernangomez</copyright>	
-		<pubDate>Sat, 04 Feb 2023 09:15:19 +0100</pubDate>
-		<lastBuildDate>Sat, 04 Feb 2023 09:15:19 +0100</lastBuildDate>
+		<pubDate>Mon, 04 Sep 2023 23:31:24 +0200</pubDate>
+		<lastBuildDate>Mon, 04 Sep 2023 23:31:24 +0200</lastBuildDate>
 		<category>blog</category>
 		<ttl>60</ttl>
 		<atom:link href="https://dieghernan.github.io/celestial_data/rss.xml" rel="self" type="application/rss+xml" />
