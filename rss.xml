@@ -6,9 +6,9 @@
 		<link>https://dieghernan.github.io/celestial_data</link>
 		<description>Site with celestial geojson data objects. Original source: https://github.com/ofrohn/d3-celestial</description>
 		<language>en</language>
-		<copyright>(c) 2023, Diego Hernangomez</copyright>	
-		<pubDate>Mon, 04 Sep 2023 23:31:24 +0200</pubDate>
-		<lastBuildDate>Mon, 04 Sep 2023 23:31:24 +0200</lastBuildDate>
+		<copyright>(c) 2025, Diego Hernangomez</copyright>	
+		<pubDate>Tue, 25 Feb 2025 14:36:06 +0100</pubDate>
+		<lastBuildDate>Tue, 25 Feb 2025 14:36:06 +0100</lastBuildDate>
 		<category>blog</category>
 		<ttl>60</ttl>
 		<atom:link href="https://dieghernan.github.io/celestial_data/rss.xml" rel="self" type="application/rss+xml" />
