@@ -106,6 +106,10 @@ defaults:
       mathjax: true
       include_on_search   : false
 
+# Identify the individual publishing this site in JSON-LD.
+publisher:
+  type: Person
+
 # XX. Other settings - no need to modify
 # HTML Compression
 # - https://jch.penibelst.de/
