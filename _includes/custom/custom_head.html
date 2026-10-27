@@ -22,14 +22,12 @@
 <meta name="theme-color" content="#24292f">
 
 {% if page.leaflet %}
-
-	<!-- Load Leaflet -->
-	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
-	<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/dieghernan/leaflet-providersESP/dist/leaflet-providersESP.min.js"></script>
-
-	<script src='https://cdn.jsdelivr.net/gh/calvinmetcalf/leaflet-ajax@gh-pages/dist/leaflet.ajax.min.js' ></script>
-
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script defer src="https://cdn.jsdelivr.net/gh/dieghernan/leaflet-providersESP@v1.3.3/dist/leaflet-providersESP.min.js"></script>
+<script defer src="{{ '/assets/js/celestial-preview.js' | relative_url }}"></script>
 {% endif %}
 
 <!-- end custom head snippets -->

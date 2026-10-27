@@ -5,14 +5,20 @@ excerpt: Preview data
 leaflet: true
 ---
 
-Preview selected data sets using [Leaflet](https://leafletjs.com/). Large star and deep-sky catalogs may take longer to load.
+Preview selected datasets using [Leaflet](https://leafletjs.com/). Large star and
+deep-sky catalogs may take longer to load. You can download the selected GeoJSON
+file even if the interactive preview is unavailable.
+
+These are J2000 celestial coordinates represented as geographic geometries.
+The geographic background is a visual reference, not a map of the night sky
+as seen from your location; the Mercator view does not show the poles.
 
 ## Leaflet preview
 
-<form>
+<div class="celestial-preview-controls">
   <div class="form-group">
     <label for="geojson_file">Select a file</label>
-    <select id="geojson_file" onChange="update()">
+    <select id="geojson_file" class="custom-select" aria-describedby="preview-help">
       <optgroup label="Polygons">
         <option value="mw" selected>Milky Way</option>
         <option value="constellations.bounds">Constellations (Bounds)</option>
@@ -31,47 +37,24 @@ Preview selected data sets using [Leaflet](https://leafletjs.com/). Large star a
         <option value="dsos.bright">DSOs Bright</option>
         <option value="lg">Local Group</option>
         <option value="messier">Messier Objects</option>
-        <option value="stars.6">Stars (magnitude 6 or less), wait for it</option>
+        <option value="stars.6">Stars (magnitude 6 or less)</option>
       </optgroup>
     </select>
   </div>
-</form>
-<!-- Create map -->
-<div class="embed-responsive embed-responsive-16by9">
-  <div class="embed-responsive-item" id="mapid"></div>
+  <div class="d-flex flex-wrap mb-3">
+    <button id="preview-reset" class="btn btn-secondary mr-2 mb-2" type="button">Reset view</button>
+    <a id="preview-download" class="btn btn-outline-primary mb-2"
+       href="{{ '/data/mw.min.geojson' | relative_url }}">Download selected GeoJSON</a>
+  </div>
 </div>
-
-<script>
-var mymap = L.map('mapid', {
-    maxZoom: 18,
-    minZoom: 1,
-    maxBounds: [
-      //south west
-      [-90, -180],
-      //north east
-      [90, 180]
-    ],
-  })
-  .setView([0, 0], 1);
-L.tileLayer.providerESP('IDErioja.Oscuro')
-  .addTo(mymap);
-var geojsonLayer = new L.GeoJSON.AJAX(
-  "https://cdn.jsdelivr.net/gh/dieghernan/celestial_data@main/data/mw.min.geojson"
-  );
-geojsonLayer.addTo(mymap);
-
-function update() {
-  mymap.eachLayer(function(layer) {
-    if (layer instanceof L.GeoJSON) mymap.removeLayer(layer);
-  });
-  var select = document.getElementById('geojson_file');
-  var option = select.options[select.selectedIndex];
-  var newgeo = option.value;
-  var geourl =
-    'https://cdn.jsdelivr.net/gh/dieghernan/celestial_data@main/data/' +
-    newgeo + '.min.geojson';
-  var geojsonLayer2 = new L.GeoJSON.AJAX(geourl);
-  geojsonLayer2.addTo(mymap);
-}
-
-</script>
+<p id="preview-help" class="small">Choose a dataset to load it. Use the map's zoom
+buttons or focus the map to pan with the arrow keys and zoom with + and −.
+The previous dataset remains visible until its replacement has loaded.</p>
+<p id="preview-status" role="status" aria-live="polite" aria-atomic="true">The interactive preview requires JavaScript.</p>
+<div id="preview-error" role="alert" hidden>
+  <p id="preview-error-text"></p>
+  <button id="preview-retry" class="btn btn-secondary mb-3" type="button">Retry loading</button>
+</div>
+<div id="mapid" class="celestial-preview-map" role="region"
+     aria-label="Interactive preview of celestial geometry" aria-describedby="preview-help"
+     data-url="{{ '/data/' | relative_url }}"></div>

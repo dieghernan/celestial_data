@@ -119,6 +119,7 @@ kramdown:
   enable_coderay: false
 incremental: false
 exclude:
+- tests
 - LICENSE
 - README.md
 - README.Rmd
