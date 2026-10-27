@@ -1,6 +1,6 @@
 # Celestial Data
 
-> Celestial datasets in GeoJSON and GeoPackage format, derived from d3-celestial and processed with R and sf by Diego Hernangómez.
+> Celestial datasets in GeoJSON and GeoPackage format, derived from d3-celestial and processed with R and sf by dieghernan.
 
 The objects describe the J2000 epoch and include stars, constellations, asterisms, deep-sky objects and the Milky Way. The project represents these objects as geographic geometries in EPSG:4326, bounded by [-180, -90, 180, 90]. This representation does not turn the datasets into terrestrial observations or current celestial positions. GeoJSON files also have minified variants.
 
@@ -24,4 +24,4 @@ The original d3-celestial data is attributed to Olaf Frohn. Consult the reposito
 ## Optional
 
 - [Source repository](https://github.com/dieghernan/celestial_data): Project history and processing assets.
-- [Author](https://dieghernan.github.io/): Diego Hernangómez's personal site.
+- [Author](https://dieghernan.github.io/): dieghernan's personal site.

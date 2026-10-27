@@ -22,7 +22,7 @@ twitter_site: dhernangomez
 
 # Author and publisher
 author:
-  name: Diego Hernangómez
+  name: dieghernan
   url: https://dieghernan.github.io/
   avatar: https://dieghernan.github.io/assets/img/site/avatar.png
   location: Madrid, Spain
@@ -47,7 +47,7 @@ author:
     label: ORCID
 publisher:
   type: Person
-  name: Diego Hernangómez
+  name: dieghernan
   url: https://dieghernan.github.io/
   image: https://dieghernan.github.io/assets/img/site/avatar.png
 
