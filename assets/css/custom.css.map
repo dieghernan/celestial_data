@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["custom.scss"],"names":[],"mappings":"AAGA,IACI,cACA,YACA,gBACA,cACA,iBACA","sourcesContent":["@charset \"utf-8\";\n// Your custom css /scss here\n\nimg {\n    max-width: 95%;\n    height: auto;\n    border-radius: 0;\n    display: block;\n    margin-left: auto;\n    margin-right: auto;\n}"],"file":"custom.css"}
