@@ -4,33 +4,31 @@
 [![DOI](https://img.shields.io/badge/DOI-10.5281/zenodo.7561601-blue)](https://doi.org/10.5281/zenodo.7561601)
 ![GitHub release (latest
 SemVer)](https://img.shields.io/github/v/release/dieghernan/celestial_data)
-![jsDelivr hits (GitHub)](https://img.shields.io/jsdelivr/gh/hy/dieghernan/celestial_data)
-
 
 This repository contains several datasets in GeoJSON and GeoPackage
-format of celestial objects as of J2000 epoch.
+format of celestial objects for the J2000 epoch.
 
 The original files were provided on the [d3-celestial
 plugin](https://github.com/ofrohn/d3-celestial/) ([Frohn
 2015](#ref-frohn2015)) under [BSD
-3-Clause](https://opensource.org/licenses/BSD-3-Clause). The datasets on
-this repository consists on the same data provided on [d3-celestial
+3-Clause](https://opensource.org/licenses/BSD-3-Clause). The datasets in
+this repository contain the same data provided by [d3-celestial
 plugin](https://github.com/ofrohn/d3-celestial/) processed with the
-**R** package **sf** ([Pebesma 2018](#ref-pebesma2018)) to ensure its
-validity:
+**R** package **sf** ([Pebesma 2018](#ref-pebesma2018)) to validate
+their geometries:
 
 - The spatial data objects are bounded to $[-180, -90, 180, 90]$.
 
-- Date is provided on WGS84 - World Geodetic System 1984
-  ([EPSG:4326](https://epsg.io/4326)).
+- The datasets use a geometry representation in
+  [EPSG:4326](https://epsg.io/4326) (WGS84).
 
-- All geometries valid as per
+- All geometries are valid according to
   [ST_IsValid](https://postgis.net/docs/ST_IsValid.html) (GEOS
   **3.9.3**).
 
 ## Distribution
 
-The data can be accessed from several API endpoints:
+The data can be accessed from several download URLs:
 
 ``` html
 
@@ -75,7 +73,9 @@ The data source can be found on
 <https://github.com/dieghernan/celestial_data/tree/main/data>.
 
 <details>
+
 <summary>
+
 List of files provided
 </summary>
 
@@ -150,7 +150,7 @@ See additional details on
 
 ## Original data sources
 
-For completion, we add the original data sources cited by Frohn
+The following original data sources are cited by Frohn
 ([2015](#ref-frohn2015)):
 
 - `asterisms.*`:
@@ -162,8 +162,8 @@ For completion, we add the original data sources cited by Frohn
 
   - [IAU Constellation
     page](http://www.iau.org/public/themes/constellations/), name
-    positions and some line modifications by Olaf Frohn, , names in
-    other languages from
+    positions and some line modifications by Olaf Frohn; names in other
+    languages from
     [Wikipedia](https://wiki2.org/en/88_modern_constellations_in_different_languages)
 
 - `constellations.bounds.*`:
@@ -179,7 +179,9 @@ For completion, we add the original data sources cited by Frohn
   - [Stellarium skycultures
     data](https://github.com/Stellarium/stellarium/tree/master/skycultures/chinese)
 
-- `dsos.6.*`, `dsos.8.^*`, `dsos.14.*`:
+<!-- FIXME: Confirm the source catalog for dsos.20.* before adding it here. -->
+
+- `dsos.6.*`, `dsos.14.*`:
 
   - [Saguaro Astronomy Club Database version
     8.1](http://www.saguaroastro.org/sac-downloads/)
@@ -203,7 +205,7 @@ For completion, we add the original data sources cited by Frohn
     [pages](http://armchairastronautics.blogspot.com/p/local-group.html)
     for complete list.
 
-- `stars.6.*`, `stars.8.^*`, `stars.14.*`:
+- `stars.6.*`, `stars.8.*`, `stars.14.*`:
 
   - Anderson, E., and Ch. Francis. 2012. “XHIP: An Extended Hipparcos
     Compilation.” *Astronomy Letters* 38 (5): 331–46.
@@ -235,29 +237,29 @@ Compilation.” *Astronomy Letters* 38 (5): 331–46.
 <div id="ref-butler_geojson_2016" class="csl-entry">
 
 Butler, H., M. Daly, A. Doyle, S. Gillies, S. Hagen, and T. Schaub.
-2016. “The GeoJSON Format.” RFC7946. RFC Editor.
+2016. *The GeoJSON Format*. No. RFC7946. RFC Editor.
 <https://doi.org/10.17487/RFC7946>.
 
 </div>
 
 <div id="ref-davenhall1989misc" class="csl-entry">
 
-Davenhall, A. C., and S. K. Leggett. 1989. “Catalogue of Constellation
-Boundary Data.” <http://vizier.cfa.harvard.edu/viz-bin/Cat?VI/49>.
+Davenhall, A. C., and S. K. Leggett. 1989. *Catalogue of Constellation
+Boundary Data*. <http://vizier.cfa.harvard.edu/viz-bin/Cat?VI/49>.
 
 </div>
 
 <div id="ref-frohn2015" class="csl-entry">
 
-Frohn, Olaf. 2015. “<span class="nocase">d3-celestial</span>.”
+Frohn, Olaf. 2015. *<span class="nocase">d3-celestial</span>*.
 <https://github.com/ofrohn/d3-celestial/>.
 
 </div>
 
 <div id="ref-gliese_preliminary_1991" class="csl-entry">
 
-Gliese, W., and H. Jahreiß. 1991. “Preliminary Version of the Third
-Catalogue of Nearby Stars.”
+Gliese, W., and H. Jahreiß. 1991. *Preliminary Version of the Third
+Catalogue of Nearby Stars*.
 <https://ui.adsabs.harvard.edu/abs/1991adc..rept.....G>.
 
 </div>
@@ -274,7 +276,7 @@ Catalog*, IV/27A.
 <div id="ref-pebesma2018" class="csl-entry">
 
 Pebesma, Edzer. 2018. “Simple Features for R: Standardized Support for
-Spatial Vector Data.” *The R Journal* 10 (1): 439446.
+Spatial Vector Data.” *The R Journal* 10 (1): 439–46.
 <https://doi.org/10.32614/RJ-2018-009>.
 
 </div>
@@ -297,10 +299,3 @@ Name Cross Index.” *VizieR Online Data Catalog*, August, IV/22.
 </div>
 
 </div>
-
-## Author identity and Webmentions
-
-The site keeps its project branding and shows the author's avatar and name in an
-h-card linked to <https://dieghernan.github.io/>. The custom head advertises the
-existing Webmention.io receiver for `dieghernan.github.io`. This enables endpoint
-discovery for incoming mentions; it does not display mentions or send them.

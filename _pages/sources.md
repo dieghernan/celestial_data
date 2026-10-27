@@ -4,7 +4,7 @@ permalink: /sources
 excerpt: Description of data sources
 ---
 
-For completion, we add the original data sources cited by ([Frohn
+The following original data sources are cited by ([Frohn
 2015](#ref-frohn2015)):
 
 - `asterisms.*`:
@@ -16,7 +16,7 @@ For completion, we add the original data sources cited by ([Frohn
 
   - [IAU Constellation
     page](http://www.iau.org/public/themes/constellations/), name
-    positions and some line modifications by Olaf Frohn, , names in
+    positions and some line modifications by Olaf Frohn; names in
     other languages from
     [Wikipedia](https://wiki2.org/en/88_modern_constellations_in_different_languages)
 
@@ -33,7 +33,9 @@ For completion, we add the original data sources cited by ([Frohn
   - [Stellarium skycultures
     data](https://github.com/Stellarium/stellarium/tree/master/skycultures/chinese)
 
-- `dsos.6.*`, `dsos.8.^*`, `dsos.14.*`:
+<!-- FIXME: Confirm the source catalog for dsos.20.* before adding it here. -->
+
+- `dsos.6.*`, `dsos.14.*`:
 
   - [Saguaro Astronomy Club Database version
     8.1](http://www.saguaroastro.org/sac-downloads/)
@@ -57,7 +59,7 @@ For completion, we add the original data sources cited by ([Frohn
     [pages](http://armchairastronautics.blogspot.com/p/local-group.html)
     for complete list.
 
-- `stars.6.*`, `stars.8.^*`, `stars.14.*`:
+- `stars.6.*`, `stars.8.*`, `stars.14.*`:
 
   - Anderson, E., and Ch. Francis. 2012. “XHIP: An Extended Hipparcos
     Compilation.” *Astronomy Letters* 38 (5): 331–46.

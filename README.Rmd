@@ -14,26 +14,26 @@ editor_options:
 ![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/dieghernan/celestial_data)
 
 This repository contains several datasets in GeoJSON and GeoPackage format of
-celestial objects as of J2000 epoch.
+celestial objects for the J2000 epoch.
 
 The original files were provided on the [d3-celestial
 plugin](https://github.com/ofrohn/d3-celestial/) [@frohn2015] under [BSD
-3-Clause](https://opensource.org/licenses/BSD-3-Clause). The datasets on this
-repository consists on the same data provided on [d3-celestial
+3-Clause](https://opensource.org/licenses/BSD-3-Clause). The datasets in this
+repository contain the same data provided by [d3-celestial
 plugin](https://github.com/ofrohn/d3-celestial/) processed with the **R**
-package **sf** [@pebesma2018] to ensure its validity:
+package **sf** [@pebesma2018] to validate their geometries:
 
 -   The spatial data objects are bounded to $[-180, -90, 180, 90]$.
 
--   Date is provided on WGS84 - World Geodetic System 1984
-    ([EPSG:4326](https://epsg.io/4326)).
+-   The datasets use a geometry representation in
+    [EPSG:4326](https://epsg.io/4326) (WGS84).
 
--   All geometries valid as per
+-   All geometries are valid according to
     [ST_IsValid](https://postgis.net/docs/ST_IsValid.html) (GEOS **3.9.3**).
 
 ## Distribution
 
-The data can be accessed from several API endpoints:
+The data can be accessed from several download URLs:
 
 ``` html
 
@@ -152,7 +152,7 @@ See additional details on <https://dieghernan.github.io/celestial_data/data>
 
 ## Original data sources
 
-For completion, we add the original data sources cited by @frohn2015:
+The following original data sources are cited by @frohn2015:
 
 -   `asterisms.*`:
 
@@ -163,7 +163,7 @@ For completion, we add the original data sources cited by @frohn2015:
 
     -   [IAU Constellation
         page](http://www.iau.org/public/themes/constellations/), name positions
-        and some line modifications by Olaf Frohn, , names in other languages
+        and some line modifications by Olaf Frohn; names in other languages
         from
         [Wikipedia](https://wiki2.org/en/88_modern_constellations_in_different_languages)
 
@@ -178,7 +178,9 @@ For completion, we add the original data sources cited by @frohn2015:
     -   [Stellarium skycultures
         data](https://github.com/Stellarium/stellarium/tree/master/skycultures/chinese)
 
--   `dsos.6.*`, `dsos.8.^*`, `dsos.14.*`:
+<!-- FIXME: Confirm the source catalog for dsos.20.* before adding it here. -->
+
+-   `dsos.6.*`, `dsos.14.*`:
 
     -   [Saguaro Astronomy Club Database version
         8.1](http://www.saguaroastro.org/sac-downloads/)
@@ -201,7 +203,7 @@ For completion, we add the original data sources cited by @frohn2015:
         [pages](http://armchairastronautics.blogspot.com/p/local-group.html) for
         complete list.
 
--   `stars.6.*`, `stars.8.^*`, `stars.14.*`:
+-   `stars.6.*`, `stars.8.*`, `stars.14.*`:
 
     -   Anderson, E., and Ch. Francis. 2012. "XHIP: An Extended Hipparcos
         Compilation." *Astronomy Letters* 38 (5): 331--46.

@@ -1,165 +1,139 @@
+# Site configuration
 remote_theme: dieghernan/chulapa
 
-repository: dieghernan/celestial_data
-url: "https://dieghernan.github.io"
+# Site identity and SEO
+locale: en-US
+title: Celestial Data
+subtitle: Celestial datasets in GeoJSON and GeoPackage formats
+description: Celestial datasets for the J2000 epoch, derived from d3-celestial and
+  processed with R and sf.
+url: https://dieghernan.github.io
 baseurl: "/celestial_data"
+repository: dieghernan/celestial_data
+timezone: Europe/Madrid
 
+# Sharing images
+og_image: https://dieghernan.github.io/celestial_data/assets/img/ogimage.webp
+og_image_alt: Circular star map with constellation lines on a dark background.
+og_image_width: 1300
+og_image_height: 857
+og_image_type: image/webp
+twitter_site: dhernangomez
 
-locale                  :     en
-title                   :  "Celestial Data"
-subtitle                : "Repository with geojson files of celestial object"
-description             : "Site with celestial geojson data objects. Original source: https://github.com/ofrohn/d3-celestial"
-timezone                : "Europe/Madrid"
-
-og_image                :   https://dieghernan.github.io/celestial_data/assets/img/ogimage.webp
-twitter_site            :   dieghernan
+# Author and publisher
 author:
+  name: Diego Hernangómez
   url: https://dieghernan.github.io/
   avatar: https://dieghernan.github.io/assets/img/site/avatar.png
-  name                  :  Diego Hernangomez 
-  location              :  "Madrid, Spain"
-  links:       
-    - url: https://dieghernan.github.io/
-      icon: fas fa-blog
-      label: Blog
-    - url: https://twitter.com/dhernangomez
-      icon: fab fa-twitter    
-      label: My Twitter
-    - url:  https://fosstodon.org/@dhernangomez
-      icon: fa-brands fa-mastodon
-      label: My Mastodon
-    - url:  https://github.com/dieghernan/
-      icon: fab fa-github
-      label: My GitHub
-    - url: https://stackoverflow.com/users/7877917/dieghernan
-      icon: fab fa-stack-overflow 
-      label: On StackOverflow
-    - url: https://orcid.org/0000-0001-8457-4658
-      icon: fa-brands fa-orcid
-      label: My Orcid
-
-# B. Navigation
-# Configure your navbar and the footer of your site
-
-# Navbar: 
-#   "brand" options would be set on the left side of your navbar
-#   "nav" would be set on the right side. Two-level nav links available
-navbar:
-  brand:
-    title   :  Home # Title in navbar
-    img: "./assets/icons/android-chrome-192x192.png"
-  nav:
-  - title   : 'Preview'
-    url     : https://dieghernan.github.io/celestial_data/preview
-  - title   : 'Data Description'
-    url     : https://dieghernan.github.io/celestial_data/data
-  - title   : 'Data Sources'
-    url     : https://dieghernan.github.io/celestial_data/sources
-  - title   : '<i class="fab fa-github" aria-hidden="true"></i> GitHub repo'
-    url     : https://github.com/dieghernan/celestial_data
-
-
-footer:
+  location: Madrid, Spain
   links:
-    - url: https://dieghernan.github.io/
-      icon: fas fa-blog
-      label: Blog
-    - label: Stack Overflow
-      icon: fab fa-stack-overflow
-      url: https://stackoverflow.com/users/7877917/dieghernan
-    - label: WikiCommons
-      icon: fab fa-wikipedia-w
-      url: https://commons.wikimedia.org/wiki/Special:ListFiles?limit=50&user=dieghernan84
-    - label: GitHub
-      icon: fab fa-github
-      url: https://github.com/dieghernan/
-  
-# C. Theme Settings
-
-
-# Theme and colors
-chulapa-skin: 
-  skin          :  gitdev-dark
-  highlight:  skeletor
-  vars:
-    border-radius-lg: 0
-    
-# D. Jekyll Defaults and collections: see https://jekyllrb.com/
-
-# Blog pagination: on this site /blog/index.html. https://jekyllrb.com/docs/pagination/
-paginate: 7
-paginate_path: "/blog/page:num/"
-paginator_maxnum: 3  #default[3] Custom: max of number to be displayed on the paginator
-
-# Collections https://jekyllrb.com/docs/step-by-step/09-collections/
-collections:
-collections_dir     : 
-permalink           : /:year:month:day_:title/
-
-
-# Defaults https://jekyllrb.com/docs/configuration/front-matter-defaults/
-defaults:
-  -
-    scope:
-      path: ""
-    values:
-      layout: "default"
-      header_type: "base"
-      mathjax: true
-      include_on_search   : false
-
-# Identify the individual publishing this site in JSON-LD.
+  - url: https://x.com/dhernangomez
+    icon: fab fa-square-x-twitter
+    label: Twitter/X
+  - url: https://fosstodon.org/@dhernangomez
+    icon: fa-brands fa-mastodon
+    label: Mastodon
+  - url: https://bsky.app/profile/dieghernan.bsky.social
+    icon: fa-brands fa-square-bluesky
+    label: Bluesky
+  - url: https://github.com/dieghernan/
+    icon: fab fa-github
+    label: GitHub
+  - url: https://stackoverflow.com/users/7877917/dieghernan
+    icon: fab fa-stack-overflow
+    label: Stack Overflow
+  - url: https://orcid.org/0000-0001-8457-4658
+    icon: fa-brands fa-orcid
+    label: ORCID
 publisher:
   type: Person
+  name: Diego Hernangómez
+  url: https://dieghernan.github.io/
+  image: https://dieghernan.github.io/assets/img/site/avatar.png
 
-# XX. Other settings - no need to modify
-# HTML Compression
-# - https://jch.penibelst.de/
+# Navigation
+navbar:
+  brand:
+    title: Home
+    img: "./assets/icons/android-chrome-192x192.png"
+  nav:
+  - title: Preview
+    url: https://dieghernan.github.io/celestial_data/preview
+  - title: Data Description
+    url: https://dieghernan.github.io/celestial_data/data
+  - title: Data Sources
+    url: https://dieghernan.github.io/celestial_data/sources
+  - title: <i class="fab fa-github" aria-hidden="true"></i> GitHub repo
+    url: https://github.com/dieghernan/celestial_data
+footer:
+  links:
+  - url: https://dieghernan.github.io/
+    icon: fas fa-blog
+    label: Blog
+  - label: Stack Overflow
+    icon: fab fa-stack-overflow
+    url: https://stackoverflow.com/users/7877917/dieghernan
+  - label: WikiCommons
+    icon: fab fa-wikipedia-w
+    url: https://commons.wikimedia.org/wiki/Special:ListFiles?limit=50&user=dieghernan84
+  - label: GitHub
+    icon: fab fa-github
+    url: https://github.com/dieghernan/
+
+# Appearance
+chulapa-skin:
+  skin: gitdev-dark
+  highlight: skeletor
+  vars:
+    border-radius-lg: 0
+
+# Content and build settings
+permalink: "/:year:month:day_:title/"
+defaults:
+- scope:
+    path: ''
+  values:
+    layout: default
+    header_type: base
+    mathjax: true
+    include_on_search: false
+include:
+- _pages
+- data
 compress_html:
   clippings: all
   blanklines: true
-
-plugins:
-  - jekyll-github-metadata
-  - jekyll-paginate
-  - jekyll-include-cache
-  - jekyll-sitemap
-
-
-# Exclude these files from production site
-exclude:
-  - LICENSE
-  - README.md
-  - README.Rmd
-  - Gemfile
-  - vendor
-  - .github
-  - data/README.md
-
-include:
- - _pages
- - data
-
-# Conversion
 markdown: kramdown
 highlighter: rouge
 lsi: false
 excerpt_separator: "\n\n"
-incremental: false
-
-# Markdown Processing
 kramdown:
   input: GFM
   hard_wrap: false
   auto_ids: true
   footnote_nr: 1
-  footnote_backlink: '&uarr;'
+  footnote_backlink: "&uarr;"
   entity_output: as_char
   toc_levels: 2..6
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
-
-# Sass/SCSS
+incremental: false
+exclude:
+- LICENSE
+- README.md
+- README.Rmd
+- Gemfile
+- vendor
+- ".github"
+- data/README.md
+- AGENTS.md
+- Gemfile.lock
+- ".bundle"
+plugins:
+- jekyll-remote-theme
+- jekyll-github-metadata
+- jekyll-include-cache
+- jekyll-sitemap
 sass:
   sass_dir: _sass
   style: compressed
@@ -170,3 +144,4 @@ sass:
   - color-functions
   - abs-percent
   - function-units
+  - if-function

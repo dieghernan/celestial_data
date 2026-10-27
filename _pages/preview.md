@@ -5,10 +5,7 @@ excerpt: Preview data
 leaflet: true
 ---
 
-
-Preview selected data sets using [Leaflet](https://leafletjs.com/). Some 
-data (as `dsos` or `stars`) have a large number of features, so they can take
-some time before they are loaded.
+Preview selected data sets using [Leaflet](https://leafletjs.com/). Large star and deep-sky catalogs may take longer to load.
 
 ## Leaflet preview
 

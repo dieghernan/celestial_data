@@ -10,7 +10,7 @@ project_links:
 h_max: 3
 ---
 
-## Data Formats
+## Data formats
 
 Data is provided in GeoJSON (`*.geojson`) and GeoPackage (`*.gpkg`) format.
 Additionally, for GeoJSON formats a minified version (`*.min.geojson`) is also
@@ -25,9 +25,12 @@ All data provided at J2000 epoch, positions converted from 0...24h right
 ascension to -180...180 degrees longitude as per GeoJSON requirements, so
 0...12h becomes 0...180 degrees, and 12...24h becomes -180...0 degrees.
 
+These are celestial coordinates represented as geographic geometries for
+cartographic software. They are not observations of locations on Earth.
+
 ## Distribution
 
-The data can be accessed from several API endpoints:
+The data can be accessed from several download URLs:
 
 ``` html
 
@@ -137,7 +140,7 @@ objects[^readme-1]:
 
 ### DSOs
 
-Deep Space Objects
+Deep-sky objects (DSOs)
 
 #### DSOnames
 
@@ -162,11 +165,11 @@ Deep Space Objects
 Several files:
 
 -   `dsos.6.<data format>`, `dsos.14.<data format>`, `dsos.20.<data format>`:
-    the number indicates limit magnitude.
+    the number indicates the limiting magnitude.
 
 -   `dsos.bright.<data format>`: hand selected DSOs.
 
--   `lg.<data format>`: Local group .
+-   `lg.<data format>`: Local group.
 
 -   `messier.<data format>` Messier objects.
 
@@ -189,7 +192,7 @@ All objects are `POINT`:
 
 -   **dim**: Angular dimensions in arcminutes
 
--   **bv**: Blue minus visual magnitude color inder (b-v)
+-   **bv**: Blue-minus-visual color index (B−V)
 
 -   **br**: Relative brightness to magnitude 0, computed as $$100^{-1 * mag / 5}$$
 
@@ -214,8 +217,8 @@ Additional fields on `lg.<data format>`:
 than HIP/HD
 
 -   **id**: Hipparcos number
--   **name**: , Proper name and names in 17 further languages
--   **desig**: , Standard designation, first from list below
+-   **name**: Proper name and names in 17 further languages
+-   **desig**: Standard designation, first from list below
 -   **bayer**: , Bayer
 -   **flam**: , Flamsteed
 -   **var**: , Variable star
