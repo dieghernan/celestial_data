@@ -56,7 +56,7 @@ var mymap = L.map('mapid', {
     ],
   })
   .setView([0, 0], 1);
-L.tileLayer.provider('CartoDB.DarkMatterNoLabels')
+L.tileLayer.provider('Stadia.AlidadeSmoothDark')
   .addTo(mymap);
 var geojsonLayer = new L.GeoJSON.AJAX(
   "https://cdn.jsdelivr.net/gh/dieghernan/celestial_data@main/data/mw.min.geojson"

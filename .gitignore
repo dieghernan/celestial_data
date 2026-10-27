@@ -5,3 +5,8 @@
 project.Rproj
 celestial_data.Rproj
 src
+_site
+.jekyll-metadata
+vendor
+.bundle
+Gemfile.lock
