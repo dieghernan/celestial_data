@@ -23,7 +23,7 @@ permissions:
 jobs:
   # Build job
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
       JEKYLL_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Needed to work out-of-the-box with jekyll-github-metadata
