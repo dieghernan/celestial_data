@@ -14,6 +14,8 @@ timezone                : "Europe/Madrid"
 og_image                :   https://dieghernan.github.io/celestial_data/assets/img/ogimage.webp
 twitter_site            :   dieghernan
 author:
+  url: https://dieghernan.github.io/
+  avatar: https://dieghernan.github.io/assets/img/site/avatar.png
   name                  :  Diego Hernangomez 
   location              :  "Madrid, Spain"
   links:       
