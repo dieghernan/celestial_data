@@ -148,7 +148,7 @@
 	<!-- Load Leaflet -->
 	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
 	<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-	<script src='https://cdn.jsdelivr.net/gh/leaflet-extras/leaflet-providers@master/leaflet-providers.min.js' ></script>
+<script src="https://cdn.jsdelivr.net/gh/dieghernan/leaflet-providersESP/dist/leaflet-providersESP.min.js"></script>
 	<script src='https://cdn.jsdelivr.net/gh/calvinmetcalf/leaflet-ajax@gh-pages/dist/leaflet.ajax.min.js' ></script>
 <!-- end custom head snippets -->
 </head>
@@ -235,7 +235,7 @@ var mymap = L.map('mapid', {
     ],
   })
   .setView([0, 0], 1);
-L.tileLayer.provider('Stadia.AlidadeSmoothDark')
+L.tileLayer.providerESP('IDErioja.Oscuro')
   .addTo(mymap);
 var geojsonLayer = new L.GeoJSON.AJAX(
   "https://cdn.jsdelivr.net/gh/dieghernan/celestial_data@main/data/mw.min.geojson"
