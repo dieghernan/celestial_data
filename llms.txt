@@ -1,0 +1,26 @@
+# Celestial Data
+
+> Celestial datasets in GeoJSON and GeoPackage format, derived from d3-celestial and processed with R and sf by Diego Hernangómez.
+
+The objects describe the J2000 epoch and include stars, constellations, asterisms, deep-sky objects and the Milky Way. The project represents these objects as geographic geometries in EPSG:4326, bounded by [-180, -90, 180, 90]. This representation does not turn the datasets into terrestrial observations or current celestial positions. GeoJSON files also have minified variants.
+
+The original d3-celestial data is attributed to Olaf Frohn. Consult the repository license and citation metadata when reusing the data.
+
+## Documentation
+
+- [Project overview](https://dieghernan.github.io/celestial_data/): Scope and distribution options.
+- [README](https://raw.githubusercontent.com/dieghernan/celestial_data/main/README.md): Plain-text project description, file inventory and citation.
+- [Data documentation](https://raw.githubusercontent.com/dieghernan/celestial_data/main/_pages/data.md): Dataset descriptions.
+- [Sources](https://raw.githubusercontent.com/dieghernan/celestial_data/main/_pages/sources.md): Original data sources and references.
+
+## Data and citation
+
+- [Data files](https://github.com/dieghernan/celestial_data/tree/main/data): GeoJSON, GeoPackage and supporting CSV files.
+- [Milky Way GeoJSON](https://dieghernan.github.io/celestial_data/data/mw.min.geojson): A directly downloadable example.
+- [Citation metadata](https://raw.githubusercontent.com/dieghernan/celestial_data/main/CITATION.cff): Machine-readable citation information.
+- [License](https://raw.githubusercontent.com/dieghernan/celestial_data/main/LICENSE): Repository license.
+
+## Optional
+
+- [Source repository](https://github.com/dieghernan/celestial_data): Project history and processing assets.
+- [Author](https://dieghernan.github.io/): Diego Hernangómez's personal site.
