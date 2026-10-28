@@ -7,8 +7,8 @@
 		<description>Celestial datasets for the J2000 epoch, derived from d3-celestial and processed with R and sf.</description>
 		<language>en-US</language>
 		<copyright>(c) 2026, dieghernan</copyright>	
-		<pubDate>Tue, 27 Oct 2026 16:52:39 +0100</pubDate>
-		<lastBuildDate>Tue, 27 Oct 2026 16:52:39 +0100</lastBuildDate>
+		<pubDate>Wed, 28 Oct 2026 19:28:57 +0100</pubDate>
+		<lastBuildDate>Wed, 28 Oct 2026 19:28:57 +0100</lastBuildDate>
 		<category>blog</category>
 		<ttl>60</ttl>
 		<atom:link href="https://dieghernan.github.io/celestial_data/rss.xml" rel="self" type="application/rss+xml" />
