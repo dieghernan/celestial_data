@@ -13,11 +13,12 @@ repository: dieghernan/celestial_data
 timezone: Europe/Madrid
 
 # Sharing images
-og_image: https://dieghernan.github.io/celestial_data/assets/img/ogimage.webp
-og_image_alt: Circular star map with constellation lines on a dark background.
-og_image_width: 1300
-og_image_height: 857
-og_image_type: image/webp
+og_image: https://dieghernan.github.io/celestial_data/assets/img/social-preview.jpg
+og_image_alt: Celestial Data. The sky in GeoJSON and GeoPackage, with a star map
+  and blue constellation lines on a dark background.
+og_image_width: 1200
+og_image_height: 630
+og_image_type: image/jpeg
 twitter_site: dhernangomez
 
 # Author and publisher

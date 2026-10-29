@@ -7,6 +7,12 @@ subtitle: Celestial datasets in GeoJSON and GeoPackage formats
 excerpt: This project provides several datasets in GeoJSON
   and GeoPackage format of celestial objects for the J2000 epoch.
 header_img: https://dieghernan.github.io/celestial_data/assets/img/ogimage.webp
+og_image: https://dieghernan.github.io/celestial_data/assets/img/social-preview.jpg
+og_image_alt: Celestial Data. The sky in GeoJSON and GeoPackage, with a star map
+  and blue constellation lines on a dark background.
+og_image_width: 1200
+og_image_height: 630
+og_image_type: image/jpeg
 project_links:
     - url: https://github.com/dieghernan/celestial_data/tree/main/data
       icon: fab fa-github
