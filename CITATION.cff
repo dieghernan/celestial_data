@@ -3,9 +3,11 @@ message: If you use this dataset, please cite it using the preferred-citation in
 type: dataset
 license: BSD-3-Clause
 title: Celestial Data
-abstract: The Celestial Data datasets are a collection of files on GeoJSON and GeoPackage
-  format representing the position of celestial objects as of J2000 epoch and CRS
-  WGS84. All the files are valid as per GEOS 3.9.3 and fulfils also the GeoJSON specification.
+abstract: Celestial datasets for the J2000 reference, derived from d3-celestial
+  and processed with R and sf. GeoJSON and GeoPackage files encode celestial
+  coordinates as geographic geometries for GIS compatibility; CSV files provide
+  complementary names and attributes. The coordinates are not Earth locations.
+
 authors:
 - family-names: Frohn
   given-names: Olaf
@@ -15,10 +17,10 @@ authors:
 preferred-citation:
   type: data
   title: Celestial Data
-  abstract: The Celestial Data datasets are a collection of files on GeoJSON and GeoPackage
-    format representing the position of celestial objects as of J2000 epoch and CRS
-    WGS84. All the files are valid as per GEOS 3.9.3 and fulfils also the GeoJSON
-    specification.
+  abstract: Celestial datasets for the J2000 reference, derived from d3-celestial
+    and processed with R and sf. GeoJSON and GeoPackage files encode celestial
+    coordinates as geographic geometries for GIS compatibility; CSV files provide
+    complementary names and attributes. The coordinates are not Earth locations.
   authors:
   - family-names: Frohn
     given-names: Olaf

@@ -6,7 +6,7 @@
     <!-- MIT License -->
     <!-- Docs: https://dieghernan.github.io/chulapa -->
     <!-- Repo: https://github.com/dieghernan/chulapa -->
-    <!-- Page build 2026-10-28 -->
+    <!-- Page build 2026-10-29 -->
     <!-- Jekyll Version 4.4.1 -->
     <!-- Google structured data -->
     <script type="application/ld+json">
@@ -202,24 +202,30 @@
 		</p>
 		<nav class="navbar-nav px-3 my-auto" aria-label="Sidebar table of contents">
 		 <p class="mb-2"><a class="nav-link font-weight-bold lead" href="#">Data description</a></p>
-			<ul class="nav flex-column" id="sidetoc"><li class="nav-item nav d-block"><a href="#data-formats" class="nav-link">Data formats</a></li><li class="nav-item nav d-block"><a href="#distribution" class="nav-link">Distribution</a></li><li class="nav-item nav d-block"><a href="#description" class="nav-link">Description</a><ul><li class="nav-item nav d-block"><a href="#asterisms" class="nav-link">Asterisms</a></li><li class="nav-item nav d-block"><a href="#constellations" class="nav-link">Constellations</a></li><li class="nav-item nav d-block"><a href="#constellation-boundaries" class="nav-link">Constellation boundaries</a></li><li class="nav-item nav d-block"><a href="#constellation-lines" class="nav-link">Constellation lines</a></li><li class="nav-item nav d-block"><a href="#dsos" class="nav-link">DSOs</a></li><li class="nav-item nav d-block"><a href="#stars" class="nav-link">Stars</a></li><li class="nav-item nav d-block"><a href="#milky-way" class="nav-link">Milky Way</a></li></ul></li></ul>
+			<ul class="nav flex-column" id="sidetoc"><li class="nav-item nav d-block"><a href="#data-formats" class="nav-link">Data formats</a></li><li class="nav-item nav d-block"><a href="#distribution" class="nav-link">Distribution</a></li><li class="nav-item nav d-block"><a href="#downloads" class="nav-link">Downloads</a></li><li class="nav-item nav d-block"><a href="#description" class="nav-link">Description</a><ul><li class="nav-item nav d-block"><a href="#asterisms" class="nav-link">Asterisms</a></li><li class="nav-item nav d-block"><a href="#constellations" class="nav-link">Constellations</a></li><li class="nav-item nav d-block"><a href="#constellation-boundaries" class="nav-link">Constellation boundaries</a></li><li class="nav-item nav d-block"><a href="#constellation-lines" class="nav-link">Constellation lines</a></li><li class="nav-item nav d-block"><a href="#dsos" class="nav-link">DSOs</a></li><li class="nav-item nav d-block"><a href="#stars" class="nav-link">Stars</a></li><li class="nav-item nav d-block"><a href="#milky-way" class="nav-link">Milky Way</a></li></ul></li></ul>
 		</nav>   
 	</div>
 			<div class="e-content"><h2 id="data-formats">Data formats</h2>
-<p>Data is provided in GeoJSON (<code class="language-plaintext highlighter-rouge">*.geojson</code>) and GeoPackage (<code class="language-plaintext highlighter-rouge">*.gpkg</code>) format.
-Additionally, for GeoJSON formats a minified version (<code class="language-plaintext highlighter-rouge">*.min.geojson</code>) is also
-provided.</p>
-<p>All data complies with the GeoJSON format (provided in
-<a href="https://epsg.io/4326">EPSG:4326</a>, bounded to \([-180, -90, 180, 90]\) and
-geometries valid as per <a href="https://postgis.net/docs/ST_IsValid.html">ST_IsValid</a>
-on GEOS <strong>3.9.3</strong>).</p>
-<p>All data provided at J2000 epoch, positions converted from 0…24h right
-ascension to -180…180 degrees longitude as per GeoJSON requirements, so
-0…12h becomes 0…180 degrees, and 12…24h becomes -180…0 degrees.</p>
-<p>These are celestial coordinates represented as geographic geometries for
-cartographic software. They are not observations of locations on Earth.</p>
+<p>Geographic datasets are available as GeoJSON (<code class="language-plaintext highlighter-rouge">*.geojson</code>) and GeoPackage
+(<code class="language-plaintext highlighter-rouge">*.gpkg</code>). Minified GeoJSON (<code class="language-plaintext highlighter-rouge">*.min.geojson</code>) removes whitespace without
+simplifying geometries. CSV files contain names and attributes without geometry.</p>
+<p>The coordinates use the J2000 celestial reference. Right ascension is converted
+from hours to degrees (15 degrees per hour), then wrapped into [-180, 180].
+Declination supplies the latitude-like angle in [-90, 90]. For example, 6h maps
+to 90 degrees and 18h maps to -90 degrees.</p>
+<p>EPSG:4326 is assigned for compatibility with GIS software. These angles describe
+celestial directions, not terrestrial WGS84 locations. Earth-based distances,
+areas and basemaps do not acquire astronomical meaning from this encoding.
+J2000 is a reference epoch, not a file update date; the files do not calculate
+current positions or a location-based view of the night sky.</p>
+<p>Geometries were validated with GEOS 3.9.3. Geometric validity does not establish
+astronomical accuracy or catalog completeness. Some degenerate source lines
+were removed during conversion.</p>
 <h2 id="distribution">Distribution</h2>
-<p>The data can be accessed from several download URLs:</p>
+<p>The website, GitHub and jsDelivr provide alternative URLs for the same files.
+These URLs follow the main branch. For an archived release, use the collection
+DOI: <a href="https://doi.org/10.5281/zenodo.7561601">https://doi.org/10.5281/zenodo.7561601</a>.</p>
+<p>For example, download the minified Milky Way dataset from:</p>
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
 <span class="c">&lt;!-- From GitHub --&gt;</span>
 https://raw.githubusercontent.com/dieghernan/celestial_data/main/data/mw.min.geojson
@@ -230,9 +236,341 @@ https://dieghernan.github.io/celestial_data/data/mw.min.geojson
 <span class="c">&lt;!-- From jsDelivr --&gt;</span>
 https://cdn.jsdelivr.net/gh/dieghernan/celestial_data@main/data/mw.min.geojson
 </code></pre></div></div>
+<h2 id="downloads">Downloads</h2>
+<h3>Asterisms and Milky Way</h3>
+<div class="row">
+ <div class="col-12 col-lg-6 mb-3">
+<section class="card h-100 dataset-download-card" aria-labelledby="dataset-asterisms">
+ <div class="card-body d-flex flex-column">
+   <h4 class="h5" id="dataset-asterisms"><a href="/celestial_data/datasets/asterisms/">Asterisms</a></h4>
+   <p>Line patterns representing 65 asterisms, with names and label positions.</p>
+   <p class="small">65 features · MultiLineString</p>
+   <div class="mt-auto">
+      <a class="btn btn-outline-info btn-sm mb-2" href="/celestial_data/data/asterisms.geojson" download="" aria-label="Download Asterisms as GeoJSON (22.3 kB)">GeoJSON · 22.3 kB</a>
+      <a class="btn btn-outline-info btn-sm mb-2" href="/celestial_data/data/asterisms.min.geojson" download="" aria-label="Download Asterisms as GeoJSON (minified) (18.5 kB)">GeoJSON (minified) · 18.5 kB</a>
+      <a class="btn btn-outline-info btn-sm mb-2" href="/celestial_data/data/asterisms.gpkg" download="" aria-label="Download Asterisms as GeoPackage (114.7 kB)">GeoPackage · 114.7 kB</a>
+   </div>
+ </div>
+</section>
+</div>
+ <div class="col-12 col-lg-6 mb-3">
+<section class="card h-100 dataset-download-card" aria-labelledby="dataset-mw">
+ <div class="card-body d-flex flex-column">
+   <h4 class="h5" id="dataset-mw"><a href="/celestial_data/datasets/mw/">Milky Way</a></h4>
+   <p>Milky Way outlines represented as polygons in five brightness steps.</p>
+   <p class="small">5 features · MultiPolygon</p>
+   <div class="mt-auto">
+      <a class="btn btn-outline-info btn-sm mb-2" href="/celestial_data/data/mw.geojson" download="" aria-label="Download Milky Way as GeoJSON (656.8 kB)">GeoJSON · 656.8 kB</a>
+      <a class="btn btn-outline-info btn-sm mb-2" href="/celestial_data/data/mw.min.geojson" download="" aria-label="Download Milky Way as GeoJSON (minified) (532.4 kB)">GeoJSON (minified) · 532.4 kB</a>
+      <a class="btn btn-outline-info btn-sm mb-2" href="/celestial_data/data/mw.gpkg" download="" aria-label="Download Milky Way as GeoPackage (593.9 kB)">GeoPackage · 593.9 kB</a>
+   </div>
+ </div>
+</section>
+</div>
+</div>
+<h3>Constellations</h3>
+<div class="row">
+ <div class="col-12 col-lg-6 mb-3">
+<section class="card h-100 dataset-download-card" aria-labelledby="dataset-constellations">
+ <div class="card-body d-flex flex-column">
+   <h4 class="h5" id="dataset-constellations"><a href="/celestial_data/datasets/constellations/">Constellation labels</a></h4>
+   <p>Label positions and multilingual names for constellation map displays.</p>
+   <p class="small">89 features · Point</p>
+   <div class="mt-auto">
+      <a class="btn btn-outline-info btn-sm mb-2" href="/celestial_data/data/constellations.geojson" download="" aria-label="Download Constellation labels as GeoJSON (60.3 kB)">GeoJSON · 60.3 kB</a>
+      <a class="btn btn-outline-info btn-sm mb-2" href="/celestial_data/data/constellations.min.geojson" download="" aria-label="Download Constellation labels as GeoJSON (minified) (53.3 kB)">GeoJSON (minified) · 53.3 kB</a>
+      <a class="btn btn-outline-info btn-sm mb-2" href="/celestial_data/data/constellations.gpkg" download="" aria-label="Download Constellation labels as GeoPackage (131.1 kB)">GeoPackage · 131.1 kB</a>
+      <a class="btn btn-outline-info btn-sm mb-2" href="/celestial_data/data/constellations.csv" download="" aria-label="Download Constellation labels as CSV (25.6 kB)">CSV · 25.6 kB</a>
+   </div>
+ </div>
+</section>
+</div>
+ <div class="col-12 col-lg-6 mb-3">
+<section class="card h-100 dataset-download-card" aria-labelledby="dataset-constellations.cn">
+ <div class="card-body d-flex flex-column">
+   <h4 class="h5" id="dataset-constellations.cn"><a href="/celestial_data/datasets/constellations.cn/">Chinese constellation labels</a></h4>
+   <p>Label positions, Chinese names and English translations for traditional Chinese constellations.</p>
+   <p class="small">312 features · Point</p>
+   <div class="mt-auto">
+      <a class="btn btn-outline-info btn-sm mb-2" href="/celestial_data/data/constellations.cn.geojson" download="" aria-label="Download Chinese constellation labels as GeoJSON (90.7 kB)">GeoJSON · 90.7 kB</a>
+      <a class="btn btn-outline-info btn-sm mb-2" href="/celestial_data/data/constellations.cn.min.geojson" download="" aria-label="Download Chinese constellation labels as GeoJSON (minified) (79.6 kB)">GeoJSON (minified) · 79.6 kB</a>
+      <a class="btn btn-outline-info btn-sm mb-2" href="/celestial_data/data/constellations.cn.gpkg" download="" aria-label="Download Chinese constellation labels as GeoPackage (151.6 kB)">GeoPackage · 151.6 kB</a>
+      <a class="btn btn-outline-info btn-sm mb-2" href="/celestial_data/data/constellations.cn.csv" download="" aria-label="Download Chinese constellation labels as CSV (21.2 kB)">CSV · 21.2 kB</a>
+   </div>
+ </div>
+</section>
+</div>
+ <div class="col-12 col-lg-6 mb-3">
+<section class="card h-100 dataset-download-card" aria-labelledby="dataset-constellations.borders">
+ <div class="card-body d-flex flex-column">
+   <h4 class="h5" id="dataset-constellations.borders"><a href="/celestial_data/datasets/constellations.borders/">Constellation borders</a></h4>
+   <p>Line geometries tracing the borders between constellations.</p>
+   <p class="small">257 features · MultiLineString</p>
+   <div class="mt-auto">
+      <a class="btn btn-outline-info btn-sm mb-2" href="/celestial_data/data/constellations.borders.geojson" download="" aria-label="Download Constellation borders as GeoJSON (57.0 kB)">GeoJSON · 57.0 kB</a>
+      <a class="btn btn-outline-info btn-sm mb-2" href="/celestial_data/data/constellations.borders.min.geojson" download="" aria-label="Download Constellation borders as GeoJSON (minified) (47.5 kB)">GeoJSON (minified) · 47.5 kB</a>
+      <a class="btn btn-outline-info btn-sm mb-2" href="/celestial_data/data/constellations.borders.gpkg" download="" aria-label="Download Constellation borders as GeoPackage (151.6 kB)">GeoPackage · 151.6 kB</a>
+   </div>
+ </div>
+</section>
+</div>
+ <div class="col-12 col-lg-6 mb-3">
+<section class="card h-100 dataset-download-card" aria-labelledby="dataset-constellations.borders.cn">
+ <div class="card-body d-flex flex-column">
+   <h4 class="h5" id="dataset-constellations.borders.cn"><a href="/celestial_data/datasets/constellations.borders.cn/">Chinese constellation borders</a></h4>
+   <p>Line geometries tracing borders in the traditional Chinese constellation data.</p>
+   <p class="small">84 features · LineString</p>
+   <div class="mt-auto">
+      <a class="btn btn-outline-info btn-sm mb-2" href="/celestial_data/data/constellations.borders.cn.geojson" download="" aria-label="Download Chinese constellation borders as GeoJSON (13.5 kB)">GeoJSON · 13.5 kB</a>
+      <a class="btn btn-outline-info btn-sm mb-2" href="/celestial_data/data/constellations.borders.cn.min.geojson" download="" aria-label="Download Chinese constellation borders as GeoJSON (minified) (10.9 kB)">GeoJSON (minified) · 10.9 kB</a>
+      <a class="btn btn-outline-info btn-sm mb-2" href="/celestial_data/data/constellations.borders.cn.gpkg" download="" aria-label="Download Chinese constellation borders as GeoPackage (118.8 kB)">GeoPackage · 118.8 kB</a>
+   </div>
+ </div>
+</section>
+</div>
+ <div class="col-12 col-lg-6 mb-3">
+<section class="card h-100 dataset-download-card" aria-labelledby="dataset-constellations.bounds">
+ <div class="card-body d-flex flex-column">
+   <h4 class="h5" id="dataset-constellations.bounds"><a href="/celestial_data/datasets/constellations.bounds/">Constellation regions</a></h4>
+   <p>Polygon geometries representing constellation regions for map displays.</p>
+   <p class="small">89 features · MultiPolygon</p>
+   <div class="mt-auto">
+      <a class="btn btn-outline-info btn-sm mb-2" href="/celestial_data/data/constellations.bounds.geojson" download="" aria-label="Download Constellation regions as GeoJSON (53.6 kB)">GeoJSON · 53.6 kB</a>
+      <a class="btn btn-outline-info btn-sm mb-2" href="/celestial_data/data/constellations.bounds.min.geojson" download="" aria-label="Download Constellation regions as GeoJSON (minified) (43.8 kB)">GeoJSON (minified) · 43.8 kB</a>
+      <a class="btn btn-outline-info btn-sm mb-2" href="/celestial_data/data/constellations.bounds.gpkg" download="" aria-label="Download Constellation regions as GeoPackage (147.5 kB)">GeoPackage · 147.5 kB</a>
+   </div>
+ </div>
+</section>
+</div>
+ <div class="col-12 col-lg-6 mb-3">
+<section class="card h-100 dataset-download-card" aria-labelledby="dataset-constellations.bounds.cn">
+ <div class="card-body d-flex flex-column">
+   <h4 class="h5" id="dataset-constellations.bounds.cn"><a href="/celestial_data/datasets/constellations.bounds.cn/">Chinese constellation regions</a></h4>
+   <p>Polygon geometries representing regions in the traditional Chinese constellation data.</p>
+   <p class="small">28 features · Polygon</p>
+   <div class="mt-auto">
+      <a class="btn btn-outline-info btn-sm mb-2" href="/celestial_data/data/constellations.bounds.cn.geojson" download="" aria-label="Download Chinese constellation regions as GeoJSON (8.5 kB)">GeoJSON · 8.5 kB</a>
+      <a class="btn btn-outline-info btn-sm mb-2" href="/celestial_data/data/constellations.bounds.cn.min.geojson" download="" aria-label="Download Chinese constellation regions as GeoJSON (minified) (6.7 kB)">GeoJSON (minified) · 6.7 kB</a>
+      <a class="btn btn-outline-info btn-sm mb-2" href="/celestial_data/data/constellations.bounds.cn.gpkg" download="" aria-label="Download Chinese constellation regions as GeoPackage (106.5 kB)">GeoPackage · 106.5 kB</a>
+   </div>
+ </div>
+</section>
+</div>
+ <div class="col-12 col-lg-6 mb-3">
+<section class="card h-100 dataset-download-card" aria-labelledby="dataset-constellations.lines">
+ <div class="card-body d-flex flex-column">
+   <h4 class="h5" id="dataset-constellations.lines"><a href="/celestial_data/datasets/constellations.lines/">Constellation lines</a></h4>
+   <p>Line patterns connecting stars to illustrate constellation figures.</p>
+   <p class="small">89 features · MultiLineString</p>
+   <div class="mt-auto">
+      <a class="btn btn-outline-info btn-sm mb-2" href="/celestial_data/data/constellations.lines.geojson" download="" aria-label="Download Constellation lines as GeoJSON (35.0 kB)">GeoJSON · 35.0 kB</a>
+      <a class="btn btn-outline-info btn-sm mb-2" href="/celestial_data/data/constellations.lines.min.geojson" download="" aria-label="Download Constellation lines as GeoJSON (minified) (28.9 kB)">GeoJSON (minified) · 28.9 kB</a>
+      <a class="btn btn-outline-info btn-sm mb-2" href="/celestial_data/data/constellations.lines.gpkg" download="" aria-label="Download Constellation lines as GeoPackage (131.1 kB)">GeoPackage · 131.1 kB</a>
+   </div>
+ </div>
+</section>
+</div>
+ <div class="col-12 col-lg-6 mb-3">
+<section class="card h-100 dataset-download-card" aria-labelledby="dataset-constellations.lines.cn">
+ <div class="card-body d-flex flex-column">
+   <h4 class="h5" id="dataset-constellations.lines.cn"><a href="/celestial_data/datasets/constellations.lines.cn/">Chinese constellation lines</a></h4>
+   <p>Line patterns illustrating traditional Chinese constellation figures; degenerate source lines were removed.</p>
+   <p class="small">255 features · MultiLineString</p>
+   <div class="mt-auto">
+      <a class="btn btn-outline-info btn-sm mb-2" href="/celestial_data/data/constellations.lines.cn.geojson" download="" aria-label="Download Chinese constellation lines as GeoJSON (81.7 kB)">GeoJSON · 81.7 kB</a>
+      <a class="btn btn-outline-info btn-sm mb-2" href="/celestial_data/data/constellations.lines.cn.min.geojson" download="" aria-label="Download Chinese constellation lines as GeoJSON (minified) (67.3 kB)">GeoJSON (minified) · 67.3 kB</a>
+      <a class="btn btn-outline-info btn-sm mb-2" href="/celestial_data/data/constellations.lines.cn.gpkg" download="" aria-label="Download Chinese constellation lines as GeoPackage (163.8 kB)">GeoPackage · 163.8 kB</a>
+   </div>
+ </div>
+</section>
+</div>
+</div>
+<h3>Deep-sky objects</h3>
+<div class="row">
+ <div class="col-12 col-lg-6 mb-3">
+<section class="card h-100 dataset-download-card" aria-labelledby="dataset-dsos.6">
+ <div class="card-body d-flex flex-column">
+   <h4 class="h5" id="dataset-dsos.6"><a href="/celestial_data/datasets/dsos.6/">Deep-sky objects: magnitude 6</a></h4>
+   <p>Deep-sky object positions with a nominal magnitude limit of 6, including entries with unknown magnitudes.</p>
+   <p class="small">3309 features · Point</p>
+   <div class="mt-auto">
+      <a class="btn btn-outline-info btn-sm mb-2" href="/celestial_data/data/dsos.6.geojson" download="" aria-label="Download Deep-sky objects: magnitude 6 as GeoJSON (846.6 kB)">GeoJSON · 846.6 kB</a>
+      <a class="btn btn-outline-info btn-sm mb-2" href="/celestial_data/data/dsos.6.min.geojson" download="" aria-label="Download Deep-sky objects: magnitude 6 as GeoJSON (minified) (696.5 kB)">GeoJSON (minified) · 696.5 kB</a>
+      <a class="btn btn-outline-info btn-sm mb-2" href="/celestial_data/data/dsos.6.gpkg" download="" aria-label="Download Deep-sky objects: magnitude 6 as GeoPackage (540.7 kB)">GeoPackage · 540.7 kB</a>
+   </div>
+ </div>
+</section>
+</div>
+ <div class="col-12 col-lg-6 mb-3">
+<section class="card h-100 dataset-download-card" aria-labelledby="dataset-dsos.14">
+ <div class="card-body d-flex flex-column">
+   <h4 class="h5" id="dataset-dsos.14"><a href="/celestial_data/datasets/dsos.14/">Deep-sky objects: magnitude 14</a></h4>
+   <p>Deep-sky object positions with a nominal magnitude limit of 14, including entries with unknown magnitudes.</p>
+   <p class="small">15807 features · Point</p>
+   <div class="mt-auto">
+      <a class="btn btn-outline-info btn-sm mb-2" href="/celestial_data/data/dsos.14.geojson" download="" aria-label="Download Deep-sky objects: magnitude 14 as GeoJSON (4.20 MB)">GeoJSON · 4.20 MB</a>
+      <a class="btn btn-outline-info btn-sm mb-2" href="/celestial_data/data/dsos.14.min.geojson" download="" aria-label="Download Deep-sky objects: magnitude 14 as GeoJSON (minified) (3.43 MB)">GeoJSON (minified) · 3.43 MB</a>
+      <a class="btn btn-outline-info btn-sm mb-2" href="/celestial_data/data/dsos.14.gpkg" download="" aria-label="Download Deep-sky objects: magnitude 14 as GeoPackage (2.33 MB)">GeoPackage · 2.33 MB</a>
+   </div>
+ </div>
+</section>
+</div>
+ <div class="col-12 col-lg-6 mb-3">
+<section class="card h-100 dataset-download-card" aria-labelledby="dataset-dsos.20">
+ <div class="card-body d-flex flex-column">
+   <h4 class="h5" id="dataset-dsos.20"><a href="/celestial_data/datasets/dsos.20/">Deep-sky objects: magnitude 20</a></h4>
+   <p>Deep-sky object positions with a nominal magnitude limit of 20, including entries with unknown magnitudes.</p>
+   <p class="small">89868 features · Point</p>
+   <div class="mt-auto">
+      <a class="btn btn-outline-info btn-sm mb-2" href="/celestial_data/data/dsos.20.geojson" download="" aria-label="Download Deep-sky objects: magnitude 20 as GeoJSON (23.83 MB)">GeoJSON · 23.83 MB</a>
+      <a class="btn btn-outline-info btn-sm mb-2" href="/celestial_data/data/dsos.20.min.geojson" download="" aria-label="Download Deep-sky objects: magnitude 20 as GeoJSON (minified) (19.26 MB)">GeoJSON (minified) · 19.26 MB</a>
+      <a class="btn btn-outline-info btn-sm mb-2" href="/celestial_data/data/dsos.20.gpkg" download="" aria-label="Download Deep-sky objects: magnitude 20 as GeoPackage (12.71 MB)">GeoPackage · 12.71 MB</a>
+   </div>
+ </div>
+</section>
+</div>
+ <div class="col-12 col-lg-6 mb-3">
+<section class="card h-100 dataset-download-card" aria-labelledby="dataset-dsos.bright">
+ <div class="card-body d-flex flex-column">
+   <h4 class="h5" id="dataset-dsos.bright"><a href="/celestial_data/datasets/dsos.bright/">Bright deep-sky objects</a></h4>
+   <p>A selection of bright deep-sky objects compiled by Olaf Frohn.</p>
+   <p class="small">32 features · Point</p>
+   <div class="mt-auto">
+      <a class="btn btn-outline-info btn-sm mb-2" href="/celestial_data/data/dsos.bright.geojson" download="" aria-label="Download Bright deep-sky objects as GeoJSON (8.7 kB)">GeoJSON · 8.7 kB</a>
+      <a class="btn btn-outline-info btn-sm mb-2" href="/celestial_data/data/dsos.bright.min.geojson" download="" aria-label="Download Bright deep-sky objects as GeoJSON (minified) (7.1 kB)">GeoJSON (minified) · 7.1 kB</a>
+      <a class="btn btn-outline-info btn-sm mb-2" href="/celestial_data/data/dsos.bright.gpkg" download="" aria-label="Download Bright deep-sky objects as GeoPackage (98.3 kB)">GeoPackage · 98.3 kB</a>
+   </div>
+ </div>
+</section>
+</div>
+ <div class="col-12 col-lg-6 mb-3">
+<section class="card h-100 dataset-download-card" aria-labelledby="dataset-lg">
+ <div class="card-body d-flex flex-column">
+   <h4 class="h5" id="dataset-lg"><a href="/celestial_data/datasets/lg/">Local Group and Milky Way halo</a></h4>
+   <p>Positions and attributes of Local Group and Milky Way halo objects compiled by Olaf Frohn.</p>
+   <p class="small">315 features · Point</p>
+   <div class="mt-auto">
+      <a class="btn btn-outline-info btn-sm mb-2" href="/celestial_data/data/lg.geojson" download="" aria-label="Download Local Group and Milky Way halo as GeoJSON (88.0 kB)">GeoJSON · 88.0 kB</a>
+      <a class="btn btn-outline-info btn-sm mb-2" href="/celestial_data/data/lg.min.geojson" download="" aria-label="Download Local Group and Milky Way halo as GeoJSON (minified) (71.9 kB)">GeoJSON (minified) · 71.9 kB</a>
+      <a class="btn btn-outline-info btn-sm mb-2" href="/celestial_data/data/lg.gpkg" download="" aria-label="Download Local Group and Milky Way halo as GeoPackage (147.5 kB)">GeoPackage · 147.5 kB</a>
+   </div>
+ </div>
+</section>
+</div>
+ <div class="col-12 col-lg-6 mb-3">
+<section class="card h-100 dataset-download-card" aria-labelledby="dataset-messier">
+ <div class="card-body d-flex flex-column">
+   <h4 class="h5" id="dataset-messier"><a href="/celestial_data/datasets/messier/">Messier catalog</a></h4>
+   <p>Positions and attributes of the 110 objects in the Messier catalog.</p>
+   <p class="small">110 features · Point</p>
+   <div class="mt-auto">
+      <a class="btn btn-outline-info btn-sm mb-2" href="/celestial_data/data/messier.geojson" download="" aria-label="Download Messier catalog as GeoJSON (28.7 kB)">GeoJSON · 28.7 kB</a>
+      <a class="btn btn-outline-info btn-sm mb-2" href="/celestial_data/data/messier.min.geojson" download="" aria-label="Download Messier catalog as GeoJSON (minified) (23.2 kB)">GeoJSON (minified) · 23.2 kB</a>
+      <a class="btn btn-outline-info btn-sm mb-2" href="/celestial_data/data/messier.gpkg" download="" aria-label="Download Messier catalog as GeoPackage (118.8 kB)">GeoPackage · 118.8 kB</a>
+   </div>
+ </div>
+</section>
+</div>
+</div>
+<h3>Stars</h3>
+<div class="row">
+ <div class="col-12 col-lg-6 mb-3">
+<section class="card h-100 dataset-download-card" aria-labelledby="dataset-stars.6">
+ <div class="card-body d-flex flex-column">
+   <h4 class="h5" id="dataset-stars.6"><a href="/celestial_data/datasets/stars.6/">Stars: magnitude 6</a></h4>
+   <p>Star positions and attributes with a nominal apparent magnitude limit of 6.</p>
+   <p class="small">5044 features · Point</p>
+   <div class="mt-auto">
+      <a class="btn btn-outline-info btn-sm mb-2" href="/celestial_data/data/stars.6.geojson" download="" aria-label="Download Stars: magnitude 6 as GeoJSON (989.6 kB)">GeoJSON · 989.6 kB</a>
+      <a class="btn btn-outline-info btn-sm mb-2" href="/celestial_data/data/stars.6.min.geojson" download="" aria-label="Download Stars: magnitude 6 as GeoJSON (minified) (769.2 kB)">GeoJSON (minified) · 769.2 kB</a>
+      <a class="btn btn-outline-info btn-sm mb-2" href="/celestial_data/data/stars.6.gpkg" download="" aria-label="Download Stars: magnitude 6 as GeoPackage (733.2 kB)">GeoPackage · 733.2 kB</a>
+   </div>
+ </div>
+</section>
+</div>
+ <div class="col-12 col-lg-6 mb-3">
+<section class="card h-100 dataset-download-card" aria-labelledby="dataset-stars.8">
+ <div class="card-body d-flex flex-column">
+   <h4 class="h5" id="dataset-stars.8"><a href="/celestial_data/datasets/stars.8/">Stars: magnitude 8</a></h4>
+   <p>Star positions and attributes with a nominal apparent magnitude limit of 8 in this repository.</p>
+   <p class="small">41411 features · Point</p>
+   <div class="mt-auto">
+      <a class="btn btn-outline-info btn-sm mb-2" href="/celestial_data/data/stars.8.geojson" download="" aria-label="Download Stars: magnitude 8 as GeoJSON (8.12 MB)">GeoJSON · 8.12 MB</a>
+      <a class="btn btn-outline-info btn-sm mb-2" href="/celestial_data/data/stars.8.min.geojson" download="" aria-label="Download Stars: magnitude 8 as GeoJSON (minified) (6.29 MB)">GeoJSON (minified) · 6.29 MB</a>
+      <a class="btn btn-outline-info btn-sm mb-2" href="/celestial_data/data/stars.8.gpkg" download="" aria-label="Download Stars: magnitude 8 as GeoPackage (5.56 MB)">GeoPackage · 5.56 MB</a>
+   </div>
+ </div>
+</section>
+</div>
+ <div class="col-12 col-lg-6 mb-3">
+<section class="card h-100 dataset-download-card" aria-labelledby="dataset-stars.14">
+ <div class="card-body d-flex flex-column">
+   <h4 class="h5" id="dataset-stars.14"><a href="/celestial_data/datasets/stars.14/">Stars: magnitude 14</a></h4>
+   <p>Star positions and attributes from the largest star catalog provided in this repository.</p>
+   <p class="small">118216 features · Point</p>
+   <div class="mt-auto">
+      <a class="btn btn-outline-info btn-sm mb-2" href="/celestial_data/data/stars.14.geojson" download="" aria-label="Download Stars: magnitude 14 as GeoJSON (23.24 MB)">GeoJSON · 23.24 MB</a>
+      <a class="btn btn-outline-info btn-sm mb-2" href="/celestial_data/data/stars.14.min.geojson" download="" aria-label="Download Stars: magnitude 14 as GeoJSON (minified) (17.94 MB)">GeoJSON (minified) · 17.94 MB</a>
+      <a class="btn btn-outline-info btn-sm mb-2" href="/celestial_data/data/stars.14.gpkg" download="" aria-label="Download Stars: magnitude 14 as GeoPackage (15.82 MB)">GeoPackage · 15.82 MB</a>
+   </div>
+ </div>
+</section>
+</div>
+</div>
+<h3>Name tables</h3>
+<div class="row">
+ <div class="col-12 col-lg-6 mb-3">
+<section class="card h-100 dataset-download-card" aria-labelledby="dataset-dsonames">
+ <div class="card-body d-flex flex-column">
+   <h4 class="h5" id="dataset-dsonames"><a href="/celestial_data/datasets/dsonames/">Deep-sky object names</a></h4>
+   <p>A complementary CSV table of deep-sky object identifiers and names in several languages.</p>
+   <p class="small">724 rows · name table</p>
+   <div class="mt-auto">
+      <a class="btn btn-outline-info btn-sm mb-2" href="/celestial_data/data/dsonames.csv" download="" aria-label="Download Deep-sky object names as CSV (196.6 kB)">CSV · 196.6 kB</a>
+   </div>
+ </div>
+</section>
+</div>
+ <div class="col-12 col-lg-6 mb-3">
+<section class="card h-100 dataset-download-card" aria-labelledby="dataset-dsonames.cn">
+ <div class="card-body d-flex flex-column">
+   <h4 class="h5" id="dataset-dsonames.cn"><a href="/celestial_data/datasets/dsonames.cn/">Chinese deep-sky object names</a></h4>
+   <p>A complementary CSV table of deep-sky object designations, Chinese names and translations.</p>
+   <p class="small">6 rows · name table</p>
+   <div class="mt-auto">
+      <a class="btn btn-outline-info btn-sm mb-2" href="/celestial_data/data/dsonames.cn.csv" download="" aria-label="Download Chinese deep-sky object names as CSV (0.3 kB)">CSV · 0.3 kB</a>
+   </div>
+ </div>
+</section>
+</div>
+ <div class="col-12 col-lg-6 mb-3">
+<section class="card h-100 dataset-download-card" aria-labelledby="dataset-starnames">
+ <div class="card-body d-flex flex-column">
+   <h4 class="h5" id="dataset-starnames"><a href="/celestial_data/datasets/starnames/">Star names</a></h4>
+   <p>A complementary CSV table of star names, catalog designations and translations, independent of the magnitude subsets.</p>
+   <p class="small">4869 rows · name table</p>
+   <div class="mt-auto">
+      <a class="btn btn-outline-info btn-sm mb-2" href="/celestial_data/data/starnames.csv" download="" aria-label="Download Star names as CSV (532.9 kB)">CSV · 532.9 kB</a>
+   </div>
+ </div>
+</section>
+</div>
+ <div class="col-12 col-lg-6 mb-3">
+<section class="card h-100 dataset-download-card" aria-labelledby="dataset-starnames.cn">
+ <div class="card-body d-flex flex-column">
+   <h4 class="h5" id="dataset-starnames.cn"><a href="/celestial_data/datasets/starnames.cn/">Chinese star names</a></h4>
+   <p>A complementary CSV table of star identifiers, Chinese names, English translations and pinyin.</p>
+   <p class="small">3056 rows · name table</p>
+   <div class="mt-auto">
+      <a class="btn btn-outline-info btn-sm mb-2" href="/celestial_data/data/starnames.cn.csv" download="" aria-label="Download Chinese star names as CSV (189.9 kB)">CSV · 189.9 kB</a>
+   </div>
+ </div>
+</section>
+</div>
+</div>
 <h2 id="description">Description</h2>
 <h3 id="asterisms">Asterisms</h3>
-<p><code class="language-plaintext highlighter-rouge">asterisms.&lt;data format&gt;</code> (<code class="language-plaintext highlighter-rouge">MULTILINESTRING</code>) with 65 objects the following attributes:</p>
+<p><code class="language-plaintext highlighter-rouge">asterisms.&lt;data format&gt;</code> (<code class="language-plaintext highlighter-rouge">MULTILINESTRING</code>) with 65 features and the following attributes:</p>
 <ul>
  <li>
    <p><strong>id</strong>: Name without spaces</p>
@@ -244,51 +582,55 @@ https://cdn.jsdelivr.net/gh/dieghernan/celestial_data@main/data/mw.min.geojson
    <p><strong>es</strong>: Proper name in Spanish</p>
  </li>
  <li>
-   <p><strong>p</strong>: Priority 1..6 (~Average brightness)</p>
+   <p><strong>p</strong>: Display priority (1–6), approximately related to brightness; 6
+denotes a guide line</p>
  </li>
  <li>
-   <p><strong>loc_lon</strong>, <strong>loc_lat</strong>: Center location of name string</p>
+   <p><strong>loc_lon</strong>, <strong>loc_lat</strong>: Label position in the same angular encoding as the
+geometry</p>
  </li>
 </ul>
 <h3 id="constellations">Constellations</h3>
 <p><code class="language-plaintext highlighter-rouge">constellations.&lt;data format&gt;</code> (<code class="language-plaintext highlighter-rouge">POINT</code>) with 89 objects. Additionally a
-<code class="language-plaintext highlighter-rouge">constellations.csv</code> file with the data (no coordinates) is also provided:</p>
+<code class="language-plaintext highlighter-rouge">constellations.csv</code> file with the attributes (no geometry) is also provided.
+The points are label positions, not constellation regions. The 89 records
+include separate entries for Serpens Caput and Serpens Cauda:</p>
 <ul>
  <li>
    <p><strong>id</strong>: 3-letter designator</p>
  </li>
  <li>
-   <p><strong>name</strong>: full IAU name</p>
+   <p><strong>name</strong>: Full IAU name</p>
  </li>
  <li>
    <p><strong>desig</strong>: 3-letter designator again</p>
  </li>
  <li>
-   <p><strong>gen</strong>: genitive for naming stars.</p>
+   <p><strong>gen</strong>: Genitive form used for naming stars</p>
  </li>
  <li>
    <p><strong>rank</strong>: 1-3 for differential name display by size/brightness</p>
  </li>
  <li>
-   <p><strong>en</strong>: English name … and names in 18 further languages</p>
+   <p><strong>en</strong>: English name; other fields provide names in additional languages</p>
  </li>
  <li>
-   <p><strong>display_ra</strong>, <strong>display_dec</strong>, <strong>display_scale</strong>: for single constellation
-display</p>
+   <p><strong>display_ra</strong>, <strong>display_dec</strong>, <strong>display_scale</strong>: View center and scale
+for displaying a single constellation; these are display parameters</p>
  </li>
 </ul>
 <h4 id="traditional-chinese-constellations">Traditional Chinese constellations</h4>
 <p><code class="language-plaintext highlighter-rouge">constellations.cn.&lt;data format&gt;</code> (<code class="language-plaintext highlighter-rouge">POINT</code>) with 312 objects. Additionally a
-<code class="language-plaintext highlighter-rouge">constellations.cn.csv</code> file with the data (no coordinates) is also provided:</p>
+<code class="language-plaintext highlighter-rouge">constellations.cn.csv</code> file with the attributes (no geometry) is also provided:</p>
 <ul>
- <li><strong>id:</strong> numerical id</li>
+ <li><strong>id</strong>: Numerical identifier</li>
  <li><strong>name</strong>: Chinese name</li>
  <li><strong>en</strong>: English translation</li>
- <li><strong>pinyin</strong>: pinyin transcription</li>
- <li><strong>desig</strong>: also Chinese name, for compatibility</li>
- <li><strong>rank</strong>: so far only 1; differential name display by size/brightness</li>
- <li><strong>display_ra</strong>, <strong>display_dec</strong>, <strong>display_scale</strong>: for single constellation
-display</li>
+ <li><strong>pinyin</strong>: Pinyin transcription</li>
+ <li><strong>desig</strong>: Chinese name repeated for compatibility</li>
+ <li><strong>rank</strong>: Display priority; currently 1 in this dataset</li>
+ <li><strong>display_ra</strong>, <strong>display_dec</strong>, <strong>display_scale</strong>: View center and scale
+for displaying a single constellation; these are display parameters</li>
 </ul>
 <h3 id="constellation-boundaries">Constellation boundaries</h3>
 <p><code class="language-plaintext highlighter-rouge">constellations.borders.&lt;data format&gt;</code> (<code class="language-plaintext highlighter-rouge">MULTILINESTRING</code>) with 257 objects.</p>
@@ -301,7 +643,7 @@ identifying the constellations surrounding the border.</li>
 <h4 id="traditional-chinese-constellations-1">Traditional Chinese constellations</h4>
 <p><code class="language-plaintext highlighter-rouge">constellations.borders.cn.&lt;data format&gt;</code> (<code class="language-plaintext highlighter-rouge">LINESTRING</code>) with 84 objects.</p>
 <ul>
- <li><strong>ids</strong>: border id.</li>
+ <li><strong>ids</strong>: Border identifier</li>
 </ul>
 <p><code class="language-plaintext highlighter-rouge">constellations.bounds.cn.&lt;data format&gt;</code> (<code class="language-plaintext highlighter-rouge">POLYGON</code>) with 28 objects. See
 <strong>Constellation lines</strong> for field descriptions.</p>
@@ -315,36 +657,41 @@ identifying the constellations surrounding the border.</li>
    <p><strong>rank</strong>: 1-3 for differential name display by size/brightness</p>
  </li>
  <li>
-   <p><strong>name</strong>: full IAU name</p>
+   <p><strong>name</strong>: Full IAU name</p>
  </li>
 </ul>
 <h4 id="traditional-chinese-constellations-2">Traditional Chinese constellations</h4>
 <p><code class="language-plaintext highlighter-rouge">constellations.lines.cn.&lt;data format&gt;</code> (<code class="language-plaintext highlighter-rouge">MULTILINESTRING</code>) with 255
-objects<sup id="fnref:readme-1"><a href="#fn:readme-1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup>:</p>
+features.</p>
+<p>Some records were removed from the
+<a href="https://github.com/ofrohn/d3-celestial/blob/master/data/constellations.lines.cn.json">original dataset</a>
+because their line geometry contained only one position. A GeoJSON
+LineString requires at least two positions; a MultiLineString contains
+arrays of such lines.</p>
 <ul>
- <li><strong>id:</strong> numerical id</li>
- <li><strong>rank</strong>: so far only 1; differential name display by size/brightness</li>
+ <li><strong>id</strong>: Numerical identifier</li>
+ <li><strong>rank</strong>: Display priority; currently 1 in this dataset</li>
  <li><strong>name</strong>: Chinese name</li>
  <li><strong>en</strong>: English translation</li>
 </ul>
 <h3 id="dsos">DSOs</h3>
-<p>Deep-sky objects (DSOs)</p>
-<h4 id="dsonames">DSOnames</h4>
+<p>Deep-sky objects (DSOs) include galaxies, nebulae and star clusters.</p>
+<h4 id="dso-names">DSO names</h4>
 <p><code class="language-plaintext highlighter-rouge">dsonames.csv</code> with 724 rows:</p>
 <ul>
  <li>
    <p><strong>id</strong>: Short designator</p>
  </li>
  <li>
-   <p><strong>name</strong>: Proper name… and names in several languages.</p>
+   <p><strong>name</strong>: Proper name; other fields provide translations</p>
  </li>
 </ul>
 <h4 id="traditional-chinese-dso-names">Traditional Chinese DSO names</h4>
-<p><code class="language-plaintext highlighter-rouge">dsonames.cn.&lt;data format&gt;</code> with 6 rows</p>
+<p><code class="language-plaintext highlighter-rouge">dsonames.cn.csv</code> with 6 rows:</p>
 <ul>
- <li><strong>id</strong>: Hipparcos number</li>
+ <li><strong>id</strong>: Deep-sky catalog designation, such as NGC 224</li>
  <li><strong>name</strong>: Chinese name</li>
- <li><strong>desig</strong>: IAU designation</li>
+ <li><strong>desig</strong>: Catalog designation</li>
  <li><strong>en</strong>: English translation</li>
  <li><strong>pinyin</strong>: Pinyin transcription</li>
 </ul>
@@ -353,7 +700,7 @@ objects<sup id="fnref:readme-1"><a href="#fn:readme-1" class="footnote" rel="foo
 <ul>
  <li>
    <p><code class="language-plaintext highlighter-rouge">dsos.6.&lt;data format&gt;</code>, <code class="language-plaintext highlighter-rouge">dsos.14.&lt;data format&gt;</code>, <code class="language-plaintext highlighter-rouge">dsos.20.&lt;data format&gt;</code>:
-the number indicates the limiting magnitude.</p>
+the number indicates the nominal limiting magnitude.</p>
  </li>
  <li>
    <p><code class="language-plaintext highlighter-rouge">dsos.bright.&lt;data format&gt;</code>: hand selected DSOs.</p>
@@ -365,7 +712,11 @@ the number indicates the limiting magnitude.</p>
    <p><code class="language-plaintext highlighter-rouge">messier.&lt;data format&gt;</code> Messier objects.</p>
  </li>
 </ul>
-<p>All objects are <code class="language-plaintext highlighter-rouge">POINT</code>:</p>
+<p>These catalogs contain <code class="language-plaintext highlighter-rouge">POINT</code> geometries. Attributes vary between catalogs;
+for example, Messier includes <code class="language-plaintext highlighter-rouge">alt</code> and <code class="language-plaintext highlighter-rouge">cl</code> but does not include <code class="language-plaintext highlighter-rouge">bv</code> or
+<code class="language-plaintext highlighter-rouge">morph</code>. Unknown magnitudes (<code class="language-plaintext highlighter-rouge">999</code>) must be excluded from numeric magnitude
+filters and brightness calculations.</p>
+<p>Common attributes include:</p>
 <ul>
  <li>
    <p><strong>id</strong>: Short designator</p>
@@ -385,7 +736,7 @@ pn: <em>(planetary nebula)</em>, snr: <em>(supernova remnant)</em>.</p>
    <p><strong>morph</strong>: Morphology classification depending on type</p>
  </li>
  <li>
-   <p><strong>mag</strong>: Apparent magnitude, 999 if n.a.</p>
+   <p><strong>mag</strong>: Apparent magnitude; 999 indicates an unavailable value</p>
  </li>
  <li>
    <p><strong>dim</strong>: Angular dimensions in arcminutes</p>
@@ -394,7 +745,7 @@ pn: <em>(planetary nebula)</em>, snr: <em>(supernova remnant)</em>.</p>
    <p><strong>bv</strong>: Blue-minus-visual color index (B−V)</p>
  </li>
  <li>
-   <p><strong>br</strong>: Relative brightness to magnitude 0, computed as \(100^{-1 * mag / 5}\)</p>
+   <p><strong>br</strong>: Relative brightness compared with magnitude 0, computed as \(100^{-1 * mag / 5}\)</p>
  </li>
  <li>
    <p><strong>name</strong>: Proper name</p>
@@ -416,44 +767,47 @@ Stream, Canis Major/Monoceros Stream, Fornax-Leo-Sculptor Great Circle)</p>
  </li>
 </ul>
 <h3 id="stars">Stars</h3>
-<h4 id="starnames">Starnames</h4>
-<p><code class="language-plaintext highlighter-rouge">starnames.csv</code>: Magnitude independent, all stars with a name/designation other
-than HIP/HD</p>
+<h4 id="star-names">Star names</h4>
+<p><code class="language-plaintext highlighter-rouge">starnames.csv</code> has 4869 rows of names and designations, independent of the
+star catalog magnitude subsets. Some name fields are empty or unavailable.</p>
 <ul>
  <li><strong>id</strong>: Hipparcos number</li>
- <li><strong>name</strong>: Proper name and names in 17 further languages</li>
- <li><strong>desig</strong>: Standard designation, first from list below</li>
- <li><strong>bayer</strong>: , Bayer</li>
- <li><strong>flam</strong>: , Flamsteed</li>
- <li><strong>var</strong>: , Variable star</li>
- <li><strong>gliese</strong>: , Gliese</li>
- <li><strong>hd</strong>: , Henry Draper</li>
+ <li><strong>name</strong>: Proper name; other fields provide translations</li>
+ <li><strong>desig</strong>: Preferred display designation from the available catalog names</li>
+ <li><strong>bayer</strong>: Bayer designation</li>
+ <li><strong>flam</strong>: Flamsteed designation</li>
+ <li><strong>var</strong>: Variable star designation</li>
+ <li><strong>gliese</strong>: Gliese designation</li>
+ <li><strong>hd</strong>: Henry Draper catalog designation</li>
  <li><strong>hip</strong>: Hipparcos number again</li>
 </ul>
 <h4 id="traditional-chinese-star-names">Traditional Chinese star names</h4>
-<p><code class="language-plaintext highlighter-rouge">starnames.cn.&lt;data format&gt;</code> with 3056 rows</p>
+<p><code class="language-plaintext highlighter-rouge">starnames.cn.csv</code> with 3056 rows:</p>
 <ul>
  <li><strong>id</strong>: Hipparcos number</li>
  <li><strong>name</strong>: Chinese name</li>
- <li><strong>desig</strong>: IAU designation</li>
+ <li><strong>desig</strong>: Catalog designation</li>
  <li><strong>en</strong>: English translation</li>
  <li><strong>pinyin</strong>: Pinyin transcription</li>
 </ul>
 <h4 id="stars-1">Stars</h4>
 <p><code class="language-plaintext highlighter-rouge">stars.6.&lt;data format&gt;</code>, <code class="language-plaintext highlighter-rouge">stars.8.&lt;data format&gt;</code>, <code class="language-plaintext highlighter-rouge">stars.14.&lt;data format&gt;</code>: the
-number indicates limit magnitude:</p>
+number indicates the nominal limiting magnitude. Smaller magnitudes indicate
+brighter objects. The local <code class="language-plaintext highlighter-rouge">stars.8</code> file reaches magnitude 8.0, although the
+upstream project describes its current counterpart as reaching 8.5. These
+subsets do not guarantee a complete survey of all objects to that magnitude:</p>
 <ul>
  <li>
-   <p><strong>id</strong>: Short designator</p>
+   <p><strong>id</strong>: Star identifier (Hipparcos number)</p>
  </li>
  <li>
-   <p><strong>mag</strong>: Apparent magnitude, 999 if n.a.</p>
+   <p><strong>mag</strong>: Apparent magnitude; 999 indicates an unavailable value</p>
  </li>
  <li>
-   <p><strong>bv</strong>: b-v color index.</p>
+   <p><strong>bv</strong>: Blue-minus-visual color index (B−V)</p>
  </li>
  <li>
-   <p><strong>br</strong>: Relative brightness to magnitude 0, computed as \(100^{-1 * mag / 5}\)</p>
+   <p><strong>br</strong>: Relative brightness compared with magnitude 0, computed as \(100^{-1 * mag / 5}\)</p>
  </li>
  <li>
    <p><strong>name</strong>: Proper name</p>
@@ -464,16 +818,6 @@ number indicates limit magnitude:</p>
 <ul>
  <li><strong>id</strong>: Milky Way outlines in 5 brightness steps (ol1-ol5).</li>
 </ul>
-<div class="footnotes" role="doc-endnotes">
- <ol>
-   <li id="fn:readme-1">
-     <p>Some constellations have been removed from the <a href="https://github.com/ofrohn/d3-celestial/blob/master/data/constellations.lines.cn.json">original dataset</a>
-since the <code class="language-plaintext highlighter-rouge">MULTILINESTRING</code> object consisted only on a single point, that
-does not conform with the GeoJSON standard (<code class="language-plaintext highlighter-rouge">POINT</code> as <code class="language-plaintext highlighter-rouge">MULTILINESTRING</code> are
-not valid). <a href="#fnref:readme-1" class="reversefootnote" role="doc-backlink">&uarr;</a></p>
-   </li>
- </ol>
-</div>
 </div>
 			</article>
 		</div>

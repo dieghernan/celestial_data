@@ -11,7 +11,7 @@ The original d3-celestial data is attributed to Olaf Frohn. Consult the reposito
 - [Project overview](https://dieghernan.github.io/celestial_data/): Scope and distribution options.
 - [README](https://raw.githubusercontent.com/dieghernan/celestial_data/main/README.md): Plain-text project description, file inventory and citation.
 - [Interactive preview](https://dieghernan.github.io/celestial_data/preview): Select datasets, inspect geographic geometry previews and download GeoJSON; large catalogs may take longer to load. This is not a location-based sky viewer.
-- [Data documentation](https://raw.githubusercontent.com/dieghernan/celestial_data/main/_pages/data.md): Dataset descriptions.
+- [Data documentation](https://raw.githubusercontent.com/dieghernan/celestial_data/main/_pages/data.md): Download catalog with cards, sizes, field descriptions and links to individual dataset pages with Dataset JSON-LD.
 - [Sources](https://raw.githubusercontent.com/dieghernan/celestial_data/main/_pages/sources.md): Original data sources and references.
 
 ## Data and citation
