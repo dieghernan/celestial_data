@@ -237,6 +237,16 @@ The following original data sources are cited by Frohn
     data](https://github.com/Stellarium/stellarium/tree/master/po/stellarium-skycultures)
     for star name translations
 
+## Webmentions
+
+After each successful deployment, the `Send outgoing Webmentions` workflow
+checks external links in published page content and sends mentions to
+destinations that advertise a compatible endpoint. It uses the HTML built from
+the repository root and stores delivery state in the `webmention-state` branch
+to avoid repeated submissions while the content is unchanged. Failed requests
+are retried on later runs. The workflow can also be run manually from GitHub
+Actions.
+
 ## References
 
 <div id="refs" class="references csl-bib-body hanging-indent">
