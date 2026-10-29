@@ -1,6 +1,7 @@
 {
   "posts": {
     "https://dieghernan.github.io/celestial_data/": {
+      "https://doi.org/10.32614/RJ-2018-009": "20af747d618ecc234c5b677fa4aefa8f9ea444373f0894a9d79c286cecf1933f",
       "https://github.com/ofrohn/d3-celestial/": "20af747d618ecc234c5b677fa4aefa8f9ea444373f0894a9d79c286cecf1933f",
       "https://opensource.org/licenses/BSD-3-Clause": "20af747d618ecc234c5b677fa4aefa8f9ea444373f0894a9d79c286cecf1933f"
     },
