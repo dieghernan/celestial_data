@@ -1,0 +1,3 @@
+# Keep downloadable text files byte-for-byte identical on Windows and Linux.
+data/*.geojson text eol=lf
+data/*.csv text eol=lf

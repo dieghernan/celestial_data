@@ -11,14 +11,14 @@
         "filename": "asterisms.geojson",
         "label": "GeoJSON",
         "mime": "application/geo+json",
-        "bytes": 22372,
-        "size": "22.4 kB"
+        "bytes": 22300,
+        "size": "22.3 kB"
       },
       {
         "filename": "asterisms.min.geojson",
         "label": "GeoJSON (minified)",
         "mime": "application/geo+json",
-        "bytes": 18474,
+        "bytes": 18473,
         "size": "18.5 kB"
       },
       {
@@ -42,14 +42,14 @@
         "filename": "mw.geojson",
         "label": "GeoJSON",
         "mime": "application/geo+json",
-        "bytes": 656860,
-        "size": "656.9 kB"
+        "bytes": 656848,
+        "size": "656.8 kB"
       },
       {
         "filename": "mw.min.geojson",
         "label": "GeoJSON (minified)",
         "mime": "application/geo+json",
-        "bytes": 532427,
+        "bytes": 532426,
         "size": "532.4 kB"
       },
       {
@@ -73,14 +73,14 @@
         "filename": "constellations.geojson",
         "label": "GeoJSON",
         "mime": "application/geo+json",
-        "bytes": 60408,
-        "size": "60.4 kB"
+        "bytes": 60312,
+        "size": "60.3 kB"
       },
       {
         "filename": "constellations.min.geojson",
         "label": "GeoJSON (minified)",
         "mime": "application/geo+json",
-        "bytes": 53263,
+        "bytes": 53262,
         "size": "53.3 kB"
       },
       {
@@ -94,8 +94,8 @@
         "filename": "constellations.csv",
         "label": "CSV",
         "mime": "text/csv",
-        "bytes": 25684,
-        "size": "25.7 kB"
+        "bytes": 25594,
+        "size": "25.6 kB"
       }
     ]
   },
@@ -111,14 +111,14 @@
         "filename": "constellations.cn.geojson",
         "label": "GeoJSON",
         "mime": "application/geo+json",
-        "bytes": 91022,
-        "size": "91.0 kB"
+        "bytes": 90703,
+        "size": "90.7 kB"
       },
       {
         "filename": "constellations.cn.min.geojson",
         "label": "GeoJSON (minified)",
         "mime": "application/geo+json",
-        "bytes": 79598,
+        "bytes": 79597,
         "size": "79.6 kB"
       },
       {
@@ -132,8 +132,8 @@
         "filename": "constellations.cn.csv",
         "label": "CSV",
         "mime": "text/csv",
-        "bytes": 21552,
-        "size": "21.6 kB"
+        "bytes": 21239,
+        "size": "21.2 kB"
       }
     ]
   },
@@ -149,14 +149,14 @@
         "filename": "constellations.borders.geojson",
         "label": "GeoJSON",
         "mime": "application/geo+json",
-        "bytes": 57288,
-        "size": "57.3 kB"
+        "bytes": 57024,
+        "size": "57.0 kB"
       },
       {
         "filename": "constellations.borders.min.geojson",
         "label": "GeoJSON (minified)",
         "mime": "application/geo+json",
-        "bytes": 47546,
+        "bytes": 47545,
         "size": "47.5 kB"
       },
       {
@@ -180,14 +180,14 @@
         "filename": "constellations.borders.cn.geojson",
         "label": "GeoJSON",
         "mime": "application/geo+json",
-        "bytes": 13577,
-        "size": "13.6 kB"
+        "bytes": 13486,
+        "size": "13.5 kB"
       },
       {
         "filename": "constellations.borders.cn.min.geojson",
         "label": "GeoJSON (minified)",
         "mime": "application/geo+json",
-        "bytes": 10921,
+        "bytes": 10920,
         "size": "10.9 kB"
       },
       {
@@ -211,14 +211,14 @@
         "filename": "constellations.bounds.geojson",
         "label": "GeoJSON",
         "mime": "application/geo+json",
-        "bytes": 53720,
-        "size": "53.7 kB"
+        "bytes": 53624,
+        "size": "53.6 kB"
       },
       {
         "filename": "constellations.bounds.min.geojson",
         "label": "GeoJSON (minified)",
         "mime": "application/geo+json",
-        "bytes": 43782,
+        "bytes": 43781,
         "size": "43.8 kB"
       },
       {
@@ -242,14 +242,14 @@
         "filename": "constellations.bounds.cn.geojson",
         "label": "GeoJSON",
         "mime": "application/geo+json",
-        "bytes": 8525,
+        "bytes": 8490,
         "size": "8.5 kB"
       },
       {
         "filename": "constellations.bounds.cn.min.geojson",
         "label": "GeoJSON (minified)",
         "mime": "application/geo+json",
-        "bytes": 6709,
+        "bytes": 6708,
         "size": "6.7 kB"
       },
       {
@@ -273,14 +273,14 @@
         "filename": "constellations.lines.geojson",
         "label": "GeoJSON",
         "mime": "application/geo+json",
-        "bytes": 35144,
-        "size": "35.1 kB"
+        "bytes": 35048,
+        "size": "35.0 kB"
       },
       {
         "filename": "constellations.lines.min.geojson",
         "label": "GeoJSON (minified)",
         "mime": "application/geo+json",
-        "bytes": 28934,
+        "bytes": 28933,
         "size": "28.9 kB"
       },
       {
@@ -304,14 +304,14 @@
         "filename": "constellations.lines.cn.geojson",
         "label": "GeoJSON",
         "mime": "application/geo+json",
-        "bytes": 81951,
-        "size": "82.0 kB"
+        "bytes": 81689,
+        "size": "81.7 kB"
       },
       {
         "filename": "constellations.lines.cn.min.geojson",
         "label": "GeoJSON (minified)",
         "mime": "application/geo+json",
-        "bytes": 67282,
+        "bytes": 67281,
         "size": "67.3 kB"
       },
       {
@@ -335,14 +335,14 @@
         "filename": "dsos.6.geojson",
         "label": "GeoJSON",
         "mime": "application/geo+json",
-        "bytes": 849909,
-        "size": "849.9 kB"
+        "bytes": 846593,
+        "size": "846.6 kB"
       },
       {
         "filename": "dsos.6.min.geojson",
         "label": "GeoJSON (minified)",
         "mime": "application/geo+json",
-        "bytes": 696467,
+        "bytes": 696466,
         "size": "696.5 kB"
       },
       {
@@ -366,14 +366,14 @@
         "filename": "dsos.14.geojson",
         "label": "GeoJSON",
         "mime": "application/geo+json",
-        "bytes": 4219894,
-        "size": "4.22 MB"
+        "bytes": 4204080,
+        "size": "4.20 MB"
       },
       {
         "filename": "dsos.14.min.geojson",
         "label": "GeoJSON (minified)",
         "mime": "application/geo+json",
-        "bytes": 3434518,
+        "bytes": 3434517,
         "size": "3.43 MB"
       },
       {
@@ -397,14 +397,14 @@
         "filename": "dsos.20.geojson",
         "label": "GeoJSON",
         "mime": "application/geo+json",
-        "bytes": 23915302,
-        "size": "23.92 MB"
+        "bytes": 23825427,
+        "size": "23.83 MB"
       },
       {
         "filename": "dsos.20.min.geojson",
         "label": "GeoJSON (minified)",
         "mime": "application/geo+json",
-        "bytes": 19262677,
+        "bytes": 19262676,
         "size": "19.26 MB"
       },
       {
@@ -428,14 +428,14 @@
         "filename": "dsos.bright.geojson",
         "label": "GeoJSON",
         "mime": "application/geo+json",
-        "bytes": 8742,
+        "bytes": 8703,
         "size": "8.7 kB"
       },
       {
         "filename": "dsos.bright.min.geojson",
         "label": "GeoJSON (minified)",
         "mime": "application/geo+json",
-        "bytes": 7135,
+        "bytes": 7134,
         "size": "7.1 kB"
       },
       {
@@ -459,14 +459,14 @@
         "filename": "lg.geojson",
         "label": "GeoJSON",
         "mime": "application/geo+json",
-        "bytes": 88280,
-        "size": "88.3 kB"
+        "bytes": 87958,
+        "size": "88.0 kB"
       },
       {
         "filename": "lg.min.geojson",
         "label": "GeoJSON (minified)",
         "mime": "application/geo+json",
-        "bytes": 71905,
+        "bytes": 71904,
         "size": "71.9 kB"
       },
       {
@@ -490,14 +490,14 @@
         "filename": "messier.geojson",
         "label": "GeoJSON",
         "mime": "application/geo+json",
-        "bytes": 28834,
-        "size": "28.8 kB"
+        "bytes": 28717,
+        "size": "28.7 kB"
       },
       {
         "filename": "messier.min.geojson",
         "label": "GeoJSON (minified)",
         "mime": "application/geo+json",
-        "bytes": 23154,
+        "bytes": 23153,
         "size": "23.2 kB"
       },
       {
@@ -521,14 +521,14 @@
         "filename": "stars.6.geojson",
         "label": "GeoJSON",
         "mime": "application/geo+json",
-        "bytes": 994649,
-        "size": "994.6 kB"
+        "bytes": 989598,
+        "size": "989.6 kB"
       },
       {
         "filename": "stars.6.min.geojson",
         "label": "GeoJSON (minified)",
         "mime": "application/geo+json",
-        "bytes": 769236,
+        "bytes": 769235,
         "size": "769.2 kB"
       },
       {
@@ -552,14 +552,14 @@
         "filename": "stars.8.geojson",
         "label": "GeoJSON",
         "mime": "application/geo+json",
-        "bytes": 8162993,
-        "size": "8.16 MB"
+        "bytes": 8121575,
+        "size": "8.12 MB"
       },
       {
         "filename": "stars.8.min.geojson",
         "label": "GeoJSON (minified)",
         "mime": "application/geo+json",
-        "bytes": 6288475,
+        "bytes": 6288474,
         "size": "6.29 MB"
       },
       {
@@ -583,14 +583,14 @@
         "filename": "stars.14.geojson",
         "label": "GeoJSON",
         "mime": "application/geo+json",
-        "bytes": 23355140,
-        "size": "23.36 MB"
+        "bytes": 23236917,
+        "size": "23.24 MB"
       },
       {
         "filename": "stars.14.min.geojson",
         "label": "GeoJSON (minified)",
         "mime": "application/geo+json",
-        "bytes": 17939097,
+        "bytes": 17939096,
         "size": "17.94 MB"
       },
       {
@@ -614,8 +614,8 @@
         "filename": "dsonames.csv",
         "label": "CSV",
         "mime": "text/csv",
-        "bytes": 197374,
-        "size": "197.4 kB"
+        "bytes": 196649,
+        "size": "196.6 kB"
       }
     ]
   },
@@ -631,7 +631,7 @@
         "filename": "dsonames.cn.csv",
         "label": "CSV",
         "mime": "text/csv",
-        "bytes": 342,
+        "bytes": 335,
         "size": "0.3 kB"
       }
     ]
@@ -648,8 +648,8 @@
         "filename": "starnames.csv",
         "label": "CSV",
         "mime": "text/csv",
-        "bytes": 537790,
-        "size": "537.8 kB"
+        "bytes": 532920,
+        "size": "532.9 kB"
       }
     ]
   },
@@ -665,8 +665,8 @@
         "filename": "starnames.cn.csv",
         "label": "CSV",
         "mime": "text/csv",
-        "bytes": 192994,
-        "size": "193.0 kB"
+        "bytes": 189937,
+        "size": "189.9 kB"
       }
     ]
   }
