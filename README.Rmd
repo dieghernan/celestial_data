@@ -3,8 +3,8 @@ output: github_document
 bibliography: references.bib
 link-citations: yes
 nocite: '@*'
-editor_options: 
-  markdown: 
+editor_options:
+  markdown:
     wrap: 80
 ---
 
@@ -16,24 +16,30 @@ editor_options:
 This repository contains several datasets in GeoJSON and GeoPackage format of
 celestial objects for the J2000 epoch.
 
-The original files were provided on the [d3-celestial
-plugin](https://github.com/ofrohn/d3-celestial/) [@frohn2015] under [BSD
-3-Clause](https://opensource.org/licenses/BSD-3-Clause). The datasets in this
-repository contain the same data provided by [d3-celestial
-plugin](https://github.com/ofrohn/d3-celestial/) processed with the **R**
-package **sf** [@pebesma2018] to validate their geometries:
+The source files come from [d3-celestial](https://github.com/ofrohn/d3-celestial/)
+[@frohn2015]
+and are distributed under the [BSD 3-Clause license](https://opensource.org/licenses/BSD-3-Clause).
+They were processed with **R** and **sf** [@pebesma2018] to repair and validate
+geometries.
+The conversion preserves the source attributes where possible, but some
+invalid constellation lines were removed.
 
--   The spatial data objects are bounded to $[-180, -90, 180, 90]$.
+Coordinates describe the J2000 celestial reference, encoded as longitude-like
+and latitude-like angles for GIS software. Assigning EPSG:4326 is a storage
+convention here: these are not terrestrial WGS84 locations. J2000 does not
+indicate when the files were downloaded or updated, and these static catalogs
+do not calculate the current sky for an observer.
 
--   The datasets use a geometry representation in
-    [EPSG:4326](https://epsg.io/4326) (WGS84).
-
--   All geometries are valid according to
-    [ST_IsValid](https://postgis.net/docs/ST_IsValid.html) (GEOS **3.9.3**).
+Geometry validation was performed with GEOS 3.9.3. It checks geometric validity,
+not the astronomical accuracy or completeness of the source catalogs.
 
 ## Distribution
 
-The data can be accessed from several download URLs:
+The same files are available through the website, GitHub and jsDelivr.
+These URLs follow the main branch and may differ from an archived release
+identified by the collection DOI.
+
+The following example downloads the minified Milky Way dataset:
 
 ``` html
 
@@ -72,8 +78,9 @@ A BibTeX entry:
 ## Data
 
 Data is provided in GeoJSON (`*.geojson`) and GeoPackage (`*.gpkg`) format.
-Additionally, for GeoJSON formats a minified version (`*.min.geojson`) is also
-provided.
+Minified GeoJSON (`*.min.geojson`) removes whitespace without simplifying
+geometries. Complementary CSV files contain names and attributes without
+geometry.
 
 The data source can be found on
 <https://github.com/dieghernan/celestial_data/tree/main/data>.
@@ -148,7 +155,12 @@ The data source can be found on
 
 </details>
 
-See additional details on <https://dieghernan.github.io/celestial_data/data>
+Browse download cards, file sizes and dataset descriptions at
+<https://dieghernan.github.io/celestial_data/data>.
+
+Maintainers can refresh file sizes, feature counts and dataset pages with
+`py scripts/build_catalog.py` after updating the data. The generator keeps the
+download catalog and structured metadata consistent.
 
 ## Original data sources
 
@@ -172,15 +184,13 @@ The following original data sources are cited by @frohn2015:
     -   Davenhall, A. C., and S. K. Leggett. 1989. "Catalogue of Constellation
         Boundary Data." <http://vizier.cfa.harvard.edu/viz-bin/Cat?VI/49>.
 
--   Traditional Chinese Constellations & Stars: `constellations.cn.*`,
+-   Traditional Chinese constellations and stars: `constellations.cn.*`,
     `constellations.bounds.cn.*`, `constellations.lines.cn.*`, `starnames.cn.*`:
 
     -   [Stellarium skycultures
         data](https://github.com/Stellarium/stellarium/tree/master/skycultures/chinese)
 
-<!-- FIXME: Confirm the source catalog for dsos.20.* before adding it here. -->
-
--   `dsos.6.*`, `dsos.14.*`:
+-   `dsos.6.*`, `dsos.14.*`, `dsos.20.*`:
 
     -   [Saguaro Astronomy Club Database version
         8.1](http://www.saguaroastro.org/sac-downloads/)

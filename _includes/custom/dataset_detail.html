@@ -1,0 +1,7 @@
+{% assign dataset = site.data.datasets | where: 'id', page.dataset_id | first %}
+{% include custom/download_card.html dataset=dataset heading='h2' %}
+
+<p class="mt-3">{% if dataset.geometry %}These are J2000 celestial coordinates encoded as geographic geometries for use in GIS software. They do not describe locations on Earth or the current sky above an observer. Minified GeoJSON removes whitespace; it does not simplify geometry.{% else %}This CSV contains names and identifiers without geometry. Use the identifiers to relate names to the relevant catalogs, checking their catalog conventions first.{% endif %}</p>
+<p>Derived from <a href="https://github.com/ofrohn/d3-celestial/">d3-celestial</a> by Olaf Frohn and processed with <strong>R</strong> and <strong>sf</strong> by Diego Hernangómez. Distributed under the <a href="https://opensource.org/licenses/BSD-3-Clause">BSD 3-Clause license</a>.</p>
+<p>The DOI <a href="https://doi.org/10.5281/zenodo.7561601">10.5281/zenodo.7561601</a> identifies the Celestial Data collection. Downloads here follow the repository's main branch and may differ from an archived release.</p>
+<p><a href="{{ '/data' | relative_url }}">All downloads and field descriptions</a> · <a href="{{ '/sources' | relative_url }}">Data sources</a> · <a href="{{ '/preview' | relative_url }}">Interactive preview of selected datasets</a></p>

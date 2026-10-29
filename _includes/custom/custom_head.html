@@ -1,4 +1,28 @@
 <link rel="describedby" type="text/plain" href="{{ '/llms.txt' | relative_url }}">
+{% if page.dataset_id %}
+{% include custom/dataset_jsonld.html %}
+{% elsif page.dataset_collection %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "@id": {{ '/' | absolute_url | append: '#collection' | jsonify }},
+  "url": {{ '/' | absolute_url | jsonify }},
+  "name": "Celestial Data",
+  "description": "Celestial datasets for the J2000 epoch derived from d3-celestial, with GeoJSON and GeoPackage geometries and complementary CSV name tables.",
+  "identifier": "https://doi.org/10.5281/zenodo.7561601",
+  "license": "https://opensource.org/licenses/BSD-3-Clause",
+  "isAccessibleForFree": true,
+  "creator": [{"@type": "Person", "name": "Olaf Frohn"}, {"@type": "Person", "name": "Diego Hernangómez", "identifier": "https://orcid.org/0000-0001-8457-4658"}],
+  "isBasedOn": "https://github.com/ofrohn/d3-celestial/",
+  "hasPart": [
+    {% for dataset in site.data.datasets %}
+    {"@type": "Dataset", "@id": {{ '/datasets/' | append: dataset.id | append: '/#dataset' | absolute_url | jsonify }}, "name": {{ dataset.name | jsonify }}, "url": {{ '/datasets/' | append: dataset.id | append: '/' | absolute_url | jsonify }}}{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ]
+}
+</script>
+{% endif %}
 <script defer src="https://cloud.umami.is/script.js" data-website-id="c23b83bb-5f33-4256-a5b5-fbc59c1c7ae8" data-domains="dieghernan.github.io"></script>
 <!-- Author identity and incoming Webmention discovery -->
 <link rel="author" href="https://dieghernan.github.io/">

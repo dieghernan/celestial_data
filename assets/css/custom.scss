@@ -19,3 +19,15 @@ img {
     max-height: 38rem;
     background: #24292f;
 }
+
+.dataset-download-card .btn {
+    color: #8ecfff;
+    border-color: #8ecfff;
+}
+
+.dataset-download-card .btn:hover,
+.dataset-download-card .btn:focus {
+    color: #24292f;
+    background-color: #8ecfff;
+    border-color: #8ecfff;
+}

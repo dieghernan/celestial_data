@@ -4,8 +4,8 @@ permalink: /sources
 excerpt: Description of data sources
 ---
 
-The following original data sources are cited by ([Frohn
-2015](#ref-frohn2015)):
+The following original data sources are cited by [Frohn
+2015](#ref-frohn2015):
 
 - `asterisms.*`:
 
@@ -26,16 +26,14 @@ The following original data sources are cited by ([Frohn
     Constellation Boundary Data.”
     <http://vizier.cfa.harvard.edu/viz-bin/Cat?VI/49>.
 
-- Traditional Chinese Constellations & Stars: `constellations.cn.*`,
+- Traditional Chinese constellations and stars: `constellations.cn.*`,
   `constellations.bounds.cn.*`, `constellations.lines.cn.*`,
   `starnames.cn.*`:
 
   - [Stellarium skycultures
     data](https://github.com/Stellarium/stellarium/tree/master/skycultures/chinese)
 
-<!-- FIXME: Confirm the source catalog for dsos.20.* before adding it here. -->
-
-- `dsos.6.*`, `dsos.14.*`:
+- `dsos.6.*`, `dsos.14.*`, `dsos.20.*`:
 
   - [Saguaro Astronomy Club Database version
     8.1](http://www.saguaroastro.org/sac-downloads/)
@@ -90,8 +88,8 @@ Compilation.” *Astronomy Letters* 38 (5): 331–46.
 
 <div id="ref-butler_geojson_2016" class="csl-entry" markdown=1>
 
-Butler, H., M. Daly, A. Doyle, S. Gillies, S. Hagen, and T. Schaub. 2016. 
-"The GeoJSON Format."" RFC7946. RFC Editor. <https://doi.org/10.17487/RFC7946>.
+Butler, H., M. Daly, A. Doyle, S. Gillies, S. Hagen, and T. Schaub. 2016.
+"The GeoJSON Format." RFC7946. RFC Editor. <https://doi.org/10.17487/RFC7946>.
 
 </div>
 
@@ -129,7 +127,7 @@ Catalog*, IV/27A.
 <div id="ref-pebesma2018" class="csl-entry" markdown=1>
 
 Pebesma, Edzer. 2018. “Simple Features for R: Standardized Support for
-Spatial Vector Data.” *The R Journal* 10 (1): 439446.
+Spatial Vector Data.” *The R Journal* 10 (1): 439–446.
 <https://doi.org/10.32614/RJ-2018-009>.
 
 </div>

@@ -1,0 +1,13 @@
+{% assign heading = include.heading | default: 'h4' %}
+<section class="card h-100 dataset-download-card" aria-labelledby="dataset-{{ include.dataset.id }}">
+  <div class="card-body d-flex flex-column">
+    <{{ heading }} class="h5" id="dataset-{{ include.dataset.id }}"><a href="{{ '/datasets/' | append: include.dataset.id | append: '/' | relative_url }}">{{ include.dataset.name | escape }}</a></{{ heading }}>
+    <p>{{ include.dataset.description | escape }}</p>
+    <p class="small">{{ include.dataset.count }} {% if include.dataset.geometry %}features · {{ include.dataset.geometry }}{% else %}rows · name table{% endif %}</p>
+    <div class="mt-auto">
+      {% for file in include.dataset.distributions %}
+      <a class="btn btn-outline-info btn-sm mb-2" href="{{ '/data/' | append: file.filename | relative_url }}" download aria-label="Download {{ include.dataset.name | escape }} as {{ file.label }} ({{ file.size }})">{{ file.label }} · {{ file.size }}</a>
+      {% endfor %}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,673 @@
+[
+  {
+    "id": "asterisms",
+    "name": "Asterisms",
+    "group": "Asterisms and Milky Way",
+    "description": "Line patterns representing 65 asterisms, with names and label positions.",
+    "count": 65,
+    "geometry": "MultiLineString",
+    "distributions": [
+      {
+        "filename": "asterisms.geojson",
+        "label": "GeoJSON",
+        "mime": "application/geo+json",
+        "bytes": 22372,
+        "size": "22.4 kB"
+      },
+      {
+        "filename": "asterisms.min.geojson",
+        "label": "GeoJSON (minified)",
+        "mime": "application/geo+json",
+        "bytes": 18474,
+        "size": "18.5 kB"
+      },
+      {
+        "filename": "asterisms.gpkg",
+        "label": "GeoPackage",
+        "mime": "application/geopackage+sqlite3",
+        "bytes": 114688,
+        "size": "114.7 kB"
+      }
+    ]
+  },
+  {
+    "id": "mw",
+    "name": "Milky Way",
+    "group": "Asterisms and Milky Way",
+    "description": "Milky Way outlines represented as polygons in five brightness steps.",
+    "count": 5,
+    "geometry": "MultiPolygon",
+    "distributions": [
+      {
+        "filename": "mw.geojson",
+        "label": "GeoJSON",
+        "mime": "application/geo+json",
+        "bytes": 656860,
+        "size": "656.9 kB"
+      },
+      {
+        "filename": "mw.min.geojson",
+        "label": "GeoJSON (minified)",
+        "mime": "application/geo+json",
+        "bytes": 532427,
+        "size": "532.4 kB"
+      },
+      {
+        "filename": "mw.gpkg",
+        "label": "GeoPackage",
+        "mime": "application/geopackage+sqlite3",
+        "bytes": 593920,
+        "size": "593.9 kB"
+      }
+    ]
+  },
+  {
+    "id": "constellations",
+    "name": "Constellation labels",
+    "group": "Constellations",
+    "description": "Label positions and multilingual names for constellation map displays.",
+    "count": 89,
+    "geometry": "Point",
+    "distributions": [
+      {
+        "filename": "constellations.geojson",
+        "label": "GeoJSON",
+        "mime": "application/geo+json",
+        "bytes": 60408,
+        "size": "60.4 kB"
+      },
+      {
+        "filename": "constellations.min.geojson",
+        "label": "GeoJSON (minified)",
+        "mime": "application/geo+json",
+        "bytes": 53263,
+        "size": "53.3 kB"
+      },
+      {
+        "filename": "constellations.gpkg",
+        "label": "GeoPackage",
+        "mime": "application/geopackage+sqlite3",
+        "bytes": 131072,
+        "size": "131.1 kB"
+      },
+      {
+        "filename": "constellations.csv",
+        "label": "CSV",
+        "mime": "text/csv",
+        "bytes": 25684,
+        "size": "25.7 kB"
+      }
+    ]
+  },
+  {
+    "id": "constellations.cn",
+    "name": "Chinese constellation labels",
+    "group": "Constellations",
+    "description": "Label positions, Chinese names and English translations for traditional Chinese constellations.",
+    "count": 312,
+    "geometry": "Point",
+    "distributions": [
+      {
+        "filename": "constellations.cn.geojson",
+        "label": "GeoJSON",
+        "mime": "application/geo+json",
+        "bytes": 91022,
+        "size": "91.0 kB"
+      },
+      {
+        "filename": "constellations.cn.min.geojson",
+        "label": "GeoJSON (minified)",
+        "mime": "application/geo+json",
+        "bytes": 79598,
+        "size": "79.6 kB"
+      },
+      {
+        "filename": "constellations.cn.gpkg",
+        "label": "GeoPackage",
+        "mime": "application/geopackage+sqlite3",
+        "bytes": 151552,
+        "size": "151.6 kB"
+      },
+      {
+        "filename": "constellations.cn.csv",
+        "label": "CSV",
+        "mime": "text/csv",
+        "bytes": 21552,
+        "size": "21.6 kB"
+      }
+    ]
+  },
+  {
+    "id": "constellations.borders",
+    "name": "Constellation borders",
+    "group": "Constellations",
+    "description": "Line geometries tracing the borders between constellations.",
+    "count": 257,
+    "geometry": "MultiLineString",
+    "distributions": [
+      {
+        "filename": "constellations.borders.geojson",
+        "label": "GeoJSON",
+        "mime": "application/geo+json",
+        "bytes": 57288,
+        "size": "57.3 kB"
+      },
+      {
+        "filename": "constellations.borders.min.geojson",
+        "label": "GeoJSON (minified)",
+        "mime": "application/geo+json",
+        "bytes": 47546,
+        "size": "47.5 kB"
+      },
+      {
+        "filename": "constellations.borders.gpkg",
+        "label": "GeoPackage",
+        "mime": "application/geopackage+sqlite3",
+        "bytes": 151552,
+        "size": "151.6 kB"
+      }
+    ]
+  },
+  {
+    "id": "constellations.borders.cn",
+    "name": "Chinese constellation borders",
+    "group": "Constellations",
+    "description": "Line geometries tracing borders in the traditional Chinese constellation data.",
+    "count": 84,
+    "geometry": "LineString",
+    "distributions": [
+      {
+        "filename": "constellations.borders.cn.geojson",
+        "label": "GeoJSON",
+        "mime": "application/geo+json",
+        "bytes": 13577,
+        "size": "13.6 kB"
+      },
+      {
+        "filename": "constellations.borders.cn.min.geojson",
+        "label": "GeoJSON (minified)",
+        "mime": "application/geo+json",
+        "bytes": 10921,
+        "size": "10.9 kB"
+      },
+      {
+        "filename": "constellations.borders.cn.gpkg",
+        "label": "GeoPackage",
+        "mime": "application/geopackage+sqlite3",
+        "bytes": 118784,
+        "size": "118.8 kB"
+      }
+    ]
+  },
+  {
+    "id": "constellations.bounds",
+    "name": "Constellation regions",
+    "group": "Constellations",
+    "description": "Polygon geometries representing constellation regions for map displays.",
+    "count": 89,
+    "geometry": "MultiPolygon",
+    "distributions": [
+      {
+        "filename": "constellations.bounds.geojson",
+        "label": "GeoJSON",
+        "mime": "application/geo+json",
+        "bytes": 53720,
+        "size": "53.7 kB"
+      },
+      {
+        "filename": "constellations.bounds.min.geojson",
+        "label": "GeoJSON (minified)",
+        "mime": "application/geo+json",
+        "bytes": 43782,
+        "size": "43.8 kB"
+      },
+      {
+        "filename": "constellations.bounds.gpkg",
+        "label": "GeoPackage",
+        "mime": "application/geopackage+sqlite3",
+        "bytes": 147456,
+        "size": "147.5 kB"
+      }
+    ]
+  },
+  {
+    "id": "constellations.bounds.cn",
+    "name": "Chinese constellation regions",
+    "group": "Constellations",
+    "description": "Polygon geometries representing regions in the traditional Chinese constellation data.",
+    "count": 28,
+    "geometry": "Polygon",
+    "distributions": [
+      {
+        "filename": "constellations.bounds.cn.geojson",
+        "label": "GeoJSON",
+        "mime": "application/geo+json",
+        "bytes": 8525,
+        "size": "8.5 kB"
+      },
+      {
+        "filename": "constellations.bounds.cn.min.geojson",
+        "label": "GeoJSON (minified)",
+        "mime": "application/geo+json",
+        "bytes": 6709,
+        "size": "6.7 kB"
+      },
+      {
+        "filename": "constellations.bounds.cn.gpkg",
+        "label": "GeoPackage",
+        "mime": "application/geopackage+sqlite3",
+        "bytes": 106496,
+        "size": "106.5 kB"
+      }
+    ]
+  },
+  {
+    "id": "constellations.lines",
+    "name": "Constellation lines",
+    "group": "Constellations",
+    "description": "Line patterns connecting stars to illustrate constellation figures.",
+    "count": 89,
+    "geometry": "MultiLineString",
+    "distributions": [
+      {
+        "filename": "constellations.lines.geojson",
+        "label": "GeoJSON",
+        "mime": "application/geo+json",
+        "bytes": 35144,
+        "size": "35.1 kB"
+      },
+      {
+        "filename": "constellations.lines.min.geojson",
+        "label": "GeoJSON (minified)",
+        "mime": "application/geo+json",
+        "bytes": 28934,
+        "size": "28.9 kB"
+      },
+      {
+        "filename": "constellations.lines.gpkg",
+        "label": "GeoPackage",
+        "mime": "application/geopackage+sqlite3",
+        "bytes": 131072,
+        "size": "131.1 kB"
+      }
+    ]
+  },
+  {
+    "id": "constellations.lines.cn",
+    "name": "Chinese constellation lines",
+    "group": "Constellations",
+    "description": "Line patterns illustrating traditional Chinese constellation figures; degenerate source lines were removed.",
+    "count": 255,
+    "geometry": "MultiLineString",
+    "distributions": [
+      {
+        "filename": "constellations.lines.cn.geojson",
+        "label": "GeoJSON",
+        "mime": "application/geo+json",
+        "bytes": 81951,
+        "size": "82.0 kB"
+      },
+      {
+        "filename": "constellations.lines.cn.min.geojson",
+        "label": "GeoJSON (minified)",
+        "mime": "application/geo+json",
+        "bytes": 67282,
+        "size": "67.3 kB"
+      },
+      {
+        "filename": "constellations.lines.cn.gpkg",
+        "label": "GeoPackage",
+        "mime": "application/geopackage+sqlite3",
+        "bytes": 163840,
+        "size": "163.8 kB"
+      }
+    ]
+  },
+  {
+    "id": "dsos.6",
+    "name": "Deep-sky objects: magnitude 6",
+    "group": "Deep-sky objects",
+    "description": "Deep-sky object positions with a nominal magnitude limit of 6, including entries with unknown magnitudes.",
+    "count": 3309,
+    "geometry": "Point",
+    "distributions": [
+      {
+        "filename": "dsos.6.geojson",
+        "label": "GeoJSON",
+        "mime": "application/geo+json",
+        "bytes": 849909,
+        "size": "849.9 kB"
+      },
+      {
+        "filename": "dsos.6.min.geojson",
+        "label": "GeoJSON (minified)",
+        "mime": "application/geo+json",
+        "bytes": 696467,
+        "size": "696.5 kB"
+      },
+      {
+        "filename": "dsos.6.gpkg",
+        "label": "GeoPackage",
+        "mime": "application/geopackage+sqlite3",
+        "bytes": 540672,
+        "size": "540.7 kB"
+      }
+    ]
+  },
+  {
+    "id": "dsos.14",
+    "name": "Deep-sky objects: magnitude 14",
+    "group": "Deep-sky objects",
+    "description": "Deep-sky object positions with a nominal magnitude limit of 14, including entries with unknown magnitudes.",
+    "count": 15807,
+    "geometry": "Point",
+    "distributions": [
+      {
+        "filename": "dsos.14.geojson",
+        "label": "GeoJSON",
+        "mime": "application/geo+json",
+        "bytes": 4219894,
+        "size": "4.22 MB"
+      },
+      {
+        "filename": "dsos.14.min.geojson",
+        "label": "GeoJSON (minified)",
+        "mime": "application/geo+json",
+        "bytes": 3434518,
+        "size": "3.43 MB"
+      },
+      {
+        "filename": "dsos.14.gpkg",
+        "label": "GeoPackage",
+        "mime": "application/geopackage+sqlite3",
+        "bytes": 2326528,
+        "size": "2.33 MB"
+      }
+    ]
+  },
+  {
+    "id": "dsos.20",
+    "name": "Deep-sky objects: magnitude 20",
+    "group": "Deep-sky objects",
+    "description": "Deep-sky object positions with a nominal magnitude limit of 20, including entries with unknown magnitudes.",
+    "count": 89868,
+    "geometry": "Point",
+    "distributions": [
+      {
+        "filename": "dsos.20.geojson",
+        "label": "GeoJSON",
+        "mime": "application/geo+json",
+        "bytes": 23915302,
+        "size": "23.92 MB"
+      },
+      {
+        "filename": "dsos.20.min.geojson",
+        "label": "GeoJSON (minified)",
+        "mime": "application/geo+json",
+        "bytes": 19262677,
+        "size": "19.26 MB"
+      },
+      {
+        "filename": "dsos.20.gpkg",
+        "label": "GeoPackage",
+        "mime": "application/geopackage+sqlite3",
+        "bytes": 12705792,
+        "size": "12.71 MB"
+      }
+    ]
+  },
+  {
+    "id": "dsos.bright",
+    "name": "Bright deep-sky objects",
+    "group": "Deep-sky objects",
+    "description": "A selection of bright deep-sky objects compiled by Olaf Frohn.",
+    "count": 32,
+    "geometry": "Point",
+    "distributions": [
+      {
+        "filename": "dsos.bright.geojson",
+        "label": "GeoJSON",
+        "mime": "application/geo+json",
+        "bytes": 8742,
+        "size": "8.7 kB"
+      },
+      {
+        "filename": "dsos.bright.min.geojson",
+        "label": "GeoJSON (minified)",
+        "mime": "application/geo+json",
+        "bytes": 7135,
+        "size": "7.1 kB"
+      },
+      {
+        "filename": "dsos.bright.gpkg",
+        "label": "GeoPackage",
+        "mime": "application/geopackage+sqlite3",
+        "bytes": 98304,
+        "size": "98.3 kB"
+      }
+    ]
+  },
+  {
+    "id": "lg",
+    "name": "Local Group and Milky Way halo",
+    "group": "Deep-sky objects",
+    "description": "Positions and attributes of Local Group and Milky Way halo objects compiled by Olaf Frohn.",
+    "count": 315,
+    "geometry": "Point",
+    "distributions": [
+      {
+        "filename": "lg.geojson",
+        "label": "GeoJSON",
+        "mime": "application/geo+json",
+        "bytes": 88280,
+        "size": "88.3 kB"
+      },
+      {
+        "filename": "lg.min.geojson",
+        "label": "GeoJSON (minified)",
+        "mime": "application/geo+json",
+        "bytes": 71905,
+        "size": "71.9 kB"
+      },
+      {
+        "filename": "lg.gpkg",
+        "label": "GeoPackage",
+        "mime": "application/geopackage+sqlite3",
+        "bytes": 147456,
+        "size": "147.5 kB"
+      }
+    ]
+  },
+  {
+    "id": "messier",
+    "name": "Messier catalog",
+    "group": "Deep-sky objects",
+    "description": "Positions and attributes of the 110 objects in the Messier catalog.",
+    "count": 110,
+    "geometry": "Point",
+    "distributions": [
+      {
+        "filename": "messier.geojson",
+        "label": "GeoJSON",
+        "mime": "application/geo+json",
+        "bytes": 28834,
+        "size": "28.8 kB"
+      },
+      {
+        "filename": "messier.min.geojson",
+        "label": "GeoJSON (minified)",
+        "mime": "application/geo+json",
+        "bytes": 23154,
+        "size": "23.2 kB"
+      },
+      {
+        "filename": "messier.gpkg",
+        "label": "GeoPackage",
+        "mime": "application/geopackage+sqlite3",
+        "bytes": 118784,
+        "size": "118.8 kB"
+      }
+    ]
+  },
+  {
+    "id": "stars.6",
+    "name": "Stars: magnitude 6",
+    "group": "Stars",
+    "description": "Star positions and attributes with a nominal apparent magnitude limit of 6.",
+    "count": 5044,
+    "geometry": "Point",
+    "distributions": [
+      {
+        "filename": "stars.6.geojson",
+        "label": "GeoJSON",
+        "mime": "application/geo+json",
+        "bytes": 994649,
+        "size": "994.6 kB"
+      },
+      {
+        "filename": "stars.6.min.geojson",
+        "label": "GeoJSON (minified)",
+        "mime": "application/geo+json",
+        "bytes": 769236,
+        "size": "769.2 kB"
+      },
+      {
+        "filename": "stars.6.gpkg",
+        "label": "GeoPackage",
+        "mime": "application/geopackage+sqlite3",
+        "bytes": 733184,
+        "size": "733.2 kB"
+      }
+    ]
+  },
+  {
+    "id": "stars.8",
+    "name": "Stars: magnitude 8",
+    "group": "Stars",
+    "description": "Star positions and attributes with a nominal apparent magnitude limit of 8 in this repository.",
+    "count": 41411,
+    "geometry": "Point",
+    "distributions": [
+      {
+        "filename": "stars.8.geojson",
+        "label": "GeoJSON",
+        "mime": "application/geo+json",
+        "bytes": 8162993,
+        "size": "8.16 MB"
+      },
+      {
+        "filename": "stars.8.min.geojson",
+        "label": "GeoJSON (minified)",
+        "mime": "application/geo+json",
+        "bytes": 6288475,
+        "size": "6.29 MB"
+      },
+      {
+        "filename": "stars.8.gpkg",
+        "label": "GeoPackage",
+        "mime": "application/geopackage+sqlite3",
+        "bytes": 5562368,
+        "size": "5.56 MB"
+      }
+    ]
+  },
+  {
+    "id": "stars.14",
+    "name": "Stars: magnitude 14",
+    "group": "Stars",
+    "description": "Star positions and attributes from the largest star catalog provided in this repository.",
+    "count": 118216,
+    "geometry": "Point",
+    "distributions": [
+      {
+        "filename": "stars.14.geojson",
+        "label": "GeoJSON",
+        "mime": "application/geo+json",
+        "bytes": 23355140,
+        "size": "23.36 MB"
+      },
+      {
+        "filename": "stars.14.min.geojson",
+        "label": "GeoJSON (minified)",
+        "mime": "application/geo+json",
+        "bytes": 17939097,
+        "size": "17.94 MB"
+      },
+      {
+        "filename": "stars.14.gpkg",
+        "label": "GeoPackage",
+        "mime": "application/geopackage+sqlite3",
+        "bytes": 15818752,
+        "size": "15.82 MB"
+      }
+    ]
+  },
+  {
+    "id": "dsonames",
+    "name": "Deep-sky object names",
+    "group": "Name tables",
+    "description": "A complementary CSV table of deep-sky object identifiers and names in several languages.",
+    "count": 724,
+    "geometry": null,
+    "distributions": [
+      {
+        "filename": "dsonames.csv",
+        "label": "CSV",
+        "mime": "text/csv",
+        "bytes": 197374,
+        "size": "197.4 kB"
+      }
+    ]
+  },
+  {
+    "id": "dsonames.cn",
+    "name": "Chinese deep-sky object names",
+    "group": "Name tables",
+    "description": "A complementary CSV table of deep-sky object designations, Chinese names and translations.",
+    "count": 6,
+    "geometry": null,
+    "distributions": [
+      {
+        "filename": "dsonames.cn.csv",
+        "label": "CSV",
+        "mime": "text/csv",
+        "bytes": 342,
+        "size": "0.3 kB"
+      }
+    ]
+  },
+  {
+    "id": "starnames",
+    "name": "Star names",
+    "group": "Name tables",
+    "description": "A complementary CSV table of star names, catalog designations and translations, independent of the magnitude subsets.",
+    "count": 4869,
+    "geometry": null,
+    "distributions": [
+      {
+        "filename": "starnames.csv",
+        "label": "CSV",
+        "mime": "text/csv",
+        "bytes": 537790,
+        "size": "537.8 kB"
+      }
+    ]
+  },
+  {
+    "id": "starnames.cn",
+    "name": "Chinese star names",
+    "group": "Name tables",
+    "description": "A complementary CSV table of star identifiers, Chinese names, English translations and pinyin.",
+    "count": 3056,
+    "geometry": null,
+    "distributions": [
+      {
+        "filename": "starnames.cn.csv",
+        "label": "CSV",
+        "mime": "text/csv",
+        "bytes": 192994,
+        "size": "193.0 kB"
+      }
+    ]
+  }
+]

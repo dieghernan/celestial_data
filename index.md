@@ -1,5 +1,6 @@
 ---
 layout: default
+dataset_collection: true
 title: Celestial Data
 header_type: hero
 subtitle: Celestial datasets in GeoJSON and GeoPackage formats
@@ -17,26 +18,28 @@ project_links:
 This project provides several datasets in GeoJSON and GeoPackage
 format of celestial objects for the J2000 epoch.
 
-The original files were provided on the
-[d3-celestial plugin](https://github.com/ofrohn/d3-celestial/)
-([Frohn 2015](#ref-frohn2015)) under
-[BSD 3-Clause](https://opensource.org/licenses/BSD-3-Clause). The datasets
-produced by this project contain the same data provided by
-[d3-celestial plugin](https://github.com/ofrohn/d3-celestial/) processed with
-the **R** package **sf** ([Pebesma 2018](#ref-pebesma2018)) to validate their
-geometries:
+The source files come from [d3-celestial](https://github.com/ofrohn/d3-celestial/)
+and are distributed under the [BSD 3-Clause license](https://opensource.org/licenses/BSD-3-Clause).
+They were processed with **R** and **sf** to repair and validate geometries.
+The conversion preserves the source attributes where possible, but some
+invalid constellation lines were removed.
 
-- The spatial data objects are bounded to $$[-180, -90, 180, 90]$$.
+Coordinates describe the J2000 celestial reference, encoded as longitude-like
+and latitude-like angles for GIS software. Assigning EPSG:4326 is a storage
+convention here: these are not terrestrial WGS84 locations. J2000 does not
+indicate when the files were downloaded or updated, and these static catalogs
+do not calculate the current sky for an observer.
 
-- The datasets use a geometry representation in
-  [EPSG:4326](https://epsg.io/4326) (WGS84).
-
-- All geometries are valid according to
-  [ST_IsValid](https://postgis.net/docs/ST_IsValid.html) (GEOS **3.9.3**).
+Geometry validation was performed with GEOS 3.9.3. It checks geometric validity,
+not the astronomical accuracy or completeness of the source catalogs.
 
 ## Distribution
 
-The data can be accessed from several download URLs:
+The same files are available through the website, GitHub and jsDelivr.
+These URLs follow the main branch and may differ from an archived release
+identified by the collection DOI.
+
+The following example downloads the minified Milky Way dataset:
 
 ``` html
 
@@ -52,84 +55,15 @@ https://cdn.jsdelivr.net/gh/dieghernan/celestial_data@main/data/mw.min.geojson
 
 ## Data
 
-Data is provided in GeoJSON (`*.geojson`) and GeoPackage (`*.gpkg`) format.
-Additionally, for GeoJSON formats a minified version (`*.min.geojson`) is
-also provided.
+Browse **19 geographic datasets** and **six complementary CSV tables**.
+Each dataset page provides direct downloads, file sizes and metadata.
 
-The data source can be found on the corresponding [GitHub repo](https://github.com/dieghernan/celestial_data/tree/main/data).
+<a class="btn btn-primary mb-3" href="{{ '/data' | relative_url }}#downloads">Browse datasets and downloads</a>
+<a class="btn btn-outline-primary mb-3" href="{{ '/preview' | relative_url }}">Preview selected datasets</a>
 
-<details markdown=1 class="my-2">
-<summary>
-List of files provided
-</summary>
-
-- `asterisms.geojson`
-- `asterisms.gpkg`
-- `asterisms.min.geojson`
-- `constellations.borders.cn.geojson`
-- `constellations.borders.cn.gpkg`
-- `constellations.borders.cn.min.geojson`
-- `constellations.borders.geojson`
-- `constellations.borders.gpkg`
-- `constellations.borders.min.geojson`
-- `constellations.bounds.cn.geojson`
-- `constellations.bounds.cn.gpkg`
-- `constellations.bounds.cn.min.geojson`
-- `constellations.bounds.geojson`
-- `constellations.bounds.gpkg`
-- `constellations.bounds.min.geojson`
-- `constellations.cn.csv`
-- `constellations.cn.geojson`
-- `constellations.cn.gpkg`
-- `constellations.cn.min.geojson`
-- `constellations.csv`
-- `constellations.geojson`
-- `constellations.gpkg`
-- `constellations.lines.cn.geojson`
-- `constellations.lines.cn.gpkg`
-- `constellations.lines.cn.min.geojson`
-- `constellations.lines.geojson`
-- `constellations.lines.gpkg`
-- `constellations.lines.min.geojson`
-- `constellations.min.geojson`
-- `dsonames.cn.csv`
-- `dsonames.csv`
-- `dsos.14.geojson`
-- `dsos.14.gpkg`
-- `dsos.14.min.geojson`
-- `dsos.20.geojson`
-- `dsos.20.gpkg`
-- `dsos.20.min.geojson`
-- `dsos.6.geojson`
-- `dsos.6.gpkg`
-- `dsos.6.min.geojson`
-- `dsos.bright.geojson`
-- `dsos.bright.gpkg`
-- `dsos.bright.min.geojson`
-- `lg.geojson`
-- `lg.gpkg`
-- `lg.min.geojson`
-- `messier.geojson`
-- `messier.gpkg`
-- `messier.min.geojson`
-- `mw.geojson`
-- `mw.gpkg`
-- `mw.min.geojson`
-- `starnames.cn.csv`
-- `starnames.csv`
-- `stars.14.geojson`
-- `stars.14.gpkg`
-- `stars.14.min.geojson`
-- `stars.6.geojson`
-- `stars.6.gpkg`
-- `stars.6.min.geojson`
-- `stars.8.geojson`
-- `stars.8.gpkg`
-- `stars.8.min.geojson`
-
-</details>
-
-See additional details on [Data Description](https://dieghernan.github.io/celestial_data/data).
+GeoJSON and GeoPackage contain spatial features. Minified GeoJSON removes
+whitespace without simplifying geometries. The CSV files contain attributes
+and names without geometry.
 
 ## Citation
 

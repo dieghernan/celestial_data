@@ -58,6 +58,8 @@ jobs:
         shell: bash
         env:
           JEKYLL_ENV: production
+      - name: Validate download catalog and structured data
+        run: python3 -m unittest discover -s tests -p 'test_*.py'
       - name: Upload artifact
         # Automatically uploads an artifact from the './_site' directory by default
         uses: actions/upload-pages-artifact@v5

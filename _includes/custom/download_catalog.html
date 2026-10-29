@@ -1,0 +1,9 @@
+{% assign groups = site.data.datasets | group_by: 'group' %}
+{% for group in groups %}
+<h3>{{ group.name }}</h3>
+<div class="row">
+  {% for dataset in group.items %}
+  <div class="col-12 col-lg-6 mb-3">{% include custom/download_card.html dataset=dataset %}</div>
+  {% endfor %}
+</div>
+{% endfor %}
