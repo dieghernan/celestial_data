@@ -56,6 +56,11 @@ Frohn O, Hernangómez D (2023). “Celestial Data.”
 <doi:10.5281/zenodo.7561601> <https://doi.org/10.5281/zenodo.7561601>,
 <https://dieghernan.github.io/celestial_data/>.
 
+The DOI above identifies the collection across releases. To cite the
+archived `v1.0.1` release specifically, use
+<https://doi.org/10.5281/zenodo.7568546>. Downloads from the main branch
+may differ from that release.
+
 A BibTeX entry:
 
 ``` bibtex
@@ -172,16 +177,17 @@ The following original data sources are cited by Frohn
 - `constellations.*` and `constellations.lines.*`:
 
   - [IAU Constellation
-    page](http://www.iau.org/public/themes/constellations/), name
-    positions and some line modifications by Olaf Frohn; names in other
-    languages from
-    [Wikipedia](https://wiki2.org/en/88_modern_constellations_in_different_languages)
+    page](https://www.iau.org/IAU/Astronomy-FAQs/Constellations.aspx),
+    with label positions and some line modifications by Olaf Frohn.
+    Multilingual names are inherited from
+    [d3-celestial](https://github.com/ofrohn/d3-celestial/), whose
+    source notes credit Wikipedia.
 
 - `constellations.bounds.*`:
 
   - Davenhall, A. C., and S. K. Leggett. 1989. “Catalogue of
     Constellation Boundary Data.”
-    <http://vizier.cfa.harvard.edu/viz-bin/Cat?VI/49>.
+    <https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=VI/49>.
 
 - Traditional Chinese constellations and stars: `constellations.cn.*`,
   `constellations.bounds.cn.*`, `constellations.lines.cn.*`,
@@ -210,8 +216,8 @@ The following original data sources are cited by Frohn
   - Frohn, Olaf. 2015. “d3-celestial.”
     <https://github.com/ofrohn/d3-celestial/>, from different sources:
     see
-    [blog](http://armchairastronautics.blogspot.com/p/milky-way-halo.html),
-    [pages](http://armchairastronautics.blogspot.com/p/local-group.html)
+    [blog](https://armchairastronautics.blogspot.com/p/milky-way-halo.html),
+    [pages](https://armchairastronautics.blogspot.com/p/local-group.html)
     for complete list.
 
 - `stars.6.*`, `stars.8.*`, `stars.14.*`:
@@ -246,7 +252,7 @@ Compilation.” *Astronomy Letters* 38 (5): 331–46.
 <div id="ref-butler_geojson_2016" class="csl-entry">
 
 Butler, H., M. Daly, A. Doyle, S. Gillies, S. Hagen, and T. Schaub.
-2016. *The GeoJSON Format*. No. RFC7946. RFC Editor.
+2016. *The GeoJSON Format*. RFC No. 7946. RFC Editor.
 <https://doi.org/10.17487/RFC7946>.
 
 </div>
@@ -254,7 +260,8 @@ Butler, H., M. Daly, A. Doyle, S. Gillies, S. Hagen, and T. Schaub.
 <div id="ref-davenhall1989misc" class="csl-entry">
 
 Davenhall, A. C., and S. K. Leggett. 1989. *Catalogue of Constellation
-Boundary Data*. <http://vizier.cfa.harvard.edu/viz-bin/Cat?VI/49>.
+Boundary Data*.
+<https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=VI/49>.
 
 </div>
 

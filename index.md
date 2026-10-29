@@ -72,6 +72,10 @@ Please cite these datasets as:
 Frohn, O., & Hernangómez, D. (2023). Celestial Data [Data set].
 <https://doi.org/10.5281/zenodo.7561601>
 
+The DOI above identifies the collection across releases. To cite the archived
+`v1.0.1` release specifically, use <https://doi.org/10.5281/zenodo.7568546>.
+Downloads from the main branch may differ from that release.
+
 A BibTeX entry:
 
 ``` bibtex
