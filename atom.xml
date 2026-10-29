@@ -3,7 +3,7 @@
 	<generator uri="https://dieghernan.github.io/chulapa" version="1.0.0">Chulapa</generator>
 	<link href="https://dieghernan.github.io/celestial_data/atom.xml" rel="self" type="application/atom+xml" />
 	<link href="https://dieghernan.github.io/celestial_data" rel="alternate" type="text/html" />
-	<updated>2026-10-29T16:54:26+01:00</updated>
+	<updated>2026-10-29T18:56:04+01:00</updated>
 	<id>https://dieghernan.github.io/celestial_data/atom.xml</id>
 	<title>Celestial Data | Celestial datasets in GeoJSON and GeoPackage formats</title>
 	<subtitle>Celestial datasets in GeoJSON and GeoPackage formats</subtitle>
@@ -13,4 +13,4 @@
 	</author>
 	<rights>(c) 2026, dieghernan</rights>
 	<icon>https://dieghernan.github.io/celestial_data/assets/icons/android-chrome-192x192.png</icon>
-	<logo>https://dieghernan.github.io/celestial_data/assets/img/ogimage.webp</logo></feed>
+	<logo>https://dieghernan.github.io/celestial_data/assets/img/social-preview.jpg</logo></feed>

@@ -7,14 +7,14 @@
 		<description>Celestial datasets for the J2000 epoch, derived from d3-celestial and processed with R and sf.</description>
 		<language>en-US</language>
 		<copyright>(c) 2026, dieghernan</copyright>	
-		<pubDate>Thu, 29 Oct 2026 16:54:26 +0100</pubDate>
-		<lastBuildDate>Thu, 29 Oct 2026 16:54:26 +0100</lastBuildDate>
+		<pubDate>Thu, 29 Oct 2026 18:56:04 +0100</pubDate>
+		<lastBuildDate>Thu, 29 Oct 2026 18:56:04 +0100</lastBuildDate>
 		<category>blog</category>
 		<ttl>60</ttl>
 		<atom:link href="https://dieghernan.github.io/celestial_data/rss.xml" rel="self" type="application/rss+xml" />
 		<image>
 			<title>Celestial Data | Celestial datasets in GeoJSON and GeoPackage formats</title>
-			<url>https://dieghernan.github.io/celestial_data/assets/img/ogimage.webp</url>
+			<url>https://dieghernan.github.io/celestial_data/assets/img/social-preview.jpg</url>
 			<link>https://dieghernan.github.io/celestial_data</link>
 			<description>Celestial datasets for the J2000 epoch, derived from d3-celestial and processed with R and sf.</description>
 		</image></channel>
