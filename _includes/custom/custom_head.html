@@ -17,7 +17,7 @@
   "isBasedOn": "https://github.com/ofrohn/d3-celestial/",
   "hasPart": [
     {% for dataset in site.data.datasets %}
-    {"@type": "Dataset", "@id": {{ '/datasets/' | append: dataset.id | append: '/#dataset' | absolute_url | jsonify }}, "name": {{ dataset.name | jsonify }}, "url": {{ '/datasets/' | append: dataset.id | append: '/' | absolute_url | jsonify }}}{% unless forloop.last %},{% endunless %}
+    {"@type": "Dataset", "@id": {{ '/datasets/' | append: dataset.id | append: '/#dataset' | absolute_url | jsonify }}, "name": {{ dataset.name | jsonify }}, "description": {{ dataset.description | jsonify }}, "license": "https://opensource.org/licenses/BSD-3-Clause", "creator": [{"@type": "Person", "name": "Olaf Frohn"}, {"@type": "Person", "name": "Diego Hernangómez", "identifier": "https://orcid.org/0000-0001-8457-4658"}], "url": {{ '/datasets/' | append: dataset.id | append: '/' | absolute_url | jsonify }}}{% unless forloop.last %},{% endunless %}
     {% endfor %}
   ]
 }

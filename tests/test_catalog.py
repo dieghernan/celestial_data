@@ -82,6 +82,26 @@ class CatalogTests(unittest.TestCase):
         for dataset in self.catalog:
             self.assertIn(f'/celestial_data/datasets/{dataset["id"]}/', source)
 
+    def test_nested_datasets_meet_google_required_fields(self):
+        def visit(value):
+            if isinstance(value, list):
+                for item in value:
+                    visit(item)
+            elif isinstance(value, dict):
+                if value.get("@type") == "Dataset":
+                    with self.subTest(dataset=value.get("@id")):
+                        self.assertTrue(value.get("name"))
+                        self.assertGreaterEqual(len(value.get("description", "")), 50)
+                        self.assertLessEqual(len(value["description"]), 5000)
+                        self.assertTrue(value.get("license"))
+                        self.assertTrue(value.get("creator"))
+                for item in value.values():
+                    visit(item)
+
+        for path in [ROOT / "_site/index.html", *(ROOT / "_site/datasets").glob("*/index.html")]:
+            for dataset in datasets_in(path.read_text(encoding="utf-8")):
+                visit(dataset)
+
 
 if __name__ == "__main__":
     unittest.main()
