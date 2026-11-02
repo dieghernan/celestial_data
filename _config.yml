@@ -58,11 +58,13 @@ navbar:
     title: Home
     img: "./assets/icons/android-chrome-192x192.png"
   nav:
+  - title: Downloads
+    url: https://dieghernan.github.io/celestial_data/downloads/
   - title: Preview
     url: https://dieghernan.github.io/celestial_data/preview
-  - title: Data Description
+  - title: Data description
     url: https://dieghernan.github.io/celestial_data/data
-  - title: Data Sources
+  - title: Data sources
     url: https://dieghernan.github.io/celestial_data/sources
   - title: <i class="fab fa-github" aria-hidden="true"></i> GitHub repo
     url: https://github.com/dieghernan/celestial_data

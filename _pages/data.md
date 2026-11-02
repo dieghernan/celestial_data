@@ -53,7 +53,8 @@ https://cdn.jsdelivr.net/gh/dieghernan/celestial_data@main/data/mw.min.geojson
 
 ## Downloads {#downloads}
 
-{% include custom/download_catalog.html %}
+Browse the [download catalog]({{ '/downloads/' | relative_url }}) for all
+datasets, file sizes and links to individual dataset pages.
 
 ## Description
 

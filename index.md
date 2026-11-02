@@ -64,7 +64,7 @@ https://cdn.jsdelivr.net/gh/dieghernan/celestial_data@main/data/mw.min.geojson
 Browse **19 geographic datasets** and **six complementary CSV tables**.
 Each dataset page provides direct downloads, file sizes and metadata.
 
-<a class="btn btn-primary mb-3" href="{{ '/data' | relative_url }}#downloads">Browse datasets and downloads</a>
+<a class="btn btn-primary mb-3" href="{{ '/downloads/' | relative_url }}">Browse datasets and downloads</a>
 <a class="btn btn-outline-primary mb-3" href="{{ '/preview' | relative_url }}">Preview selected datasets</a>
 
 GeoJSON and GeoPackage contain spatial features. Minified GeoJSON removes

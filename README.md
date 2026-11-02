@@ -158,7 +158,7 @@ List of files provided
 </details>
 
 Browse download cards, file sizes and dataset descriptions at
-<https://dieghernan.github.io/celestial_data/data>.
+<https://dieghernan.github.io/celestial_data/downloads/>.
 
 Maintainers can refresh file sizes, feature counts and dataset pages
 with `py scripts/build_catalog.py` after updating the data. The

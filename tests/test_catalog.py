@@ -86,10 +86,14 @@ class CatalogTests(unittest.TestCase):
                     self.assertTrue((ROOT / "_site/data" / unquote(href.split("/")[-1])).is_file())
 
     def test_catalog_and_collection_link_all_datasets(self):
-        source = (ROOT / "_site/data.html").read_text(encoding="utf-8")
+        source = (ROOT / "_site/downloads/index.html").read_text(encoding="utf-8")
         page = Page(source)
         self.assertEqual(len(page.downloads), 63)
-        self.assertIn("downloads", page.ids)
+        self.assertIn('href="/celestial_data/downloads/"', (ROOT / "_site/data.html").read_text(encoding="utf-8"))
+        self.assertIn("downloads", Page((ROOT / "_site/data.html").read_text(encoding="utf-8")).ids)
+        for category in ("asterisms-and-milky-way", "constellations", "deep-sky-objects", "stars", "name-tables"):
+            self.assertIn(category, page.ids)
+            self.assertIn(f'href="#{category}"', source)
         self.assertEqual(len(page.ids), len(set(page.ids)))
         metadata, = datasets_in((ROOT / "_site/index.html").read_text(encoding="utf-8"))
         self.assertEqual(metadata["identifier"], "https://doi.org/10.5281/zenodo.7561601")
