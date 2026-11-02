@@ -1,0 +1,318 @@
+{
+  "@context": {
+    "@language": "en",
+    "@vocab": "https://schema.org/",
+    "arrayShape": "cr:arrayShape",
+    "citeAs": "cr:citeAs",
+    "column": "cr:column",
+    "conformsTo": "dct:conformsTo",
+    "containedIn": "cr:containedIn",
+    "cr": "http://mlcommons.org/croissant/",
+    "rai": "http://mlcommons.org/croissant/RAI/",
+    "data": {
+      "@id": "cr:data",
+      "@type": "@json"
+    },
+    "dataType": {
+      "@id": "cr:dataType",
+      "@type": "@vocab"
+    },
+    "dct": "http://purl.org/dc/terms/",
+    "description": "sc:description",
+    "equivalentProperty": "cr:equivalentProperty",
+    "examples": {
+      "@id": "cr:examples",
+      "@type": "@json"
+    },
+    "extract": "cr:extract",
+    "field": "cr:field",
+    "fileProperty": "cr:fileProperty",
+    "fileObject": "cr:fileObject",
+    "fileSet": "cr:fileSet",
+    "format": "cr:format",
+    "includes": "cr:includes",
+    "isArray": "cr:isArray",
+    "isLiveDataset": "cr:isLiveDataset",
+    "jsonPath": "cr:jsonPath",
+    "key": "cr:key",
+    "md5": "cr:md5",
+    "name": "sc:name",
+    "parentField": "cr:parentField",
+    "path": "cr:path",
+    "recordSet": "cr:recordSet",
+    "references": "cr:references",
+    "regex": "cr:regex",
+    "repeated": "cr:repeated",
+    "replace": "cr:replace",
+    "samplingRate": "cr:samplingRate",
+    "sc": "https://schema.org/",
+    "separator": "cr:separator",
+    "source": "cr:source",
+    "subField": "cr:subField",
+    "transform": "cr:transform",
+    "@base": "https://dieghernan.github.io/celestial_data/datasets/messier/"
+  },
+  "@type": "Dataset",
+  "@id": "https://dieghernan.github.io/celestial_data/datasets/messier/#dataset",
+  "url": "https://dieghernan.github.io/celestial_data/datasets/messier/",
+  "name": "Messier catalog",
+  "description": "J2000 positions and attributes of the 110 objects in the Messier catalog, derived from d3-celestial. GeoJSON and GeoPackage contain point geometries with names, catalog designations, object types, magnitudes and dimensions where supplied.",
+  "datePublished": "2023-01-25",
+  "dateModified": "2023-01-25",
+  "version": "1.0.1",
+  "keywords": [
+    "Messier catalog",
+    "J2000",
+    "GeoJSON",
+    "GeoPackage",
+    "celestial"
+  ],
+  "license": "https://opensource.org/licenses/BSD-3-Clause",
+  "creator": [
+    {
+      "@type": "Person",
+      "name": "Olaf Frohn"
+    },
+    {
+      "@type": "Person",
+      "name": "Diego Hernangómez",
+      "sameAs": "https://orcid.org/0000-0001-8457-4658",
+      "url": "https://dieghernan.github.io/"
+    }
+  ],
+  "isAccessibleForFree": true,
+  "isBasedOn": "https://github.com/ofrohn/d3-celestial/",
+  "isPartOf": {
+    "@id": "https://dieghernan.github.io/celestial_data/#collection"
+  },
+  "conformsTo": "http://mlcommons.org/croissant/1.1",
+  "citeAs": "Part of Celestial Data (1.0.1), collection DOI: https://doi.org/10.5281/zenodo.7561601. The DOI identifies the archived collection, not a separate DOI for this dataset.",
+  "distribution": [
+    {
+      "@type": [
+        "cr:FileObject",
+        "sc:DataDownload"
+      ],
+      "@id": "messier.geojson",
+      "name": "GeoJSON",
+      "encodingFormat": "application/geo+json",
+      "contentSize": "28717 bytes",
+      "contentUrl": "https://dieghernan.github.io/celestial_data/data/messier.geojson",
+      "sha256": "2e0657d5ae5011f873e424831a5650c8b89538fa73316eddfa74fef9b7f8e3b9"
+    },
+    {
+      "@type": [
+        "cr:FileObject",
+        "sc:DataDownload"
+      ],
+      "@id": "messier.min.geojson",
+      "name": "GeoJSON (minified)",
+      "encodingFormat": "application/geo+json",
+      "contentSize": "23153 bytes",
+      "contentUrl": "https://dieghernan.github.io/celestial_data/data/messier.min.geojson",
+      "sha256": "e5842c46bbe1e8e3230933b43fff27599bf48d6e134095b2b704811316ba0a76"
+    },
+    {
+      "@type": [
+        "cr:FileObject",
+        "sc:DataDownload"
+      ],
+      "@id": "messier.gpkg",
+      "name": "GeoPackage",
+      "encodingFormat": "application/geopackage+sqlite3",
+      "contentSize": "118784 bytes",
+      "contentUrl": "https://dieghernan.github.io/celestial_data/data/messier.gpkg",
+      "sha256": "86c34e1fbbba3fa9c9d63ce5a6580a3ef59884ca57f3f512b379d4b5b4d444d3"
+    },
+    {
+      "@type": [
+        "cr:FileObject",
+        "sc:DataDownload"
+      ],
+      "@id": "records-json",
+      "name": "Messier catalog (JSON/WKT, gzip)",
+      "contentUrl": "https://dieghernan.github.io/celestial_data/assets/croissant/d0046a92651542571af0b6a364b8ac2b621487a299267bba59c18029c59bc611/records.json.gz",
+      "encodingFormat": "application/json",
+      "contentSize": "4303 bytes",
+      "sha256": "d0046a92651542571af0b6a364b8ac2b621487a299267bba59c18029c59bc611"
+    }
+  ],
+  "recordSet": [
+    {
+      "@type": "cr:RecordSet",
+      "@id": "records",
+      "name": "records",
+      "description": "One record per source feature or CSV row in its original order. No values are imputed. Publication dates describe the collection release, not observations; J2000 is a celestial reference epoch, not a file date. The row-position key is local to this snapshot.",
+      "key": {
+        "@id": "records/record_index"
+      },
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "records/record_index",
+          "name": "record_index",
+          "description": "One-based row position in this source snapshot; unique within this record set, not an astronomical catalog identifier or a persistent cross-release key. Absent properties and JSON null are represented as null; missing values are not imputed.",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "records-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].record_index"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "records/alt",
+          "name": "alt",
+          "description": "Alternative source designation, retained literally; null means unspecified. Absent properties and JSON null are represented as null; missing values are not imputed.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "records-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].alt"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "records/br",
+          "name": "br",
+          "description": "Relative brightness stored in the source, normalized to magnitude zero: 100**(-mag/5). This is not calibrated physical flux. Values are preserved rather than recomputed, including missing values or source sentinel effects. Absent properties and JSON null are represented as null; missing values are not imputed.",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "records-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].br"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "records/cl",
+          "name": "cl",
+          "description": "Source cl classification field, retained literally without imposing an undocumented classification scheme. Absent properties and JSON null are represented as null; missing values are not imputed.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "records-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].cl"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "records/desig",
+          "name": "desig",
+          "description": "Source designation; its convention depends on the catalog. No catalog prefixes or missing values are inferred. Absent properties and JSON null are represented as null; missing values are not imputed.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "records-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].desig"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "records/dim",
+          "name": "dim",
+          "description": "Angular dimensions in arcminutes, retained as source text; compound dimension strings are not converted into a scalar. Null means missing. Absent properties and JSON null are represented as null; missing values are not imputed.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "records-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].dim"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "records/id",
+          "name": "id",
+          "description": "Identifier as stored in this source catalog, preserving its original text or numeric representation. It is not assumed unique across catalogs or records. Absent properties and JSON null are represented as null; missing values are not imputed.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "records-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "records/mag",
+          "name": "mag",
+          "description": "Apparent magnitude in the source. The sentinel 999 means unavailable and is preserved; exclude it from magnitude filters and brightness calculations. JSON null also remains missing. Absent properties and JSON null are represented as null; missing values are not imputed.",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "records-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].mag"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "records/name",
+          "name": "name",
+          "description": "Name stored in the source; its convention depends on the catalog. Nulls and empty strings are preserved, not filled from another language. Absent properties and JSON null are represented as null; missing values are not imputed.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "records-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].name"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "records/type",
+          "name": "type",
+          "description": "Source object-type code, such as g (galaxy), oc (open cluster) or pn (planetary nebula); no classification is inferred for missing values. Absent properties and JSON null are represented as null; missing values are not imputed.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "records-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].type"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "records/geometry_wkt",
+          "name": "geometry_wkt",
+          "description": "Original geometry encoded as WKT without reprojection, rounding or simplification. J2000 celestial angles in degrees: x is right ascension converted from hours at 15 degrees/hour and wrapped to [-180,180]; y is declination. These are not terrestrial WGS84 positions. WKT itself does not carry this reference frame. Absent properties and JSON null are represented as null; missing values are not imputed.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "records-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].geometry_wkt"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

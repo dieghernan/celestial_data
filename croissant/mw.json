@@ -1,0 +1,198 @@
+{
+  "@context": {
+    "@language": "en",
+    "@vocab": "https://schema.org/",
+    "arrayShape": "cr:arrayShape",
+    "citeAs": "cr:citeAs",
+    "column": "cr:column",
+    "conformsTo": "dct:conformsTo",
+    "containedIn": "cr:containedIn",
+    "cr": "http://mlcommons.org/croissant/",
+    "rai": "http://mlcommons.org/croissant/RAI/",
+    "data": {
+      "@id": "cr:data",
+      "@type": "@json"
+    },
+    "dataType": {
+      "@id": "cr:dataType",
+      "@type": "@vocab"
+    },
+    "dct": "http://purl.org/dc/terms/",
+    "description": "sc:description",
+    "equivalentProperty": "cr:equivalentProperty",
+    "examples": {
+      "@id": "cr:examples",
+      "@type": "@json"
+    },
+    "extract": "cr:extract",
+    "field": "cr:field",
+    "fileProperty": "cr:fileProperty",
+    "fileObject": "cr:fileObject",
+    "fileSet": "cr:fileSet",
+    "format": "cr:format",
+    "includes": "cr:includes",
+    "isArray": "cr:isArray",
+    "isLiveDataset": "cr:isLiveDataset",
+    "jsonPath": "cr:jsonPath",
+    "key": "cr:key",
+    "md5": "cr:md5",
+    "name": "sc:name",
+    "parentField": "cr:parentField",
+    "path": "cr:path",
+    "recordSet": "cr:recordSet",
+    "references": "cr:references",
+    "regex": "cr:regex",
+    "repeated": "cr:repeated",
+    "replace": "cr:replace",
+    "samplingRate": "cr:samplingRate",
+    "sc": "https://schema.org/",
+    "separator": "cr:separator",
+    "source": "cr:source",
+    "subField": "cr:subField",
+    "transform": "cr:transform",
+    "@base": "https://dieghernan.github.io/celestial_data/datasets/mw/"
+  },
+  "@type": "Dataset",
+  "@id": "https://dieghernan.github.io/celestial_data/datasets/mw/#dataset",
+  "url": "https://dieghernan.github.io/celestial_data/datasets/mw/",
+  "name": "Milky Way",
+  "description": "Polygon outlines of the Milky Way in successive brightness bands, derived from d3-celestial for J2000 sky maps. Available as GeoJSON and GeoPackage with celestial angles encoded as geographic coordinates for GIS use, not as terrestrial locations.",
+  "datePublished": "2023-01-25",
+  "dateModified": "2023-01-25",
+  "version": "1.0.1",
+  "keywords": [
+    "Milky Way",
+    "J2000",
+    "GeoJSON",
+    "GeoPackage",
+    "celestial"
+  ],
+  "license": "https://opensource.org/licenses/BSD-3-Clause",
+  "creator": [
+    {
+      "@type": "Person",
+      "name": "Olaf Frohn"
+    },
+    {
+      "@type": "Person",
+      "name": "Diego Hernangómez",
+      "sameAs": "https://orcid.org/0000-0001-8457-4658",
+      "url": "https://dieghernan.github.io/"
+    }
+  ],
+  "isAccessibleForFree": true,
+  "isBasedOn": "https://github.com/ofrohn/d3-celestial/",
+  "isPartOf": {
+    "@id": "https://dieghernan.github.io/celestial_data/#collection"
+  },
+  "conformsTo": "http://mlcommons.org/croissant/1.1",
+  "citeAs": "Part of Celestial Data (1.0.1), collection DOI: https://doi.org/10.5281/zenodo.7561601. The DOI identifies the archived collection, not a separate DOI for this dataset.",
+  "distribution": [
+    {
+      "@type": [
+        "cr:FileObject",
+        "sc:DataDownload"
+      ],
+      "@id": "mw.geojson",
+      "name": "GeoJSON",
+      "encodingFormat": "application/geo+json",
+      "contentSize": "656848 bytes",
+      "contentUrl": "https://dieghernan.github.io/celestial_data/data/mw.geojson",
+      "sha256": "58ce378f1d19f872f03ec08ffaac60cd7213fe09ac65e3178cc17e456a08a34c"
+    },
+    {
+      "@type": [
+        "cr:FileObject",
+        "sc:DataDownload"
+      ],
+      "@id": "mw.min.geojson",
+      "name": "GeoJSON (minified)",
+      "encodingFormat": "application/geo+json",
+      "contentSize": "532426 bytes",
+      "contentUrl": "https://dieghernan.github.io/celestial_data/data/mw.min.geojson",
+      "sha256": "52e05e82dd2df00be3abc69599c00914dfbc7ecf6877cc05c884646265a6e67b"
+    },
+    {
+      "@type": [
+        "cr:FileObject",
+        "sc:DataDownload"
+      ],
+      "@id": "mw.gpkg",
+      "name": "GeoPackage",
+      "encodingFormat": "application/geopackage+sqlite3",
+      "contentSize": "593920 bytes",
+      "contentUrl": "https://dieghernan.github.io/celestial_data/data/mw.gpkg",
+      "sha256": "52c4a65ff3e34d5a0d871d923d201a4e6c57fd74cd3cfd147a9da4ddf1373a63"
+    },
+    {
+      "@type": [
+        "cr:FileObject",
+        "sc:DataDownload"
+      ],
+      "@id": "records-json",
+      "name": "Milky Way (JSON/WKT, gzip)",
+      "contentUrl": "https://dieghernan.github.io/celestial_data/assets/croissant/d44ccb12e9cf6bc9d8bf8c1541a42d600a3fb4d4586bfe442667714ee9599d84/records.json.gz",
+      "encodingFormat": "application/json",
+      "contentSize": "175805 bytes",
+      "sha256": "d44ccb12e9cf6bc9d8bf8c1541a42d600a3fb4d4586bfe442667714ee9599d84"
+    }
+  ],
+  "recordSet": [
+    {
+      "@type": "cr:RecordSet",
+      "@id": "records",
+      "name": "records",
+      "description": "One record per source feature or CSV row in its original order. No values are imputed. Publication dates describe the collection release, not observations; J2000 is a celestial reference epoch, not a file date. The row-position key is local to this snapshot.",
+      "key": {
+        "@id": "records/record_index"
+      },
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "records/record_index",
+          "name": "record_index",
+          "description": "One-based row position in this source snapshot; unique within this record set, not an astronomical catalog identifier or a persistent cross-release key. Absent properties and JSON null are represented as null; missing values are not imputed.",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "records-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].record_index"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "records/id",
+          "name": "id",
+          "description": "Identifier as stored in this source catalog, preserving its original text or numeric representation. It is not assumed unique across catalogs or records. Absent properties and JSON null are represented as null; missing values are not imputed.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "records-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "records/geometry_wkt",
+          "name": "geometry_wkt",
+          "description": "Original geometry encoded as WKT without reprojection, rounding or simplification. J2000 celestial angles in degrees: x is right ascension converted from hours at 15 degrees/hour and wrapped to [-180,180]; y is declination. These are not terrestrial WGS84 positions. WKT itself does not carry this reference frame. Absent properties and JSON null are represented as null; missing values are not imputed.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "records-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].geometry_wkt"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

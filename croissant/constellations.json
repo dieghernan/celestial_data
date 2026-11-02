@@ -1,0 +1,616 @@
+{
+  "@context": {
+    "@language": "en",
+    "@vocab": "https://schema.org/",
+    "arrayShape": "cr:arrayShape",
+    "citeAs": "cr:citeAs",
+    "column": "cr:column",
+    "conformsTo": "dct:conformsTo",
+    "containedIn": "cr:containedIn",
+    "cr": "http://mlcommons.org/croissant/",
+    "rai": "http://mlcommons.org/croissant/RAI/",
+    "data": {
+      "@id": "cr:data",
+      "@type": "@json"
+    },
+    "dataType": {
+      "@id": "cr:dataType",
+      "@type": "@vocab"
+    },
+    "dct": "http://purl.org/dc/terms/",
+    "description": "sc:description",
+    "equivalentProperty": "cr:equivalentProperty",
+    "examples": {
+      "@id": "cr:examples",
+      "@type": "@json"
+    },
+    "extract": "cr:extract",
+    "field": "cr:field",
+    "fileProperty": "cr:fileProperty",
+    "fileObject": "cr:fileObject",
+    "fileSet": "cr:fileSet",
+    "format": "cr:format",
+    "includes": "cr:includes",
+    "isArray": "cr:isArray",
+    "isLiveDataset": "cr:isLiveDataset",
+    "jsonPath": "cr:jsonPath",
+    "key": "cr:key",
+    "md5": "cr:md5",
+    "name": "sc:name",
+    "parentField": "cr:parentField",
+    "path": "cr:path",
+    "recordSet": "cr:recordSet",
+    "references": "cr:references",
+    "regex": "cr:regex",
+    "repeated": "cr:repeated",
+    "replace": "cr:replace",
+    "samplingRate": "cr:samplingRate",
+    "sc": "https://schema.org/",
+    "separator": "cr:separator",
+    "source": "cr:source",
+    "subField": "cr:subField",
+    "transform": "cr:transform",
+    "@base": "https://dieghernan.github.io/celestial_data/datasets/constellations/"
+  },
+  "@type": "Dataset",
+  "@id": "https://dieghernan.github.io/celestial_data/datasets/constellations/#dataset",
+  "url": "https://dieghernan.github.io/celestial_data/datasets/constellations/",
+  "name": "Constellation labels",
+  "description": "Constellation label positions in the J2000 celestial reference, with identifiers, multilingual names and display attributes from d3-celestial. GeoJSON and GeoPackage contain point geometries; the complementary CSV contains attributes without geometry.",
+  "datePublished": "2023-01-25",
+  "dateModified": "2023-01-25",
+  "version": "1.0.1",
+  "keywords": [
+    "Constellation labels",
+    "J2000",
+    "GeoJSON",
+    "GeoPackage",
+    "CSV",
+    "celestial"
+  ],
+  "license": "https://opensource.org/licenses/BSD-3-Clause",
+  "creator": [
+    {
+      "@type": "Person",
+      "name": "Olaf Frohn"
+    },
+    {
+      "@type": "Person",
+      "name": "Diego Hernangómez",
+      "sameAs": "https://orcid.org/0000-0001-8457-4658",
+      "url": "https://dieghernan.github.io/"
+    }
+  ],
+  "isAccessibleForFree": true,
+  "isBasedOn": "https://github.com/ofrohn/d3-celestial/",
+  "isPartOf": {
+    "@id": "https://dieghernan.github.io/celestial_data/#collection"
+  },
+  "conformsTo": "http://mlcommons.org/croissant/1.1",
+  "citeAs": "Part of Celestial Data (1.0.1), collection DOI: https://doi.org/10.5281/zenodo.7561601. The DOI identifies the archived collection, not a separate DOI for this dataset.",
+  "distribution": [
+    {
+      "@type": [
+        "cr:FileObject",
+        "sc:DataDownload"
+      ],
+      "@id": "constellations.geojson",
+      "name": "GeoJSON",
+      "encodingFormat": "application/geo+json",
+      "contentSize": "60312 bytes",
+      "contentUrl": "https://dieghernan.github.io/celestial_data/data/constellations.geojson",
+      "sha256": "cf9d0210a293548d7606ee7c6ce6e4aa0160d13f97077513f3f80a4406c0994e"
+    },
+    {
+      "@type": [
+        "cr:FileObject",
+        "sc:DataDownload"
+      ],
+      "@id": "constellations.min.geojson",
+      "name": "GeoJSON (minified)",
+      "encodingFormat": "application/geo+json",
+      "contentSize": "53262 bytes",
+      "contentUrl": "https://dieghernan.github.io/celestial_data/data/constellations.min.geojson",
+      "sha256": "161045734e6b4cad9284530800b045e166be77a5d1f7e1d939adecaa3c277ca3"
+    },
+    {
+      "@type": [
+        "cr:FileObject",
+        "sc:DataDownload"
+      ],
+      "@id": "constellations.gpkg",
+      "name": "GeoPackage",
+      "encodingFormat": "application/geopackage+sqlite3",
+      "contentSize": "131072 bytes",
+      "contentUrl": "https://dieghernan.github.io/celestial_data/data/constellations.gpkg",
+      "sha256": "79408e234824dbf86ecbcb0cac4bf6940a6abce25bf4090f0a85b05c2f96a6f0"
+    },
+    {
+      "@type": [
+        "cr:FileObject",
+        "sc:DataDownload"
+      ],
+      "@id": "constellations.csv",
+      "name": "CSV",
+      "encodingFormat": "text/csv",
+      "contentSize": "25594 bytes",
+      "contentUrl": "https://dieghernan.github.io/celestial_data/data/constellations.csv",
+      "sha256": "dbdca159b76c1ba38a49f85905791a4ff1e0faa9efd69a86b087693a791f898d"
+    },
+    {
+      "@type": [
+        "cr:FileObject",
+        "sc:DataDownload"
+      ],
+      "@id": "records-json",
+      "name": "Constellation labels (JSON/WKT, gzip)",
+      "contentUrl": "https://dieghernan.github.io/celestial_data/assets/croissant/a0745181074725756eff4244359a29467f50296562f39437b9e176fe99b9bcaa/records.json.gz",
+      "encodingFormat": "application/json",
+      "contentSize": "17537 bytes",
+      "sha256": "a0745181074725756eff4244359a29467f50296562f39437b9e176fe99b9bcaa"
+    }
+  ],
+  "recordSet": [
+    {
+      "@type": "cr:RecordSet",
+      "@id": "records",
+      "name": "records",
+      "description": "One record per source feature or CSV row in its original order. No values are imputed. Publication dates describe the collection release, not observations; J2000 is a celestial reference epoch, not a file date. The row-position key is local to this snapshot.",
+      "key": {
+        "@id": "records/record_index"
+      },
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "records/record_index",
+          "name": "record_index",
+          "description": "One-based row position in this source snapshot; unique within this record set, not an astronomical catalog identifier or a persistent cross-release key. Absent properties and JSON null are represented as null; missing values are not imputed.",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "records-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].record_index"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "records/ar",
+          "name": "ar",
+          "description": "Source name in Arabic; no translation or normalization is added. Absent properties and JSON null are represented as null; missing values are not imputed.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "records-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].ar"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "records/cz",
+          "name": "cz",
+          "description": "Source name in Czech; no translation or normalization is added. Absent properties and JSON null are represented as null; missing values are not imputed.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "records-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].cz"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "records/de",
+          "name": "de",
+          "description": "Source name in German; no translation or normalization is added. Absent properties and JSON null are represented as null; missing values are not imputed.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "records-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].de"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "records/desig",
+          "name": "desig",
+          "description": "Source designation; its convention depends on the catalog. No catalog prefixes or missing values are inferred. Absent properties and JSON null are represented as null; missing values are not imputed.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "records-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].desig"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "records/display_dec",
+          "name": "display_dec",
+          "description": "Declination display-center parameter copied from the source; not a new position measurement. Absent properties and JSON null are represented as null; missing values are not imputed.",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "records-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].display_dec"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "records/display_ra",
+          "name": "display_ra",
+          "description": "Right-ascension display-center parameter copied from the source; not a new position measurement or a current-epoch prediction. Absent properties and JSON null are represented as null; missing values are not imputed.",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "records-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].display_ra"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "records/display_scale",
+          "name": "display_scale",
+          "description": "Source display-scale parameter; not an angular size or a distance. Absent properties and JSON null are represented as null; missing values are not imputed.",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "records-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].display_scale"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "records/ee",
+          "name": "ee",
+          "description": "Source name in Estonian; no translation or normalization is added. Absent properties and JSON null are represented as null; missing values are not imputed.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "records-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].ee"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "records/el",
+          "name": "el",
+          "description": "Source name in Greek; no translation or normalization is added. Absent properties and JSON null are represented as null; missing values are not imputed.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "records-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].el"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "records/en",
+          "name": "en",
+          "description": "Source name in English; no translation or normalization is added. Absent properties and JSON null are represented as null; missing values are not imputed.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "records-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].en"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "records/es",
+          "name": "es",
+          "description": "Source name in Spanish; no translation or normalization is added. Absent properties and JSON null are represented as null; missing values are not imputed.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "records-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].es"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "records/fa",
+          "name": "fa",
+          "description": "Source name in Persian; no translation or normalization is added. Absent properties and JSON null are represented as null; missing values are not imputed.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "records-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].fa"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "records/fi",
+          "name": "fi",
+          "description": "Source name in Finnish; no translation or normalization is added. Absent properties and JSON null are represented as null; missing values are not imputed.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "records-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].fi"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "records/fr",
+          "name": "fr",
+          "description": "Source name in French; no translation or normalization is added. Absent properties and JSON null are represented as null; missing values are not imputed.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "records-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].fr"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "records/gen",
+          "name": "gen",
+          "description": "Genitive name used for stellar naming, as supplied by the source. Absent properties and JSON null are represented as null; missing values are not imputed.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "records-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].gen"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "records/he",
+          "name": "he",
+          "description": "Source name in Hebrew; no translation or normalization is added. Absent properties and JSON null are represented as null; missing values are not imputed.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "records-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].he"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "records/hi",
+          "name": "hi",
+          "description": "Source name in Hindi; no translation or normalization is added. Absent properties and JSON null are represented as null; missing values are not imputed.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "records-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].hi"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "records/id",
+          "name": "id",
+          "description": "Identifier as stored in this source catalog, preserving its original text or numeric representation. It is not assumed unique across catalogs or records. Absent properties and JSON null are represented as null; missing values are not imputed.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "records-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "records/it",
+          "name": "it",
+          "description": "Source name in Italian; no translation or normalization is added. Absent properties and JSON null are represented as null; missing values are not imputed.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "records-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].it"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "records/ja",
+          "name": "ja",
+          "description": "Source name in Japanese; no translation or normalization is added. Absent properties and JSON null are represented as null; missing values are not imputed.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "records-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].ja"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "records/ko",
+          "name": "ko",
+          "description": "Source name in Korean; no translation or normalization is added. Absent properties and JSON null are represented as null; missing values are not imputed.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "records-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].ko"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "records/la",
+          "name": "la",
+          "description": "Source name in Latin; no translation or normalization is added. Absent properties and JSON null are represented as null; missing values are not imputed.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "records-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].la"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "records/name",
+          "name": "name",
+          "description": "Name stored in the source; its convention depends on the catalog. Nulls and empty strings are preserved, not filled from another language. Absent properties and JSON null are represented as null; missing values are not imputed.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "records-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].name"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "records/rank",
+          "name": "rank",
+          "description": "Source display-priority rank, not a physical measurement; its scale depends on the constellation catalog. Absent properties and JSON null are represented as null; missing values are not imputed.",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "records-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].rank"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "records/ru",
+          "name": "ru",
+          "description": "Source name in Russian; no translation or normalization is added. Absent properties and JSON null are represented as null; missing values are not imputed.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "records-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].ru"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "records/sw",
+          "name": "sw",
+          "description": "Source name in Swahili; no translation or normalization is added. Absent properties and JSON null are represented as null; missing values are not imputed.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "records-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].sw"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "records/tr",
+          "name": "tr",
+          "description": "Source name in Turkish; no translation or normalization is added. Absent properties and JSON null are represented as null; missing values are not imputed.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "records-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].tr"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "records/zh",
+          "name": "zh",
+          "description": "Source name in Chinese; no translation or normalization is added. Absent properties and JSON null are represented as null; missing values are not imputed.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "records-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].zh"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "records/geometry_wkt",
+          "name": "geometry_wkt",
+          "description": "Original geometry encoded as WKT without reprojection, rounding or simplification. J2000 celestial angles in degrees: x is right ascension converted from hours at 15 degrees/hour and wrapped to [-180,180]; y is declination. These are not terrestrial WGS84 positions. WKT itself does not carry this reference frame. Absent properties and JSON null are represented as null; missing values are not imputed.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "records-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].geometry_wkt"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
