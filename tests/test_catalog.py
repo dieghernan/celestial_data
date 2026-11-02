@@ -60,6 +60,8 @@ class CatalogTests(unittest.TestCase):
                 self.assertEqual(len(page.ids), len(set(page.ids)))
                 metadata, = datasets_in(source)
                 self.assertEqual(metadata["name"], dataset["name"])
+                self.assertEqual(metadata["description"], dataset["description"])
+                self.assertIn(dataset["description"], source)
                 self.assertNotIn("identifier", metadata)  # DOI belongs to collection.
                 self.assertNotIn("spatialCoverage", metadata)
                 self.assertEqual(len(page.downloads), len(dataset["distributions"]))
@@ -81,6 +83,11 @@ class CatalogTests(unittest.TestCase):
         self.assertEqual(len(metadata["hasPart"]), len(self.catalog))
         for dataset in self.catalog:
             self.assertIn(f'/celestial_data/datasets/{dataset["id"]}/', source)
+        for part in metadata["hasPart"]:
+            self.assertEqual(part["sameAs"], part["url"])
+            self.assertEqual(part["@id"], part["url"] + "#dataset")
+            entry, = [item for item in self.catalog if item["name"] == part["name"]]
+            self.assertEqual(part["description"], entry["description"])
 
     def test_nested_datasets_meet_google_required_fields(self):
         def visit(value):
@@ -95,6 +102,9 @@ class CatalogTests(unittest.TestCase):
                         self.assertLessEqual(len(value["description"]), 5000)
                         self.assertTrue(value.get("license"))
                         self.assertTrue(value.get("creator"))
+                        diego, = [creator for creator in value["creator"]
+                                  if creator["name"] == "Diego Hernangómez"]
+                        self.assertEqual(diego["sameAs"], "https://orcid.org/0000-0001-8457-4658")
                 for item in value.values():
                     visit(item)
 

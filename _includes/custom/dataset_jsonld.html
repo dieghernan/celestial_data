@@ -12,10 +12,10 @@
   "isAccessibleForFree": true,
   "creator": [
     {"@type": "Person", "name": "Olaf Frohn"},
-    {"@type": "Person", "name": "Diego Hernangómez", "identifier": "https://orcid.org/0000-0001-8457-4658"}
+    {"@type": "Person", "name": "Diego Hernangómez", "sameAs": "https://orcid.org/0000-0001-8457-4658"}
   ],
   "isBasedOn": "https://github.com/ofrohn/d3-celestial/",
-  "isPartOf": {"@type": "Dataset", "@id": {{ '/' | absolute_url | append: '#collection' | jsonify }}, "name": "Celestial Data", "description": "Celestial datasets for the J2000 epoch derived from d3-celestial, with GeoJSON and GeoPackage geometries and complementary CSV name tables.", "license": "https://opensource.org/licenses/BSD-3-Clause", "creator": [{"@type": "Person", "name": "Olaf Frohn"}, {"@type": "Person", "name": "Diego Hernangómez", "identifier": "https://orcid.org/0000-0001-8457-4658"}], "url": {{ "/" | absolute_url | jsonify }}, "identifier": "https://doi.org/10.5281/zenodo.7561601"},
+  "isPartOf": {"@type": "Dataset", "@id": {{ '/' | absolute_url | append: '#collection' | jsonify }}, "name": "Celestial Data", "description": "Collection of celestial datasets derived from d3-celestial: stars, deep-sky objects, the Milky Way, asterisms and constellation labels, lines and regions. GeoJSON and GeoPackage files encode J2000 celestial angles as geographic geometries for GIS use; CSV tables provide names and attributes. These are not locations on Earth or predictions of the current sky. Downloads follow the repository main branch and may differ from the archived collection identified by its DOI.", "license": "https://opensource.org/licenses/BSD-3-Clause", "creator": [{"@type": "Person", "name": "Olaf Frohn"}, {"@type": "Person", "name": "Diego Hernangómez", "sameAs": "https://orcid.org/0000-0001-8457-4658"}], "url": {{ "/" | absolute_url | jsonify }}, "identifier": "https://doi.org/10.5281/zenodo.7561601"},
   "distribution": [
     {% for file in dataset.distributions %}
     {"@type": "DataDownload", "name": {{ file.label | jsonify }}, "encodingFormat": {{ file.mime | jsonify }}, "contentSize": "{{ file.bytes }} bytes", "contentUrl": {{ '/data/' | append: file.filename | absolute_url | jsonify }}}{% unless forloop.last %},{% endunless %}
