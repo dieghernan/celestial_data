@@ -1,7 +1,9 @@
+{% unless include.summary %}
+{{ site.data.croissant[include.dataset.id] | jsonify | replace: '<', '\u003c' }}
+{% else %}
 {%- assign entry = include.dataset -%}
 {%- assign entry_url = '/datasets/' | append: entry.id | append: '/' | absolute_url -%}
 {
-  {% unless include.summary %}"@context": "https://schema.org",{% endunless %}
   "@type": "Dataset",
   "@id": {{ entry_url | append: '#dataset' | jsonify }},
   "url": {{ entry_url | jsonify }},
@@ -11,16 +13,11 @@
   "keywords": {{ entry.keywords | jsonify }},
   "license": {{ site.data.structured_data.license | jsonify }},
   "creator": {{ site.data.structured_data.creator | jsonify }},
-  {% if include.summary %}
-  "sameAs": {{ entry_url | jsonify }}
-  {% else %}
-  "isAccessibleForFree": {{ site.data.structured_data.isAccessibleForFree | jsonify }},
-  "isBasedOn": {{ site.data.structured_data.isBasedOn | jsonify }},
-  "isPartOf": {% include custom/structured_data/collection.html summary=true %},
-  "distribution": [
-    {% for file in entry.distributions %}
-    {% include custom/structured_data/distribution.html file=file %}{% unless forloop.last %},{% endunless %}
-    {% endfor %}
-  ]
-  {% endif %}
+  "sameAs": {{ entry_url | jsonify }},
+  "subjectOf": {
+    "@type": "DigitalDocument",
+    "encodingFormat": "application/ld+json",
+    "url": {{ '/croissant/' | append: entry.id | append: '.json' | absolute_url | jsonify }}
+  }
 }
+{% endunless %}

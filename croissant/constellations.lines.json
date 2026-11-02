@@ -1,0 +1,228 @@
+{
+  "@context": {
+    "@language": "en",
+    "@vocab": "https://schema.org/",
+    "arrayShape": "cr:arrayShape",
+    "citeAs": "cr:citeAs",
+    "column": "cr:column",
+    "conformsTo": "dct:conformsTo",
+    "containedIn": "cr:containedIn",
+    "cr": "http://mlcommons.org/croissant/",
+    "rai": "http://mlcommons.org/croissant/RAI/",
+    "data": {
+      "@id": "cr:data",
+      "@type": "@json"
+    },
+    "dataType": {
+      "@id": "cr:dataType",
+      "@type": "@vocab"
+    },
+    "dct": "http://purl.org/dc/terms/",
+    "description": "sc:description",
+    "equivalentProperty": "cr:equivalentProperty",
+    "examples": {
+      "@id": "cr:examples",
+      "@type": "@json"
+    },
+    "extract": "cr:extract",
+    "field": "cr:field",
+    "fileProperty": "cr:fileProperty",
+    "fileObject": "cr:fileObject",
+    "fileSet": "cr:fileSet",
+    "format": "cr:format",
+    "includes": "cr:includes",
+    "isArray": "cr:isArray",
+    "isLiveDataset": "cr:isLiveDataset",
+    "jsonPath": "cr:jsonPath",
+    "key": "cr:key",
+    "md5": "cr:md5",
+    "name": "sc:name",
+    "parentField": "cr:parentField",
+    "path": "cr:path",
+    "recordSet": "cr:recordSet",
+    "references": "cr:references",
+    "regex": "cr:regex",
+    "repeated": "cr:repeated",
+    "replace": "cr:replace",
+    "samplingRate": "cr:samplingRate",
+    "sc": "https://schema.org/",
+    "separator": "cr:separator",
+    "source": "cr:source",
+    "subField": "cr:subField",
+    "transform": "cr:transform",
+    "@base": "https://dieghernan.github.io/celestial_data/datasets/constellations.lines/"
+  },
+  "@type": "Dataset",
+  "@id": "https://dieghernan.github.io/celestial_data/datasets/constellations.lines/#dataset",
+  "url": "https://dieghernan.github.io/celestial_data/datasets/constellations.lines/",
+  "name": "Constellation lines",
+  "description": "Line patterns connecting stars to illustrate constellation figures, with constellation identifiers, names and display ranks. Derived from d3-celestial in the J2000 reference and available as GeoJSON and GeoPackage; the lines illustrate figures rather than region borders.",
+  "datePublished": "2023-01-25",
+  "dateModified": "2023-01-25",
+  "version": "1.0.1",
+  "keywords": [
+    "Constellation lines",
+    "J2000",
+    "GeoJSON",
+    "GeoPackage",
+    "celestial"
+  ],
+  "license": "https://opensource.org/licenses/BSD-3-Clause",
+  "creator": [
+    {
+      "@type": "Person",
+      "name": "Olaf Frohn"
+    },
+    {
+      "@type": "Person",
+      "name": "Diego Hernangómez",
+      "sameAs": "https://orcid.org/0000-0001-8457-4658",
+      "url": "https://dieghernan.github.io/"
+    }
+  ],
+  "isAccessibleForFree": true,
+  "isBasedOn": "https://github.com/ofrohn/d3-celestial/",
+  "isPartOf": {
+    "@id": "https://dieghernan.github.io/celestial_data/#collection"
+  },
+  "conformsTo": "http://mlcommons.org/croissant/1.1",
+  "citeAs": "Part of Celestial Data (1.0.1), collection DOI: https://doi.org/10.5281/zenodo.7561601. The DOI identifies the archived collection, not a separate DOI for this dataset.",
+  "distribution": [
+    {
+      "@type": [
+        "cr:FileObject",
+        "sc:DataDownload"
+      ],
+      "@id": "constellations.lines.geojson",
+      "name": "GeoJSON",
+      "encodingFormat": "application/geo+json",
+      "contentSize": "35048 bytes",
+      "contentUrl": "https://dieghernan.github.io/celestial_data/data/constellations.lines.geojson",
+      "sha256": "902f356b6c7883a7573ab30bd7c0df9427324bda6466674479583fe08e0bc5c1"
+    },
+    {
+      "@type": [
+        "cr:FileObject",
+        "sc:DataDownload"
+      ],
+      "@id": "constellations.lines.min.geojson",
+      "name": "GeoJSON (minified)",
+      "encodingFormat": "application/geo+json",
+      "contentSize": "28933 bytes",
+      "contentUrl": "https://dieghernan.github.io/celestial_data/data/constellations.lines.min.geojson",
+      "sha256": "687c50a1cdff6f665b9236d508d9aa81e643e94bdcec7e1949522d868bbdf2db"
+    },
+    {
+      "@type": [
+        "cr:FileObject",
+        "sc:DataDownload"
+      ],
+      "@id": "constellations.lines.gpkg",
+      "name": "GeoPackage",
+      "encodingFormat": "application/geopackage+sqlite3",
+      "contentSize": "131072 bytes",
+      "contentUrl": "https://dieghernan.github.io/celestial_data/data/constellations.lines.gpkg",
+      "sha256": "eb104633971e52aaa5bf67a28fb375873a5842eb72d3ccc4cf96900899e5a1b2"
+    },
+    {
+      "@type": [
+        "cr:FileObject",
+        "sc:DataDownload"
+      ],
+      "@id": "records-json",
+      "name": "Constellation lines (JSON/WKT, gzip)",
+      "contentUrl": "https://dieghernan.github.io/celestial_data/assets/croissant/30d778c3a1161f0933d0277566e5d4cc6be751a94d4a86436985973f29360b37/records.json.gz",
+      "encodingFormat": "application/json",
+      "contentSize": "8929 bytes",
+      "sha256": "30d778c3a1161f0933d0277566e5d4cc6be751a94d4a86436985973f29360b37"
+    }
+  ],
+  "recordSet": [
+    {
+      "@type": "cr:RecordSet",
+      "@id": "records",
+      "name": "records",
+      "description": "One record per source feature or CSV row in its original order. No values are imputed. Publication dates describe the collection release, not observations; J2000 is a celestial reference epoch, not a file date. The row-position key is local to this snapshot.",
+      "key": {
+        "@id": "records/record_index"
+      },
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "records/record_index",
+          "name": "record_index",
+          "description": "One-based row position in this source snapshot; unique within this record set, not an astronomical catalog identifier or a persistent cross-release key. Absent properties and JSON null are represented as null; missing values are not imputed.",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "records-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].record_index"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "records/id",
+          "name": "id",
+          "description": "Identifier as stored in this source catalog, preserving its original text or numeric representation. It is not assumed unique across catalogs or records. Absent properties and JSON null are represented as null; missing values are not imputed.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "records-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "records/name",
+          "name": "name",
+          "description": "Name stored in the source; its convention depends on the catalog. Nulls and empty strings are preserved, not filled from another language. Absent properties and JSON null are represented as null; missing values are not imputed.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "records-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].name"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "records/rank",
+          "name": "rank",
+          "description": "Source display-priority rank, not a physical measurement; its scale depends on the constellation catalog. Absent properties and JSON null are represented as null; missing values are not imputed.",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "records-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].rank"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "records/geometry_wkt",
+          "name": "geometry_wkt",
+          "description": "Original geometry encoded as WKT without reprojection, rounding or simplification. J2000 celestial angles in degrees: x is right ascension converted from hours at 15 degrees/hour and wrapped to [-180,180]; y is declination. These are not terrestrial WGS84 positions. WKT itself does not carry this reference frame. Absent properties and JSON null are represented as null; missing values are not imputed.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "records-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].geometry_wkt"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

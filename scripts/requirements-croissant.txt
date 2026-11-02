@@ -1,0 +1,2 @@
+mlcroissant==1.1.1
+shapely==2.1.2

@@ -30,7 +30,8 @@
     {
       "@type": "Person",
       "name": "Diego Hernangómez",
-      "sameAs": "https://orcid.org/0000-0001-8457-4658"
+      "sameAs": "https://orcid.org/0000-0001-8457-4658",
+      "url": "https://dieghernan.github.io/"
     }
   ],
   "isBasedOn": "https://github.com/ofrohn/d3-celestial/"

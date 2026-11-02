@@ -37,6 +37,18 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v7
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: scripts/requirements-croissant.txt
+      - name: Install Croissant dependencies
+        run: pip install -r scripts/requirements-croissant.txt
+      - name: Generate record downloads and check descriptors
+        run: python scripts/build_croissant.py --check
+      - name: Validate all Croissant descriptors
+        run: |
+          python -c "from pathlib import Path; import mlcroissant; [mlcroissant.Dataset(str(path)) for path in Path('croissant').glob('*.json')]"
       - name: Test preview loading
         run: node --test tests/celestial-preview.test.cjs
       - name: Setup Ruby

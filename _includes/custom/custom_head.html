@@ -1,5 +1,6 @@
 <link rel="describedby" type="text/plain" href="{{ '/llms.txt' | relative_url }}">
 {% if page.dataset_id %}
+<link rel="alternate" type="application/ld+json" title="Croissant metadata" href="{{ '/croissant/' | append: page.dataset_id | append: '.json' | absolute_url }}">
 {% include custom/dataset_jsonld.html %}
 {% elsif page.dataset_collection %}
 <script type="application/ld+json">
