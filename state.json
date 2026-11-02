@@ -1,106 +1,107 @@
 {
   "posts": {
     "https://dieghernan.github.io/celestial_data/": {
-      "https://doi.org/10.32614/RJ-2018-009": "20af747d618ecc234c5b677fa4aefa8f9ea444373f0894a9d79c286cecf1933f",
-      "https://github.com/ofrohn/d3-celestial/": "20af747d618ecc234c5b677fa4aefa8f9ea444373f0894a9d79c286cecf1933f",
-      "https://opensource.org/licenses/BSD-3-Clause": "20af747d618ecc234c5b677fa4aefa8f9ea444373f0894a9d79c286cecf1933f"
+      "https://doi.org/10.32614/RJ-2018-009": "9c6a6dee91716879ffc491af93a7352da06f74e2aca0df5b274a0402d8e5ae6c",
+      "https://github.com/ofrohn/d3-celestial/": "9c6a6dee91716879ffc491af93a7352da06f74e2aca0df5b274a0402d8e5ae6c",
+      "https://opensource.org/licenses/BSD-3-Clause": "9c6a6dee91716879ffc491af93a7352da06f74e2aca0df5b274a0402d8e5ae6c"
     },
     "https://dieghernan.github.io/celestial_data/404.html": {},
     "https://dieghernan.github.io/celestial_data/data": {
-      "https://github.com/ofrohn/d3-celestial/blob/master/data/constellations.lines.cn.json": "bfa5d7a04553301b8ee8191f3625fdbc634f4719d76220d591f490905abff526"
+      "https://github.com/ofrohn/d3-celestial/blob/master/data/constellations.lines.cn.json": "14cf9941524b801ec6c99317babaf631de3e84e004e30e271d48c610f6c42f01"
     },
     "https://dieghernan.github.io/celestial_data/datasets/asterisms/": {
-      "https://github.com/ofrohn/d3-celestial/": "7211df87647e8f6abf3b3ca911251472ccdae6c68b96461d1553602b7d5fdc0b",
-      "https://opensource.org/licenses/BSD-3-Clause": "7211df87647e8f6abf3b3ca911251472ccdae6c68b96461d1553602b7d5fdc0b"
+      "https://github.com/ofrohn/d3-celestial/": "7f2b7827370a8e7dac434405bc1aa01b4c9f139e73703911e027932a4be3871e",
+      "https://opensource.org/licenses/BSD-3-Clause": "7f2b7827370a8e7dac434405bc1aa01b4c9f139e73703911e027932a4be3871e"
     },
     "https://dieghernan.github.io/celestial_data/datasets/constellations.borders.cn/": {
-      "https://github.com/ofrohn/d3-celestial/": "34222db8c687dcaaae904b9760d8ead67c8dd466bea93dab50ababda4674aa46",
-      "https://opensource.org/licenses/BSD-3-Clause": "34222db8c687dcaaae904b9760d8ead67c8dd466bea93dab50ababda4674aa46"
+      "https://github.com/ofrohn/d3-celestial/": "8f6705b42ded4f5be3b30e4ca2e3978d6c7f03f0c17618cf82eba44d31d69ee1",
+      "https://opensource.org/licenses/BSD-3-Clause": "8f6705b42ded4f5be3b30e4ca2e3978d6c7f03f0c17618cf82eba44d31d69ee1"
     },
     "https://dieghernan.github.io/celestial_data/datasets/constellations.borders/": {
-      "https://github.com/ofrohn/d3-celestial/": "357375ac5873ee7dc45f2c2bbdfd9561bf2e6b107624fe56ff5538680d0de170",
-      "https://opensource.org/licenses/BSD-3-Clause": "357375ac5873ee7dc45f2c2bbdfd9561bf2e6b107624fe56ff5538680d0de170"
+      "https://github.com/ofrohn/d3-celestial/": "1e7b6edf6396c0f9765564b0f3f84e50a6aecd43ad45a532eeee6ba645b2075d",
+      "https://opensource.org/licenses/BSD-3-Clause": "1e7b6edf6396c0f9765564b0f3f84e50a6aecd43ad45a532eeee6ba645b2075d"
     },
     "https://dieghernan.github.io/celestial_data/datasets/constellations.bounds.cn/": {
-      "https://github.com/ofrohn/d3-celestial/": "bff1aeb0057d3e8f00ecb19f2e1cb638657e22321dff41e79ee7bf4d4f76a344",
-      "https://opensource.org/licenses/BSD-3-Clause": "bff1aeb0057d3e8f00ecb19f2e1cb638657e22321dff41e79ee7bf4d4f76a344"
+      "https://github.com/ofrohn/d3-celestial/": "efc4bbd72044b74afc21f8ba9c02332a80fcf0fc7ef0c1f9ad193d0ac5016d8c",
+      "https://opensource.org/licenses/BSD-3-Clause": "efc4bbd72044b74afc21f8ba9c02332a80fcf0fc7ef0c1f9ad193d0ac5016d8c"
     },
     "https://dieghernan.github.io/celestial_data/datasets/constellations.bounds/": {
-      "https://github.com/ofrohn/d3-celestial/": "e9c37a0b49453d39fe52199ba259415cf43c605180b396b9c9e6e426963258ba",
-      "https://opensource.org/licenses/BSD-3-Clause": "e9c37a0b49453d39fe52199ba259415cf43c605180b396b9c9e6e426963258ba"
+      "https://github.com/ofrohn/d3-celestial/": "e0514b3b22fd3e11ff67ca652db334a1acc7972461097cea36cfd8634bd5a285",
+      "https://opensource.org/licenses/BSD-3-Clause": "e0514b3b22fd3e11ff67ca652db334a1acc7972461097cea36cfd8634bd5a285"
     },
     "https://dieghernan.github.io/celestial_data/datasets/constellations.cn/": {
-      "https://github.com/ofrohn/d3-celestial/": "21d4b86ac1659d6f93a560066f5a4f57aecd81c67a7aef890187c8b8e76fb64e",
-      "https://opensource.org/licenses/BSD-3-Clause": "21d4b86ac1659d6f93a560066f5a4f57aecd81c67a7aef890187c8b8e76fb64e"
+      "https://github.com/ofrohn/d3-celestial/": "f7956ac8f653508fc0932f03afd3bf8a8f6b936a303cb725409ad452298c5aac",
+      "https://opensource.org/licenses/BSD-3-Clause": "f7956ac8f653508fc0932f03afd3bf8a8f6b936a303cb725409ad452298c5aac"
     },
     "https://dieghernan.github.io/celestial_data/datasets/constellations.lines.cn/": {
-      "https://github.com/ofrohn/d3-celestial/": "98e1cb2072b83842361dde826597f0761fd2a11e58214df61238dc1cfe7303e0",
-      "https://opensource.org/licenses/BSD-3-Clause": "98e1cb2072b83842361dde826597f0761fd2a11e58214df61238dc1cfe7303e0"
+      "https://github.com/ofrohn/d3-celestial/": "935ce1d0294c442662f77aed7947664b290e312203e21979c274f0669034743f",
+      "https://opensource.org/licenses/BSD-3-Clause": "935ce1d0294c442662f77aed7947664b290e312203e21979c274f0669034743f"
     },
     "https://dieghernan.github.io/celestial_data/datasets/constellations.lines/": {
-      "https://github.com/ofrohn/d3-celestial/": "74cc21fc5484114a42fac845adcf04b0b5ec84ebeb0b955675230413687fbba7",
-      "https://opensource.org/licenses/BSD-3-Clause": "74cc21fc5484114a42fac845adcf04b0b5ec84ebeb0b955675230413687fbba7"
+      "https://github.com/ofrohn/d3-celestial/": "80c046970faf26487a2771797b9f0d6bde6dcff4764b7b9ea969e48449f30118",
+      "https://opensource.org/licenses/BSD-3-Clause": "80c046970faf26487a2771797b9f0d6bde6dcff4764b7b9ea969e48449f30118"
     },
     "https://dieghernan.github.io/celestial_data/datasets/constellations/": {
-      "https://github.com/ofrohn/d3-celestial/": "b8f36acdd255f187588d3b44386c500baea3015c61217d7245b3ba7c05e225a5",
-      "https://opensource.org/licenses/BSD-3-Clause": "b8f36acdd255f187588d3b44386c500baea3015c61217d7245b3ba7c05e225a5"
+      "https://github.com/ofrohn/d3-celestial/": "ddffafd42e2740832a415b218a1ee92d8c6f285db3eef384d2462b286c4dd4a1",
+      "https://opensource.org/licenses/BSD-3-Clause": "ddffafd42e2740832a415b218a1ee92d8c6f285db3eef384d2462b286c4dd4a1"
     },
     "https://dieghernan.github.io/celestial_data/datasets/dsonames.cn/": {
-      "https://github.com/ofrohn/d3-celestial/": "23b5416a8901d80c5f73f61571a37600d66be61b8012c07b985e77d29a077621",
-      "https://opensource.org/licenses/BSD-3-Clause": "23b5416a8901d80c5f73f61571a37600d66be61b8012c07b985e77d29a077621"
+      "https://github.com/ofrohn/d3-celestial/": "55291c1d825d6da0c4f39dddbc26f6d9c922ee451ca51f1d03c31b3c6a5967b9",
+      "https://opensource.org/licenses/BSD-3-Clause": "55291c1d825d6da0c4f39dddbc26f6d9c922ee451ca51f1d03c31b3c6a5967b9"
     },
     "https://dieghernan.github.io/celestial_data/datasets/dsonames/": {
-      "https://github.com/ofrohn/d3-celestial/": "abae20e8bc7a4c0fc209e0e754e8e04fed2bd98ea148fc3920c38ffe32d8c642",
-      "https://opensource.org/licenses/BSD-3-Clause": "abae20e8bc7a4c0fc209e0e754e8e04fed2bd98ea148fc3920c38ffe32d8c642"
+      "https://github.com/ofrohn/d3-celestial/": "1817df550493823d86d7361108753ad459ee59cf906802cebc4843ed7f706689",
+      "https://opensource.org/licenses/BSD-3-Clause": "1817df550493823d86d7361108753ad459ee59cf906802cebc4843ed7f706689"
     },
     "https://dieghernan.github.io/celestial_data/datasets/dsos.14/": {
-      "https://github.com/ofrohn/d3-celestial/": "61b84ca1a68523cf7ac2552ff7cad4bb15f6e57741e585fce2a1875f16c16630",
-      "https://opensource.org/licenses/BSD-3-Clause": "61b84ca1a68523cf7ac2552ff7cad4bb15f6e57741e585fce2a1875f16c16630"
+      "https://github.com/ofrohn/d3-celestial/": "e050a3cae1e212606d3b823947fb25ff568605d3ab1fa31f3c1a41fa54ffc2e6",
+      "https://opensource.org/licenses/BSD-3-Clause": "e050a3cae1e212606d3b823947fb25ff568605d3ab1fa31f3c1a41fa54ffc2e6"
     },
     "https://dieghernan.github.io/celestial_data/datasets/dsos.20/": {
-      "https://github.com/ofrohn/d3-celestial/": "b5c99912188cef874ff8e73726e5069c007395552ef05f392978b26680c164a3",
-      "https://opensource.org/licenses/BSD-3-Clause": "b5c99912188cef874ff8e73726e5069c007395552ef05f392978b26680c164a3"
+      "https://github.com/ofrohn/d3-celestial/": "659c48337949015bbcf74f427c2d57accefe92c38f6820a930967d7985ab2c33",
+      "https://opensource.org/licenses/BSD-3-Clause": "659c48337949015bbcf74f427c2d57accefe92c38f6820a930967d7985ab2c33"
     },
     "https://dieghernan.github.io/celestial_data/datasets/dsos.6/": {
-      "https://github.com/ofrohn/d3-celestial/": "e7c61c2c2d0934d85f3fb7b825abca1553a0696516466167553661d814cb3c4c",
-      "https://opensource.org/licenses/BSD-3-Clause": "e7c61c2c2d0934d85f3fb7b825abca1553a0696516466167553661d814cb3c4c"
+      "https://github.com/ofrohn/d3-celestial/": "efe7e8bba52e84dacbf3f92149147561d223d67746aac6dcc9eec83b9d5c2aef",
+      "https://opensource.org/licenses/BSD-3-Clause": "efe7e8bba52e84dacbf3f92149147561d223d67746aac6dcc9eec83b9d5c2aef"
     },
     "https://dieghernan.github.io/celestial_data/datasets/dsos.bright/": {
-      "https://github.com/ofrohn/d3-celestial/": "22088b26fca5c6820bdf60f09814cd3c1ee63615347ece5ed957e2b2df863cea",
-      "https://opensource.org/licenses/BSD-3-Clause": "22088b26fca5c6820bdf60f09814cd3c1ee63615347ece5ed957e2b2df863cea"
+      "https://github.com/ofrohn/d3-celestial/": "c8b54ab2402e485e80e746a8dbbf045443c152d9a9ce0ee16ec37b8c0fe96efe",
+      "https://opensource.org/licenses/BSD-3-Clause": "c8b54ab2402e485e80e746a8dbbf045443c152d9a9ce0ee16ec37b8c0fe96efe"
     },
     "https://dieghernan.github.io/celestial_data/datasets/lg/": {
-      "https://github.com/ofrohn/d3-celestial/": "b28741c12587298721e419d9122d8a3901431b21afde14342099372283a4d818",
-      "https://opensource.org/licenses/BSD-3-Clause": "b28741c12587298721e419d9122d8a3901431b21afde14342099372283a4d818"
+      "https://github.com/ofrohn/d3-celestial/": "fd6dd1781484d17c24e7c9fe5b09b1f08c109be3986bc689a818dbf4d4f8fb2c",
+      "https://opensource.org/licenses/BSD-3-Clause": "fd6dd1781484d17c24e7c9fe5b09b1f08c109be3986bc689a818dbf4d4f8fb2c"
     },
     "https://dieghernan.github.io/celestial_data/datasets/messier/": {
-      "https://github.com/ofrohn/d3-celestial/": "9874d034ff4ee4cb9f912904d6386e50ecef5066e143227ff1570ed64bab7f10",
-      "https://opensource.org/licenses/BSD-3-Clause": "9874d034ff4ee4cb9f912904d6386e50ecef5066e143227ff1570ed64bab7f10"
+      "https://github.com/ofrohn/d3-celestial/": "09c740bd4e112f503ff95755210d29999fde8d378d49bf196ed37054a885fbaf",
+      "https://opensource.org/licenses/BSD-3-Clause": "09c740bd4e112f503ff95755210d29999fde8d378d49bf196ed37054a885fbaf"
     },
     "https://dieghernan.github.io/celestial_data/datasets/mw/": {
-      "https://github.com/ofrohn/d3-celestial/": "bc935dda33a207c8b030dc1f6a078bd2a5087fcdc3ff84ebfd4ba47769cf4fca",
-      "https://opensource.org/licenses/BSD-3-Clause": "bc935dda33a207c8b030dc1f6a078bd2a5087fcdc3ff84ebfd4ba47769cf4fca"
+      "https://github.com/ofrohn/d3-celestial/": "9b47cdc6aba9b54c65a6a9425496a1b0fc15696bd49ceb61f8ae02e70f60b33f",
+      "https://opensource.org/licenses/BSD-3-Clause": "9b47cdc6aba9b54c65a6a9425496a1b0fc15696bd49ceb61f8ae02e70f60b33f"
     },
     "https://dieghernan.github.io/celestial_data/datasets/starnames.cn/": {
-      "https://github.com/ofrohn/d3-celestial/": "c169630fc30e380e98d8009d1828308c3b3fa49d36f65a9127dc4c8b1a28490c",
-      "https://opensource.org/licenses/BSD-3-Clause": "c169630fc30e380e98d8009d1828308c3b3fa49d36f65a9127dc4c8b1a28490c"
+      "https://github.com/ofrohn/d3-celestial/": "bfaed1c5167c0f8fa17de08f2b5db87e54e4258befc432e9cb5ea1d8f7c3996f",
+      "https://opensource.org/licenses/BSD-3-Clause": "bfaed1c5167c0f8fa17de08f2b5db87e54e4258befc432e9cb5ea1d8f7c3996f"
     },
     "https://dieghernan.github.io/celestial_data/datasets/starnames/": {
-      "https://github.com/ofrohn/d3-celestial/": "891e578769a9bfe453077469e214b0b75909e9c0422273f3292baca6f3cb67a8",
-      "https://opensource.org/licenses/BSD-3-Clause": "891e578769a9bfe453077469e214b0b75909e9c0422273f3292baca6f3cb67a8"
+      "https://github.com/ofrohn/d3-celestial/": "7dceff861aa5c09c3de0a51a55773d06d52673430119703639e7c53d5140523d",
+      "https://opensource.org/licenses/BSD-3-Clause": "7dceff861aa5c09c3de0a51a55773d06d52673430119703639e7c53d5140523d"
     },
     "https://dieghernan.github.io/celestial_data/datasets/stars.14/": {
-      "https://github.com/ofrohn/d3-celestial/": "36456a874f24f68cf6a888ea44e868d6ad682aa24606006f06ef3468797f50b9",
-      "https://opensource.org/licenses/BSD-3-Clause": "36456a874f24f68cf6a888ea44e868d6ad682aa24606006f06ef3468797f50b9"
+      "https://github.com/ofrohn/d3-celestial/": "fb5c408b3eb932e387e3d679a45e605e049b69d6bd83c2a3ecb1fb934d4d8d61",
+      "https://opensource.org/licenses/BSD-3-Clause": "fb5c408b3eb932e387e3d679a45e605e049b69d6bd83c2a3ecb1fb934d4d8d61"
     },
     "https://dieghernan.github.io/celestial_data/datasets/stars.6/": {
-      "https://github.com/ofrohn/d3-celestial/": "0666b237e8cd34d585b89e23efe33ee5e6e5138889d810a47064bbf991a5df2b",
-      "https://opensource.org/licenses/BSD-3-Clause": "0666b237e8cd34d585b89e23efe33ee5e6e5138889d810a47064bbf991a5df2b"
+      "https://github.com/ofrohn/d3-celestial/": "df49c0caf1c85d2a2c9e0931a85303244d04f8f390970b3407a08cb1be1decb1",
+      "https://opensource.org/licenses/BSD-3-Clause": "df49c0caf1c85d2a2c9e0931a85303244d04f8f390970b3407a08cb1be1decb1"
     },
     "https://dieghernan.github.io/celestial_data/datasets/stars.8/": {
-      "https://github.com/ofrohn/d3-celestial/": "df1150288c17d477d843a88f9d3c5e21d78d5a1e2adbb00c7f8015867423ba26",
-      "https://opensource.org/licenses/BSD-3-Clause": "df1150288c17d477d843a88f9d3c5e21d78d5a1e2adbb00c7f8015867423ba26"
+      "https://github.com/ofrohn/d3-celestial/": "b804f648ad169e044326632256f1e013153549e0eb74e4732873d568e74ebf11",
+      "https://opensource.org/licenses/BSD-3-Clause": "b804f648ad169e044326632256f1e013153549e0eb74e4732873d568e74ebf11"
     },
+    "https://dieghernan.github.io/celestial_data/downloads/": {},
     "https://dieghernan.github.io/celestial_data/preview": {
       "https://leafletjs.com/": "752b9bd6803ed4f4094e784cf3184040a95b8c68b91d795a997ef757f102909e"
     },
