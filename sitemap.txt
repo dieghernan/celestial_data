@@ -9,6 +9,7 @@ https://dieghernan.github.io/celestial_data/datasets/constellations.lines.cn/
 https://dieghernan.github.io/celestial_data/datasets/constellations.lines/
 https://dieghernan.github.io/celestial_data/datasets/constellations/
 https://dieghernan.github.io/celestial_data/data
+https://dieghernan.github.io/celestial_data/downloads/
 https://dieghernan.github.io/celestial_data/datasets/dsonames.cn/
 https://dieghernan.github.io/celestial_data/datasets/dsonames/
 https://dieghernan.github.io/celestial_data/datasets/dsos.14/
