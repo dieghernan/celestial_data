@@ -1,0 +1,21 @@
+{
+  {% unless include.summary %}"@context": "https://schema.org",{% endunless %}
+  "@type": "Dataset",
+  "@id": {{ '/' | absolute_url | append: '#collection' | jsonify }},
+  "url": {{ '/' | absolute_url | jsonify }},
+  "name": {{ site.data.structured_data.collection.name | jsonify }},
+  "description": {{ site.data.structured_data.collection.description | jsonify }},
+  "identifier": {{ site.data.structured_data.collection.identifier | jsonify }},
+  "license": {{ site.data.structured_data.license | jsonify }},
+  "creator": {{ site.data.structured_data.creator | jsonify }}{% unless include.summary %},
+  {% include custom/structured_data/release.html %}
+  "sameAs": {{ site.data.structured_data.collection.identifier | jsonify }},
+  "keywords": {{ site.data.structured_data.collection.keywords | jsonify }},
+  "isAccessibleForFree": {{ site.data.structured_data.isAccessibleForFree | jsonify }},
+  "isBasedOn": {{ site.data.structured_data.isBasedOn | jsonify }},
+  "hasPart": [
+    {% for dataset in site.data.datasets %}
+    {% include custom/structured_data/dataset.html dataset=dataset summary=true %}{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ]{% endunless %}
+}

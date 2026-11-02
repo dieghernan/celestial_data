@@ -61,6 +61,19 @@ class CatalogTests(unittest.TestCase):
                 metadata, = datasets_in(source)
                 self.assertEqual(metadata["name"], dataset["name"])
                 self.assertEqual(metadata["description"], dataset["description"])
+                self.assertEqual(metadata["datePublished"], "2023-01-25")
+                self.assertEqual(metadata["dateModified"], "2023-01-25")
+                self.assertEqual(metadata["version"], "1.0.1")
+                expected_keywords = [dataset["name"]]
+                if dataset["geometry"]:
+                    expected_keywords.append("J2000")
+                expected_keywords.extend(file["label"] for file in dataset["distributions"] if "minified" not in file["label"])
+                expected_keywords.append("celestial")
+                self.assertEqual(metadata["keywords"], expected_keywords)
+                self.assertEqual(dataset["keywords"], expected_keywords)
+                collection, = datasets_in((ROOT / "_site/index.html").read_text(encoding="utf-8"))
+                for key, value in metadata["isPartOf"].items():
+                    self.assertEqual(value, collection[key])
                 self.assertIn(dataset["description"], source)
                 self.assertNotIn("identifier", metadata)  # DOI belongs to collection.
                 self.assertNotIn("spatialCoverage", metadata)
@@ -88,6 +101,10 @@ class CatalogTests(unittest.TestCase):
             self.assertEqual(part["@id"], part["url"] + "#dataset")
             entry, = [item for item in self.catalog if item["name"] == part["name"]]
             self.assertEqual(part["description"], entry["description"])
+            child_source = (ROOT / "_site/datasets" / entry["id"] / "index.html").read_text(encoding="utf-8")
+            child, = datasets_in(child_source)
+            for key in ("datePublished", "dateModified", "version", "keywords"):
+                self.assertEqual(part[key], child[key])
 
     def test_nested_datasets_meet_google_required_fields(self):
         def visit(value):

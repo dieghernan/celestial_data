@@ -60,7 +60,10 @@ def build():
                 size = path.stat().st_size
                 distributions.append(dict(filename=path.name, label=label, mime=mime,
                                           bytes=size, size=f"{size / 1_000_000:.2f} MB" if size >= 1_000_000 else f"{size / 1000:.1f} kB"))
-        datasets.append(dict(id=key, name=name, group=group, description=description,
+        keywords = [name] + (["J2000"] if geometry else [])
+        keywords.extend(file["label"] for file in distributions if "minified" not in file["label"])
+        keywords.append("celestial")
+        datasets.append(dict(id=key, name=name, group=group, description=description, keywords=keywords,
                              count=count, geometry=geometry, distributions=distributions))
         target = ROOT / "_pages" / "datasets" / f"{key}.md"
         target.parent.mkdir(parents=True, exist_ok=True)

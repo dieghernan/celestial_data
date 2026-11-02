@@ -1,0 +1,26 @@
+{%- assign entry = include.dataset -%}
+{%- assign entry_url = '/datasets/' | append: entry.id | append: '/' | absolute_url -%}
+{
+  {% unless include.summary %}"@context": "https://schema.org",{% endunless %}
+  "@type": "Dataset",
+  "@id": {{ entry_url | append: '#dataset' | jsonify }},
+  "url": {{ entry_url | jsonify }},
+  "name": {{ entry.name | jsonify }},
+  "description": {{ entry.description | jsonify }},
+  {% include custom/structured_data/release.html %}
+  "keywords": {{ entry.keywords | jsonify }},
+  "license": {{ site.data.structured_data.license | jsonify }},
+  "creator": {{ site.data.structured_data.creator | jsonify }},
+  {% if include.summary %}
+  "sameAs": {{ entry_url | jsonify }}
+  {% else %}
+  "isAccessibleForFree": {{ site.data.structured_data.isAccessibleForFree | jsonify }},
+  "isBasedOn": {{ site.data.structured_data.isBasedOn | jsonify }},
+  "isPartOf": {% include custom/structured_data/collection.html summary=true %},
+  "distribution": [
+    {% for file in entry.distributions %}
+    {% include custom/structured_data/distribution.html file=file %}{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ]
+  {% endif %}
+}

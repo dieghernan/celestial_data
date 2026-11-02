@@ -1,0 +1,7 @@
+{
+  "@type": "DataDownload",
+  "name": {{ include.file.label | jsonify }},
+  "encodingFormat": {{ include.file.mime | jsonify }},
+  "contentSize": "{{ include.file.bytes }} bytes",
+  "contentUrl": {{ '/data/' | append: include.file.filename | absolute_url | jsonify }}
+}

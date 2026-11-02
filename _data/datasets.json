@@ -4,6 +4,13 @@
     "name": "Asterisms",
     "group": "Asterisms and Milky Way",
     "description": "Line patterns for asterisms in the J2000 celestial reference, with names and label positions from d3-celestial. GeoJSON and GeoPackage geometries support sky-map illustration; the coordinates describe celestial directions, not places on Earth.",
+    "keywords": [
+      "Asterisms",
+      "J2000",
+      "GeoJSON",
+      "GeoPackage",
+      "celestial"
+    ],
     "count": 65,
     "geometry": "MultiLineString",
     "distributions": [
@@ -35,6 +42,13 @@
     "name": "Milky Way",
     "group": "Asterisms and Milky Way",
     "description": "Polygon outlines of the Milky Way in successive brightness bands, derived from d3-celestial for J2000 sky maps. Available as GeoJSON and GeoPackage with celestial angles encoded as geographic coordinates for GIS use, not as terrestrial locations.",
+    "keywords": [
+      "Milky Way",
+      "J2000",
+      "GeoJSON",
+      "GeoPackage",
+      "celestial"
+    ],
     "count": 5,
     "geometry": "MultiPolygon",
     "distributions": [
@@ -66,6 +80,14 @@
     "name": "Constellation labels",
     "group": "Constellations",
     "description": "Constellation label positions in the J2000 celestial reference, with identifiers, multilingual names and display attributes from d3-celestial. GeoJSON and GeoPackage contain point geometries; the complementary CSV contains attributes without geometry.",
+    "keywords": [
+      "Constellation labels",
+      "J2000",
+      "GeoJSON",
+      "GeoPackage",
+      "CSV",
+      "celestial"
+    ],
     "count": 89,
     "geometry": "Point",
     "distributions": [
@@ -104,6 +126,14 @@
     "name": "Chinese constellation labels",
     "group": "Constellations",
     "description": "Label positions for traditional Chinese constellations in the J2000 celestial reference, with Chinese names, English translations, pinyin and display attributes. Available as point geometries in GeoJSON and GeoPackage, with complementary attributes in CSV.",
+    "keywords": [
+      "Chinese constellation labels",
+      "J2000",
+      "GeoJSON",
+      "GeoPackage",
+      "CSV",
+      "celestial"
+    ],
     "count": 312,
     "geometry": "Point",
     "distributions": [
@@ -142,6 +172,13 @@
     "name": "Constellation borders",
     "group": "Constellations",
     "description": "Line geometries tracing constellation borders in the J2000 celestial reference, with identifiers for adjacent regions. Derived from d3-celestial and distributed as GeoJSON and GeoPackage for sky maps; the coordinates are not locations on Earth.",
+    "keywords": [
+      "Constellation borders",
+      "J2000",
+      "GeoJSON",
+      "GeoPackage",
+      "celestial"
+    ],
     "count": 257,
     "geometry": "MultiLineString",
     "distributions": [
@@ -173,6 +210,13 @@
     "name": "Chinese constellation borders",
     "group": "Constellations",
     "description": "Line geometries tracing borders in the traditional Chinese constellation data from d3-celestial, with identifiers for adjacent regions. The J2000 celestial angles are encoded as geographic coordinates in GeoJSON and GeoPackage for sky-map displays.",
+    "keywords": [
+      "Chinese constellation borders",
+      "J2000",
+      "GeoJSON",
+      "GeoPackage",
+      "celestial"
+    ],
     "count": 84,
     "geometry": "LineString",
     "distributions": [
@@ -204,6 +248,13 @@
     "name": "Constellation regions",
     "group": "Constellations",
     "description": "Polygon regions for constellations in the J2000 celestial reference, with identifiers, names and display ranks from d3-celestial. Available as GeoJSON and GeoPackage for sky-map displays; these regions are celestial, not terrestrial administrative areas.",
+    "keywords": [
+      "Constellation regions",
+      "J2000",
+      "GeoJSON",
+      "GeoPackage",
+      "celestial"
+    ],
     "count": 89,
     "geometry": "MultiPolygon",
     "distributions": [
@@ -235,6 +286,13 @@
     "name": "Chinese constellation regions",
     "group": "Constellations",
     "description": "Polygon regions in the traditional Chinese constellation data from d3-celestial, with identifiers, Chinese names, English labels and display ranks. GeoJSON and GeoPackage encode J2000 celestial angles for GIS-compatible sky-map displays.",
+    "keywords": [
+      "Chinese constellation regions",
+      "J2000",
+      "GeoJSON",
+      "GeoPackage",
+      "celestial"
+    ],
     "count": 28,
     "geometry": "Polygon",
     "distributions": [
@@ -266,6 +324,13 @@
     "name": "Constellation lines",
     "group": "Constellations",
     "description": "Line patterns connecting stars to illustrate constellation figures, with constellation identifiers, names and display ranks. Derived from d3-celestial in the J2000 reference and available as GeoJSON and GeoPackage; the lines illustrate figures rather than region borders.",
+    "keywords": [
+      "Constellation lines",
+      "J2000",
+      "GeoJSON",
+      "GeoPackage",
+      "celestial"
+    ],
     "count": 89,
     "geometry": "MultiLineString",
     "distributions": [
@@ -297,6 +362,13 @@
     "name": "Chinese constellation lines",
     "group": "Constellations",
     "description": "Line patterns illustrating traditional Chinese constellation figures in the J2000 celestial reference, with identifiers, names and English labels. Available as GeoJSON and GeoPackage derived from d3-celestial; degenerate source lines were removed during processing.",
+    "keywords": [
+      "Chinese constellation lines",
+      "J2000",
+      "GeoJSON",
+      "GeoPackage",
+      "celestial"
+    ],
     "count": 255,
     "geometry": "MultiLineString",
     "distributions": [
@@ -328,6 +400,13 @@
     "name": "Deep-sky objects: magnitude 6",
     "group": "Deep-sky objects",
     "description": "Positions and attributes of deep-sky objects from d3-celestial with a nominal magnitude limit of 6, including entries with unknown magnitudes. J2000 point geometries are available in GeoJSON and GeoPackage, with object identifiers, classifications and dimensions where supplied.",
+    "keywords": [
+      "Deep-sky objects: magnitude 6",
+      "J2000",
+      "GeoJSON",
+      "GeoPackage",
+      "celestial"
+    ],
     "count": 3309,
     "geometry": "Point",
     "distributions": [
@@ -359,6 +438,13 @@
     "name": "Deep-sky objects: magnitude 14",
     "group": "Deep-sky objects",
     "description": "Positions and attributes of deep-sky objects from d3-celestial with a nominal magnitude limit of 14, including entries with unknown magnitudes. J2000 point geometries are available in GeoJSON and GeoPackage, with object identifiers, classifications and dimensions where supplied.",
+    "keywords": [
+      "Deep-sky objects: magnitude 14",
+      "J2000",
+      "GeoJSON",
+      "GeoPackage",
+      "celestial"
+    ],
     "count": 15807,
     "geometry": "Point",
     "distributions": [
@@ -390,6 +476,13 @@
     "name": "Deep-sky objects: magnitude 20",
     "group": "Deep-sky objects",
     "description": "Positions and attributes of deep-sky objects from d3-celestial with a nominal magnitude limit of 20, including entries with unknown magnitudes. J2000 point geometries are available in GeoJSON and GeoPackage, with object identifiers, classifications and dimensions where supplied.",
+    "keywords": [
+      "Deep-sky objects: magnitude 20",
+      "J2000",
+      "GeoJSON",
+      "GeoPackage",
+      "celestial"
+    ],
     "count": 89868,
     "geometry": "Point",
     "distributions": [
@@ -421,6 +514,13 @@
     "name": "Bright deep-sky objects",
     "group": "Deep-sky objects",
     "description": "A selection of bright deep-sky objects compiled by Olaf Frohn for d3-celestial, with identifiers, object types, magnitudes and dimensions where supplied. Available as J2000 point geometries in GeoJSON and GeoPackage; the selection is not a complete inventory of deep-sky objects.",
+    "keywords": [
+      "Bright deep-sky objects",
+      "J2000",
+      "GeoJSON",
+      "GeoPackage",
+      "celestial"
+    ],
     "count": 32,
     "geometry": "Point",
     "distributions": [
@@ -452,6 +552,13 @@
     "name": "Local Group and Milky Way halo",
     "group": "Deep-sky objects",
     "description": "Positions and attributes of objects in the Local Group and Milky Way halo, compiled by Olaf Frohn for d3-celestial. GeoJSON and GeoPackage contain J2000 point geometries with identifiers, classifications, magnitudes and dimensions where supplied.",
+    "keywords": [
+      "Local Group and Milky Way halo",
+      "J2000",
+      "GeoJSON",
+      "GeoPackage",
+      "celestial"
+    ],
     "count": 315,
     "geometry": "Point",
     "distributions": [
@@ -483,6 +590,13 @@
     "name": "Messier catalog",
     "group": "Deep-sky objects",
     "description": "J2000 positions and attributes of the 110 objects in the Messier catalog, derived from d3-celestial. GeoJSON and GeoPackage contain point geometries with names, catalog designations, object types, magnitudes and dimensions where supplied.",
+    "keywords": [
+      "Messier catalog",
+      "J2000",
+      "GeoJSON",
+      "GeoPackage",
+      "celestial"
+    ],
     "count": 110,
     "geometry": "Point",
     "distributions": [
@@ -514,6 +628,13 @@
     "name": "Stars: magnitude 6",
     "group": "Stars",
     "description": "Star positions and attributes from d3-celestial with a nominal apparent magnitude limit of 6. Available as J2000 point geometries in GeoJSON and GeoPackage, with source identifiers, magnitudes, color indices and names where supplied; not a calculation of the current sky.",
+    "keywords": [
+      "Stars: magnitude 6",
+      "J2000",
+      "GeoJSON",
+      "GeoPackage",
+      "celestial"
+    ],
     "count": 5044,
     "geometry": "Point",
     "distributions": [
@@ -545,6 +666,13 @@
     "name": "Stars: magnitude 8",
     "group": "Stars",
     "description": "Star positions and attributes with a nominal apparent magnitude limit of 8 in this repository, derived from d3-celestial. GeoJSON and GeoPackage contain J2000 point geometries, identifiers, magnitudes and color indices; they do not calculate the current sky.",
+    "keywords": [
+      "Stars: magnitude 8",
+      "J2000",
+      "GeoJSON",
+      "GeoPackage",
+      "celestial"
+    ],
     "count": 41411,
     "geometry": "Point",
     "distributions": [
@@ -576,6 +704,13 @@
     "name": "Stars: magnitude 14",
     "group": "Stars",
     "description": "The largest star catalog supplied by this repository, derived from d3-celestial with positions in the J2000 reference. GeoJSON and GeoPackage contain point geometries, source identifiers, magnitudes, color indices and names where supplied; the file name does not establish catalog completeness.",
+    "keywords": [
+      "Stars: magnitude 14",
+      "J2000",
+      "GeoJSON",
+      "GeoPackage",
+      "celestial"
+    ],
     "count": 118216,
     "geometry": "Point",
     "distributions": [
@@ -607,6 +742,11 @@
     "name": "Deep-sky object names",
     "group": "Name tables",
     "description": "A CSV name table for deep-sky objects from d3-celestial, linking source object identifiers to names in several languages. The table contains no geometry and complements the deep-sky position catalogs; shared identifiers must be interpreted according to the source catalog conventions.",
+    "keywords": [
+      "Deep-sky object names",
+      "CSV",
+      "celestial"
+    ],
     "count": 724,
     "geometry": null,
     "distributions": [
@@ -624,6 +764,11 @@
     "name": "Chinese deep-sky object names",
     "group": "Name tables",
     "description": "A CSV name table for Chinese deep-sky designations from d3-celestial, with identifiers, names, English translations and pinyin. It contains no geometry and complements the celestial object catalogs rather than providing another set of sky positions.",
+    "keywords": [
+      "Chinese deep-sky object names",
+      "CSV",
+      "celestial"
+    ],
     "count": 6,
     "geometry": null,
     "distributions": [
@@ -641,6 +786,11 @@
     "name": "Star names",
     "group": "Name tables",
     "description": "A CSV table linking star names and multilingual translations to source identifiers and catalog designations, including Bayer, Flamsteed, HD and Hipparcos fields where supplied. Derived from d3-celestial without geometry; it is independent of the magnitude-limited position subsets.",
+    "keywords": [
+      "Star names",
+      "CSV",
+      "celestial"
+    ],
     "count": 4869,
     "geometry": null,
     "distributions": [
@@ -658,6 +808,11 @@
     "name": "Chinese star names",
     "group": "Name tables",
     "description": "A CSV table of Chinese star names from d3-celestial, with source identifiers, designations, English translations and pinyin. It contains no geometry and complements the star position catalogs; identifiers should be matched using the source catalog conventions.",
+    "keywords": [
+      "Chinese star names",
+      "CSV",
+      "celestial"
+    ],
     "count": 3056,
     "geometry": null,
     "distributions": [
