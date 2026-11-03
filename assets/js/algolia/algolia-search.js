@@ -128,7 +128,6 @@ search.addWidgets([
     },
   }),
   
-  
   instantsearch.widgets.hits({
     container: '#hits',
     escapeHTML: false,
