@@ -9,7 +9,6 @@ _site
 .jekyll-metadata
 vendor
 .bundle
-Gemfile.lock
 __pycache__/
 
 # Generated Croissant record downloads
