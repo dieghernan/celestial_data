@@ -6,7 +6,7 @@ excerpt: Browse celestial datasets by category and download GeoJSON, GeoPackage 
 
 Browse datasets by category. Select a dataset name for its metadata or use the
 buttons to download files directly. GeoJSON and GeoPackage contain J2000
-celestial geometries; CSV files contain names and attributes without geometry.
+celestial geometries. CSV files contain names and attributes without geometry.
 
 For formats, coordinate conventions and field definitions, see the
 [data description]({{ '/data' | relative_url }}).

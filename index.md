@@ -36,7 +36,7 @@ convention here: these are not terrestrial WGS84 locations. J2000 does not
 indicate when the files were downloaded or updated, and these static catalogs
 do not calculate the current sky for an observer.
 
-Geometry validation was performed with GEOS 3.9.3. It checks geometric validity,
+Geometry validation was performed with **GEOS** 3.9.3. It checks geometric validity,
 not the astronomical accuracy or completeness of the source catalogs.
 
 ## Distribution

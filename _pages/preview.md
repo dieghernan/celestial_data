@@ -11,7 +11,7 @@ file even if the interactive preview is unavailable.
 
 These are J2000 celestial coordinates represented as geographic geometries.
 The geographic background is a visual reference, not a map of the night sky
-as seen from your location; the Mercator view does not show the poles.
+as seen from your location. The Mercator view does not show the poles.
 
 ## Leaflet preview
 

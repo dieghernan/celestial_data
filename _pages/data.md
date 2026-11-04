@@ -24,10 +24,10 @@ to 90 degrees and 18h maps to -90 degrees.
 EPSG:4326 is assigned for compatibility with GIS software. These angles describe
 celestial directions, not terrestrial WGS84 locations. Earth-based distances,
 areas and basemaps do not acquire astronomical meaning from this encoding.
-J2000 is a reference epoch, not a file update date; the files do not calculate
-current positions or a location-based view of the night sky.
+J2000 identifies the reference epoch. The files contain static positions for
+that epoch.
 
-Geometries were validated with GEOS 3.9.3. Geometric validity does not establish
+Geometries were validated with **GEOS** 3.9.3. Geometric validity does not establish
 astronomical accuracy or catalog completeness. Some degenerate source lines
 were removed during conversion.
 
@@ -68,7 +68,7 @@ datasets, file sizes and links to individual dataset pages.
 
 -   **es**: Proper name in Spanish
 
--   **p**: Display priority (1–6), approximately related to brightness; 6
+-   **p**: Display priority (1–6), approximately related to brightness. A value of 6
     denotes a guide line
 
 -   **loc_lon**, **loc_lat**: Label position in the same angular encoding as the
@@ -91,10 +91,10 @@ include separate entries for Serpens Caput and Serpens Cauda:
 
 -   **rank**: 1-3 for differential name display by size/brightness
 
--   **en**: English name; other fields provide names in additional languages
+-   **en**: English name. Other fields provide names in additional languages
 
 -   **display_ra**, **display_dec**, **display_scale**: View center and scale
-    for displaying a single constellation; these are display parameters
+    for displaying a single constellation. These are display parameters
 
 #### Traditional Chinese constellations
 
@@ -106,9 +106,9 @@ include separate entries for Serpens Caput and Serpens Cauda:
 -   **en**: English translation
 -   **pinyin**: Pinyin transcription
 -   **desig**: Chinese name repeated for compatibility
--   **rank**: Display priority; currently 1 in this dataset
+-   **rank**: Display priority. The value is currently 1 in this dataset
 -   **display_ra**, **display_dec**, **display_scale**: View center and scale
-    for displaying a single constellation; these are display parameters
+    for displaying a single constellation. These are display parameters
 
 ### Constellation boundaries
 
@@ -147,11 +147,11 @@ features.
 Some records were removed from the
 [original dataset](https://github.com/ofrohn/d3-celestial/blob/master/data/constellations.lines.cn.json)
 because their line geometry contained only one position. A GeoJSON
-LineString requires at least two positions; a MultiLineString contains
+LineString requires at least two positions. A MultiLineString contains
 arrays of such lines.
 
 -   **id**: Numerical identifier
--   **rank**: Display priority; currently 1 in this dataset
+-   **rank**: Display priority. The value is currently 1 in this dataset
 -   **name**: Chinese name
 -   **en**: English translation
 
@@ -165,7 +165,7 @@ Deep-sky objects (DSOs) include galaxies, nebulae and star clusters.
 
 -   **id**: Short designator
 
--   **name**: Proper name; other fields provide translations
+-   **name**: Proper name. Other fields provide translations
 
 #### Traditional Chinese DSO names
 
@@ -210,7 +210,7 @@ Common attributes include:
 
 -   **morph**: Morphology classification depending on type
 
--   **mag**: Apparent magnitude; 999 indicates an unavailable value
+-   **mag**: Apparent magnitude. The value 999 indicates an unavailable value
 
 -   **dim**: Angular dimensions in arcminutes
 
@@ -239,7 +239,7 @@ Additional fields on `lg.<data format>`:
 star catalog magnitude subsets. Some name fields are empty or unavailable.
 
 -   **id**: Hipparcos number
--   **name**: Proper name; other fields provide translations
+-   **name**: Proper name. Other fields provide translations
 -   **desig**: Preferred display designation from the available catalog names
 -   **bayer**: Bayer designation
 -   **flam**: Flamsteed designation
@@ -268,7 +268,7 @@ subsets do not guarantee a complete survey of all objects to that magnitude:
 
 -   **id**: Star identifier (Hipparcos number)
 
--   **mag**: Apparent magnitude; 999 indicates an unavailable value
+-   **mag**: Apparent magnitude. The value 999 indicates an unavailable value
 
 -   **bv**: Blue-minus-visual color index (B−V)
 

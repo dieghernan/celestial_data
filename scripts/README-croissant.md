@@ -65,7 +65,7 @@ wkt = row[record_set + "/geometry_wkt"]
 
 ## Generate and verify
 
-Use Python 3.12:
+Use **Python** 3.12.
 
 ```sh
 pip install -r scripts/requirements-croissant.txt
@@ -92,11 +92,11 @@ Fixed gzip metadata and JSON Unicode escapes make output reproducible and avoid
 the Windows gzip reader's legacy default-encoding problem. JSON escapes decode
 to the original multilingual names. Do not edit generated metadata by hand.
 
-CI checks regeneration, validates all descriptors, builds Jekyll and compares
+CI checks regeneration, validates all descriptors, builds the **Jekyll** site and compares
 all original rows with records loaded through mlcroissant before deployment.
 Tests map URLs to local generated files; after deployment readers use the same
 URLs without mapping. The schema aliases for `name` and `description` avoid the
-language-container objects that Google Rich Results rejects. Chulapa templates,
+language-container objects that Google Rich Results rejects. **Chulapa** templates,
 microformats, existing visible pages and original data files are not edited.
 
 Specifications and source documentation:
