@@ -23,8 +23,7 @@ Browse download cards and sizes at
 <https://dieghernan.github.io/celestial_data/data#downloads>.
 
 The website, GitHub and jsDelivr provide alternative URLs for the same files.
-These URLs follow the main branch. For an archived release, use the collection
-DOI: <https://doi.org/10.5281/zenodo.7561601>.
+These URLs follow the main branch. The collection DOI lists the archived releases. <https://doi.org/10.5281/zenodo.7561601>.
 
 For example, download the minified Milky Way dataset from:
 
@@ -229,7 +228,7 @@ star catalog magnitude subsets. Some name fields are empty or unavailable.
 -   **bayer**: Bayer designation
 -   **flam**: Flamsteed designation
 -   **var**: Variable star designation
--   **gliese**: Gliese designation
+-   **gl**, **gliese**: Gliese designation fields
 -   **hd**: Henry Draper catalog designation
 -   **hip**: Hipparcos number again
 
