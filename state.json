@@ -1,9 +1,9 @@
 {
   "posts": {
     "https://dieghernan.github.io/celestial_data/": {
-      "https://doi.org/10.32614/RJ-2018-009": "9c6a6dee91716879ffc491af93a7352da06f74e2aca0df5b274a0402d8e5ae6c",
-      "https://github.com/ofrohn/d3-celestial/": "9c6a6dee91716879ffc491af93a7352da06f74e2aca0df5b274a0402d8e5ae6c",
-      "https://opensource.org/licenses/BSD-3-Clause": "9c6a6dee91716879ffc491af93a7352da06f74e2aca0df5b274a0402d8e5ae6c"
+      "https://doi.org/10.32614/RJ-2018-009": "e3aa942770a381028108edc628b59c166214b7199c3c6e6f7eb954978922713f",
+      "https://github.com/ofrohn/d3-celestial/": "e3aa942770a381028108edc628b59c166214b7199c3c6e6f7eb954978922713f",
+      "https://opensource.org/licenses/BSD-3-Clause": "e3aa942770a381028108edc628b59c166214b7199c3c6e6f7eb954978922713f"
     },
     "https://dieghernan.github.io/celestial_data/404.html": {},
     "https://dieghernan.github.io/celestial_data/data": {
