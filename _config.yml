@@ -54,6 +54,7 @@ publisher:
 
 # Navigation
 navbar:
+  expand: lg
   brand:
     title: Celestial Data
     img: "./assets/icons/android-chrome-192x192.png"
