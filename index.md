@@ -21,8 +21,8 @@ project_links:
 
 [![DOI](https://img.shields.io/badge/DOI-10.5281/zenodo.7561601-blue)](https://doi.org/10.5281/zenodo.7561601)
 
-This project provides several datasets in GeoJSON and GeoPackage
-format of celestial objects for the J2000 epoch.
+This project provides datasets of celestial objects for the J2000 epoch
+in GeoJSON and GeoPackage formats.
 
 The source files come from [d3-celestial](https://github.com/ofrohn/d3-celestial/)
 and are distributed under the [BSD 3-Clause license](https://opensource.org/licenses/BSD-3-Clause).
@@ -45,7 +45,7 @@ The same files are available through the website, GitHub and jsDelivr.
 These URLs follow the main branch and may differ from an archived release
 identified by the collection DOI.
 
-The following example downloads the minified Milky Way dataset:
+These URLs point to the minified Milky Way dataset.
 
 ``` html
 

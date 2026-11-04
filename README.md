@@ -5,8 +5,8 @@
 ![GitHub release (latest
 SemVer)](https://img.shields.io/github/v/release/dieghernan/celestial_data)
 
-This repository contains several datasets in GeoJSON and GeoPackage
-format of celestial objects for the J2000 epoch.
+This repository contains datasets of celestial objects for the J2000 epoch
+in GeoJSON and GeoPackage formats.
 
 The source files come from
 [d3-celestial](https://github.com/ofrohn/d3-celestial/) ([Frohn
@@ -34,7 +34,7 @@ The same files are available through the website, GitHub and jsDelivr.
 These URLs follow the main branch and may differ from an archived
 release identified by the collection DOI.
 
-The following example downloads the minified Milky Way dataset:
+These URLs point to the minified Milky Way dataset.
 
 ``` html
 

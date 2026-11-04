@@ -10,10 +10,8 @@ Declination supplies the latitude-like angle in [-90, 90]. For example, 6h maps
 to 90 degrees and 18h maps to -90 degrees.
 
 EPSG:4326 is assigned for compatibility with GIS software. These angles describe
-celestial directions, not terrestrial WGS84 locations. Earth-based distances,
-areas and basemaps do not acquire astronomical meaning from this encoding.
-J2000 is a reference epoch, not a file update date; the files do not calculate
-current positions or a location-based view of the night sky.
+celestial directions, not terrestrial WGS84 locations. Use the coordinates as angles when analyzing the catalogs. J2000 identifies
+the reference epoch. The files contain static positions for that epoch.
 
 Geometries were validated with GEOS 3.9.3. Geometric validity does not establish
 astronomical accuracy or catalog completeness. Some degenerate source lines
