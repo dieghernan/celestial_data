@@ -221,9 +221,9 @@ to 90 degrees and 18h maps to -90 degrees.</p>
 <p>EPSG:4326 is assigned for compatibility with GIS software. These angles describe
 celestial directions, not terrestrial WGS84 locations. Earth-based distances,
 areas and basemaps do not acquire astronomical meaning from this encoding.
-J2000 is a reference epoch, not a file update date; the files do not calculate
-current positions or a location-based view of the night sky.</p>
-<p>Geometries were validated with GEOS 3.9.3. Geometric validity does not establish
+J2000 identifies the reference epoch. The files contain static positions for
+that epoch.</p>
+<p>Geometries were validated with <strong>GEOS</strong> 3.9.3. Geometric validity does not establish
 astronomical accuracy or catalog completeness. Some degenerate source lines
 were removed during conversion.</p>
 <h2 id="distribution">Distribution</h2>
@@ -258,7 +258,7 @@ datasets, file sizes and links to individual dataset pages.</p>
    <p><strong>es</strong>: Proper name in Spanish</p>
  </li>
  <li>
-   <p><strong>p</strong>: Display priority (1–6), approximately related to brightness; 6
+   <p><strong>p</strong>: Display priority (1–6), approximately related to brightness. A value of 6
 denotes a guide line</p>
  </li>
  <li>
@@ -288,11 +288,11 @@ include separate entries for Serpens Caput and Serpens Cauda:</p>
    <p><strong>rank</strong>: 1-3 for differential name display by size/brightness</p>
  </li>
  <li>
-   <p><strong>en</strong>: English name; other fields provide names in additional languages</p>
+   <p><strong>en</strong>: English name. Other fields provide names in additional languages</p>
  </li>
  <li>
    <p><strong>display_ra</strong>, <strong>display_dec</strong>, <strong>display_scale</strong>: View center and scale
-for displaying a single constellation; these are display parameters</p>
+for displaying a single constellation. These are display parameters</p>
  </li>
 </ul>
 <h4 id="traditional-chinese-constellations">Traditional Chinese constellations</h4>
@@ -304,9 +304,9 @@ for displaying a single constellation; these are display parameters</p>
  <li><strong>en</strong>: English translation</li>
  <li><strong>pinyin</strong>: Pinyin transcription</li>
  <li><strong>desig</strong>: Chinese name repeated for compatibility</li>
- <li><strong>rank</strong>: Display priority; currently 1 in this dataset</li>
+ <li><strong>rank</strong>: Display priority. The value is currently 1 in this dataset</li>
  <li><strong>display_ra</strong>, <strong>display_dec</strong>, <strong>display_scale</strong>: View center and scale
-for displaying a single constellation; these are display parameters</li>
+for displaying a single constellation. These are display parameters</li>
 </ul>
 <h3 id="constellation-boundaries">Constellation boundaries</h3>
 <p><code class="language-plaintext highlighter-rouge">constellations.borders.&lt;data format&gt;</code> (<code class="language-plaintext highlighter-rouge">MULTILINESTRING</code>) with 257 objects.</p>
@@ -342,11 +342,11 @@ features.</p>
 <p>Some records were removed from the
 <a href="https://github.com/ofrohn/d3-celestial/blob/master/data/constellations.lines.cn.json">original dataset</a>
 because their line geometry contained only one position. A GeoJSON
-LineString requires at least two positions; a MultiLineString contains
+LineString requires at least two positions. A MultiLineString contains
 arrays of such lines.</p>
 <ul>
  <li><strong>id</strong>: Numerical identifier</li>
- <li><strong>rank</strong>: Display priority; currently 1 in this dataset</li>
+ <li><strong>rank</strong>: Display priority. The value is currently 1 in this dataset</li>
  <li><strong>name</strong>: Chinese name</li>
  <li><strong>en</strong>: English translation</li>
 </ul>
@@ -359,7 +359,7 @@ arrays of such lines.</p>
    <p><strong>id</strong>: Short designator</p>
  </li>
  <li>
-   <p><strong>name</strong>: Proper name; other fields provide translations</p>
+   <p><strong>name</strong>: Proper name. Other fields provide translations</p>
  </li>
 </ul>
 <h4 id="traditional-chinese-dso-names">Traditional Chinese DSO names</h4>
@@ -412,7 +412,7 @@ pn: <em>(planetary nebula)</em>, snr: <em>(supernova remnant)</em>.</p>
    <p><strong>morph</strong>: Morphology classification depending on type</p>
  </li>
  <li>
-   <p><strong>mag</strong>: Apparent magnitude; 999 indicates an unavailable value</p>
+   <p><strong>mag</strong>: Apparent magnitude. The value 999 indicates an unavailable value</p>
  </li>
  <li>
    <p><strong>dim</strong>: Angular dimensions in arcminutes</p>
@@ -448,7 +448,7 @@ Stream, Canis Major/Monoceros Stream, Fornax-Leo-Sculptor Great Circle)</p>
 star catalog magnitude subsets. Some name fields are empty or unavailable.</p>
 <ul>
  <li><strong>id</strong>: Hipparcos number</li>
- <li><strong>name</strong>: Proper name; other fields provide translations</li>
+ <li><strong>name</strong>: Proper name. Other fields provide translations</li>
  <li><strong>desig</strong>: Preferred display designation from the available catalog names</li>
  <li><strong>bayer</strong>: Bayer designation</li>
  <li><strong>flam</strong>: Flamsteed designation</li>
@@ -477,7 +477,7 @@ subsets do not guarantee a complete survey of all objects to that magnitude:</p>
    <p><strong>id</strong>: Star identifier (Hipparcos number)</p>
  </li>
  <li>
-   <p><strong>mag</strong>: Apparent magnitude; 999 indicates an unavailable value</p>
+   <p><strong>mag</strong>: Apparent magnitude. The value 999 indicates an unavailable value</p>
  </li>
  <li>
    <p><strong>bv</strong>: Blue-minus-visual color index (B−V)</p>
