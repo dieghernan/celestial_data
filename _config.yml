@@ -67,7 +67,7 @@ navbar:
     url: https://dieghernan.github.io/celestial_data/data
   - title: Data sources
     url: https://dieghernan.github.io/celestial_data/sources
-  - title: '<i class="fab fa-github mr-1" aria-hidden="true"></i> GitHub'
+  - title: <i class="fab fa-github mr-1" aria-hidden="true"></i><span class="d-lg-none">GitHub</span><span class="sr-only">GitHub repo of this project</span>
     url: https://github.com/dieghernan/celestial_data
 footer:
   links:
