@@ -13,3 +13,4 @@ __pycache__/
 
 # Generated Croissant record downloads
 assets/croissant/
+Gemfile.lock
