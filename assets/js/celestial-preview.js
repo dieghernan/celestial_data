@@ -29,8 +29,11 @@
   resetView();
   document.getElementById("preview-reset").addEventListener("click", resetView);
 
-  if (L.tileLayer.providerESP) {
-    const background = L.tileLayer.providerESP("IDErioja.Oscuro", { noWrap: true }).addTo(map);
+  if (L.tileLayer.provider) {
+    const background = L.tileLayer.provider("CartoDB.DarkMatterNoLabels", {
+      apikey: "cb1_5619_1_b2e6946e6183e8692f337d2e",
+      noWrap: true,
+    }).addTo(map);
     L.control.layers({}, { "Geographic background": background }).addTo(map);
   }
 
