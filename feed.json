@@ -1,0 +1,17 @@
+{
+  "version": "https://jsonfeed.org/version/1.1",
+  "title": "Celestial Data",
+  "home_page_url": "https://dieghernan.github.io/celestial_data/",
+  "feed_url": "https://dieghernan.github.io/celestial_data/feed.json",
+  "language": "en-US",
+  "description": "Celestial datasets for the J2000 epoch, derived from d3-celestial and processed with R and sf.",
+  "icon": "https://dieghernan.github.io/celestial_data/assets/img/social-preview.jpg",
+  "favicon": "https://dieghernan.github.io/celestial_data/assets/icons/android-chrome-192x192.png",
+  "authors": [{
+    "name": "Diego HH",
+    "url": "https://dieghernan.github.io/"
+  }],
+  "items": [
+    
+  ]
+}
