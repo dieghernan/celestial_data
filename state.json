@@ -119,7 +119,8 @@
       "https://github.com/Stellarium/stellarium/tree/master/skycultures/chinese": "900f2e333d2c8bb5df0605786c948bef7e6f498bdbc92f579e0d419806421487",
       "https://github.com/ofrohn/d3-celestial/": "900f2e333d2c8bb5df0605786c948bef7e6f498bdbc92f579e0d419806421487",
       "https://www.iau.org/IAU/Astronomy-FAQs/Constellations.aspx": "900f2e333d2c8bb5df0605786c948bef7e6f498bdbc92f579e0d419806421487"
-    }
+    },
+    "https://dieghernan.github.io/celestial_data/subscribe/": {}
   },
   "version": 2
 }
