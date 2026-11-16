@@ -1,23 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
-	<channel>
-		<title>Celestial Data | Celestial datasets in GeoJSON and GeoPackage formats</title>
-		<generator>(c) Chulapa Jekyll Theme RSS generator</generator>
-		<link>https://dieghernan.github.io/celestial_data</link>
-		<description>Celestial datasets for the J2000 epoch, derived from d3-celestial and processed with R and sf.</description>
-		<language>en-US</language>
-		<copyright>(c) 2026, Diego HH</copyright>
-		
-		<lastBuildDate>Fri, 13 Nov 2026 07:38:17 +0100</lastBuildDate>
-		<category>blog</category>
-		<ttl>60</ttl>
-		<atom:link href="https://dieghernan.github.io/celestial_data/rss.xml" rel="self" type="application/rss+xml" />
-		
-		<image>
-			<title>Celestial Data | Celestial datasets in GeoJSON and GeoPackage formats</title>
-			<url>https://dieghernan.github.io/celestial_data/assets/img/social-preview.jpg</url>
-			<link>https://dieghernan.github.io/celestial_data</link>
-			<description>Celestial datasets for the J2000 epoch, derived from d3-celestial and processed with R and sf.</description>
-		</image>
-		</channel>
+<rss version="2.0"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dcterms="http://purl.org/dc/terms/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>Celestial Data | Celestial datasets in GeoJSON and GeoPackage formats</title>
+    <generator>(c) Chulapa Jekyll Theme RSS generator</generator>
+    <link>https://dieghernan.github.io/celestial_data</link>
+    <description>Celestial datasets for the J2000 epoch, derived from d3-celestial and processed with R and sf.</description>
+    <language>en-US</language>
+    <copyright>(c) 2026, Diego HH</copyright>
+    <lastBuildDate>Mon, 16 Nov 2026 22:49:36 +0100</lastBuildDate>
+    <category>blog</category>
+    <ttl>60</ttl>
+    <atom:link href="https://dieghernan.github.io/celestial_data/rss.xml" rel="self" type="application/rss+xml" />
+    <image>
+      <title>Celestial Data | Celestial datasets in GeoJSON and GeoPackage formats</title>
+      <url>https://dieghernan.github.io/celestial_data/assets/img/social-preview.jpg</url>
+      <link>https://dieghernan.github.io/celestial_data</link>
+      <description>Celestial datasets for the J2000 epoch, derived from d3-celestial and processed with R and sf.</description>
+    </image>
+    
+  </channel>
 </rss>
