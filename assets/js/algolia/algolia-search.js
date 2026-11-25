@@ -39,18 +39,24 @@ function imgurl(p1) {
 }
 
 function parsecontent(hit) {
-  if (hit.html === undefined){
-    return " "
-  } else {
-    return hit._highlightResult?.html?.value ?? hit.html ?? '';
-  }
+  if (hit.html === undefined) return " ";
+  const content = hit._highlightResult?.html?.value ?? hit.html ?? '';
+  const excerpt = document.createElement('template');
+  excerpt.innerHTML = content;
+  const pageUrl = new URL(resultUrl(hit.url), "https://dieghernan.github.io/celestial_data/");
+  excerpt.content.querySelectorAll('a[href]').forEach(link => {
+    const href = link.getAttribute('href').trim();
+    if (!href || /^(?:[a-z][a-z\d+.-]*:|\/)/i.test(href)) return;
+    link.setAttribute('href', new URL(href, pageUrl).href);
+  });
+  return excerpt.innerHTML;
 }
 function parsetitle(hit) {
-  if (hit.title === undefined){
-    return "---------"
-  } else {
-    return hit._highlightResult.title.value
-  }
+  const highlighted = hit._highlightResult?.title?.value;
+  if (highlighted != null) return highlighted;
+  const title = document.createElement('span');
+  title.textContent = hit.title ?? '---------';
+  return title.innerHTML;
 }
 
 function parseimg(img1, img2){
